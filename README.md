@@ -1,10 +1,15 @@
-# pinghsu-jekyll
+# Theme pinghsu-jekyll
 
 a jekyll theme which is cloned a typecho theme [pinghsu](https://github.com/chakhsu/pinghsu)
 
-## preview
+## Preview
 
 [lightfish.cn](http://lightfish.cn)
+
+## Developer
+
+- [chakhsu](https://github.com/chakhsu)
+- [lightfish-zhang](https://github.com/lightfish-zhang)
 
 ## Thanks
 
