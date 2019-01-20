@@ -1,1 +1,3 @@
 # pinghsu-jekyll
+
+a theme clone [pinghsu-typecho](https://github.com/chakhsu/pinghsu), it's ...
