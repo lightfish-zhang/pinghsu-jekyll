@@ -4,7 +4,7 @@ a jekyll theme which is cloned a typecho theme [pinghsu](https://github.com/chak
 
 ## Preview
 
-[lightfish.cn](http://lightfish.cn)
+[Lightfish Blog](http://lightfish.cn)
 
 ## Developer
 
