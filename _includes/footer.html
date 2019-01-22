@@ -1,0 +1,56 @@
+<footer id="footer" class="footer bg-white">
+    <div class="footer-social">
+        <div class="footer-container clearfix">
+            <div class="social-list">
+                <a href="{{ '/' | prepend: site.baseurl }}"><span class='iconfont icon-home'></span>&nbsp;&nbsp;HOME</a>
+                <a rel="nofollow" target="_blank" href="{{site.github}}"><span class='iconfont icon-github'></span>&nbsp;&nbsp;Github</a>
+                <a target="_blank" href="{{ '/feed.xml' | prepend: site.baseurl }}"><span class='iconfont icon-rss'></span>&nbsp;&nbsp;RSS</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-meta">
+        <div class="footer-container">
+            <div class="meta-item meta-copyright">
+                <div class="meta-copyright-info">
+                    <a href="{{site.resume_site}}" class="info-logo">
+                        <img src="{{ '/style/image/logo.png' | prepend: site.baseurl }}" alt="wonder">
+                    </a>
+                    <div class="info-text">
+                        <p>Copyright &copy; 2016 - {{ site.time | date: '%Y' }} <a href="{{site.resume_site}}"><code>{{ site.author }}</code></a></p>
+                        <p>Powered by <a href="http://jekyllrb.com" target="_blank" rel="nofollow"><code>jekyll</code></a>，theme is <a href="https://github.com/lightfish-zhang/pinghsu-jekyll" target="_blank" rel="nofollow"><code>pinghsu</code></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meta-item meta-posts">
+                <h3 class="meta-title">RECENT POSTS</h3>
+                {% for post in site.posts limit:7 %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- #end -->
+<script src="//cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+<script>
+	!window.jQuery && document.write(unescape('%3Cscript src="{{ site.baseurl }}/style/js/jquery.min.js"%3E%3C/script%3E'))
+</script>
+<script src="{{ site.baseurl }}/style/js/headroom.min.js"></script>
+<script src="{{ site.baseurl }}/style/js/nav.min.js"></script>
+<script type="text/javascript">
+    var header = new Headroom(document.getElementById("header"), {
+        tolerance: 10,
+        offset : 80,
+        classes: {
+            initial: "animated",
+            pinned: "slideDown",
+            unpinned: "slideUp"
+        }
+    });
+    header.init();
+</script>
