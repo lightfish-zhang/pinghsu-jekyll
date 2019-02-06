@@ -85,3 +85,4 @@ run `bundle install` and `jekyll server` to preview site on you computer, more q
 - [jekyll](http://jekyllrb.com) git page engine
 - [pinghsu](https://github.com/chakhsu/pinghsu), a typecho theme, it's a great design.
 - [gitalk](https://github.com/gitalk/gitalk) git page comment engine, it depends on github issue.
+- [smoothscroll](https://www.smoothscroll.net/mac/) SmoothScroll will give your mouse wheel (Finder, Safari, Chrome, etc.) buttery smooth scrolling
