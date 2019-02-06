@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+
+<article class="main-content page-page" itemscope itemtype="http://schema.org/Article">
+    <div class="post-header">
+    </div>
+        <article class="post-content">
+            <h2>Oh no, 404</h2>
+            <p>Page not found! :(</p>
+            <p>After <span id="404Time" style="color:#D3070A;">6</span> seconds, jump to home page</p>
+        </article>
+</article>
+
+<script type="text/javascript"> 
+	function delayURL(url) {
+		var delay = document.getElementById("404Time").innerHTML;
+		if(delay > 0) {
+			delay--;
+			document.getElementById("404Time").innerHTML = delay;
+		} else {
+			window.top.location.href = url;
+		}
+		setTimeout("delayURL('" + url + "')", 1000);
+	}
+	delayURL("/");
+</script>
