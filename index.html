@@ -8,7 +8,7 @@ layout: default
             {% for post in paginator.posts %}
             <div class="post-list-item">
                 <div class="post-list-item-container">
-                    <div class="item-thumb bg-deepgrey" style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}{% else %}{{ '/style/image/thumbnail.jpg' | prepend: site.baseurl }}{% endif %});"></div>
+                    <div class="item-thumb bg-deepgrey" style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}{% else %}{{ '/style/image/thumbnail.png' | prepend: site.baseurl }}{% endif %});"></div>
                     <a href="{{ post.url | prepend: site.baseurl }}">
                         <div class="item-desc">
                             <p>{{ post.content | strip_html | strip_newlines | truncate: 128 }} </p>
