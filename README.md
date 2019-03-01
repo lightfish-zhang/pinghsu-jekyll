@@ -10,6 +10,8 @@ a jekyll theme which is based on a typecho theme pinghsu
 
 ![Screenshot](https://raw.githubusercontent.com/lightfish-zhang/pinghsu-jekyll/master/preview2.png)
 
+![Screenshot](https://raw.githubusercontent.com/lightfish-zhang/pinghsu-jekyll/master/preview3.png)
+
 ## How to start
 
 - fill the file `_config.yml`
