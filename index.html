@@ -13,7 +13,7 @@ layout: default
                     <div class="item-thumb bg-deepgrey" style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}{% else %}{{ '/style/image/thumbnail.png' | prepend: site.baseurl }}{% endif %});"></div>
                     <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">
                         <div class="item-desc">
-                            <p>{{ post.content | strip_html | strip_newlines | truncate: 128 }} </p>
+                            <p>{{ post.summary }} </p>
                         </div>
                     </a>
                     <div class="item-slant reverse-slant bg-deepgrey"></div>
