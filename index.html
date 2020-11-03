@@ -11,7 +11,7 @@ layout: default
             <div class="post-list-item">
                 <div class="post-list-item-container">
                     <div class="item-thumb bg-deepgrey" style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}{% else %}{{ '/style/image/thumbnail.png' | prepend: site.baseurl }}{% endif %});"></div>
-                    <a href="{{ post.url | prepend: site.baseurl }}">
+                    <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">
                         <div class="item-desc">
                             <p>{{ post.content | strip_html | strip_newlines | truncate: 128 }} </p>
                         </div>
@@ -19,7 +19,7 @@ layout: default
                     <div class="item-slant reverse-slant bg-deepgrey"></div>
                     <div class="item-slant"></div>
                     <div class="item-label">
-                        <div class="item-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        <div class="item-title"><a href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }}</a>
                         <br />
                         {{ post.date | date: "%b %d, %Y" }}
                         </div>
