@@ -16,8 +16,11 @@ icon: code
 # 安装
 ### 1.下载Code Server文件
 code server项目地址：https://github.com/cdr/code-server/releases
-![image.png](http://47.92.138.251/upload/2020/06/image-0e507a3b215f4a12943316a43dab0043.png)
+
+![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image/image-0e507a3b215f4a12943316a43dab0043.png)
+
 根据自己的服务器选择相应文件，下载到本地后通过Xftp上传至服务器任一位置，我这里就是新建了一个code_server文件夹放置文件。
+
 ```language
 cd /home/Ning/code_server
 ```
@@ -43,9 +46,9 @@ export PASSWORD="*******" && ./code-server --host 0.0.0.0 --port 8091
 在浏览器输入**ip+端口号**，如果出现登录界面，输入密码稍等片刻即可。
 ![image.png](http://47.92.138.251/upload/2020/06/image-ac285cb2d2d9414a8b8e2fd41797f98f.png)
 
-![image.png](http://47.92.138.251/upload/2020/06/image-bf99594fda884707b62f846946b920a0.png)
+![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image/image-bf99594fda884707b62f846946b920a0.png)
 
-![image.png](http://47.92.138.251/upload/2020/06/image-0408728818fc43b9af49a6057cc664ff.png)
+![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image/image-0408728818fc43b9af49a6057cc664ff.png)
 
 ### 4.让Code Server在后台保持运行
 如果按照上述操作，关闭或退出shell连接后，就无法再连接上服务器上code server。
@@ -68,11 +71,11 @@ export PASSWORD="*******" && ./code-server --host 0.0.0.0 --port 8091
 ### 5.其他（code server中文设置）
 和VS Code设置方法一样，按Ctrl + Shift + P
 搜索"Configure Display Language"
-![image.png](http://47.92.138.251/upload/2020/06/image-db5b46eec4b74c568c42055f60ab1b3e.png)
+![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image/image-db5b46eec4b74c568c42055f60ab1b3e.png)
 然后点Install，找到中文-简体安装即可
-![image.png](http://47.92.138.251/upload/2020/06/image-2e6e11f9882f4c19862de4799c4f2182.png)
+![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image-2e6e11f9882f4c19862de4799c4f2182.png)
 
-![image.png](http://47.92.138.251/upload/2020/06/image-393f536763394069ac8f746615bd6c3f.png)
+![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image-db5b46eec4b74c568c42055f60ab1b3e.png)
 
 
 
