@@ -3,7 +3,7 @@ layout: post
 title: 服务器CentOS7安装code-server，快乐地用web修改代码
 date: 2020-11-01 00:00:00 +0800
 category: tutorial
-thumbnail: /style/image/thumbnail.png
+thumbnail: /style/image/daniel-schludi-l8cvrt3Hpec-unsplash.jpg
 icon: code
 ---
 
