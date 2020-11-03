@@ -44,7 +44,7 @@ export PASSWORD="*******" && ./code-server --host 0.0.0.0 --port 8091
 
 ### 3.测试是否安装成功
 在浏览器输入**ip+端口号**，如果出现登录界面，输入密码稍等片刻即可。
-![image.png](http://47.92.138.251/upload/2020/06/image-ac285cb2d2d9414a8b8e2fd41797f98f.png)
+![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image/image-ac285cb2d2d9414a8b8e2fd41797f98f.png)
 
 ![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image/image-bf99594fda884707b62f846946b920a0.png)
 
@@ -73,9 +73,9 @@ export PASSWORD="*******" && ./code-server --host 0.0.0.0 --port 8091
 搜索"Configure Display Language"
 ![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image/image-db5b46eec4b74c568c42055f60ab1b3e.png)
 然后点Install，找到中文-简体安装即可
-![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image-2e6e11f9882f4c19862de4799c4f2182.png)
+![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image/image-2e6e11f9882f4c19862de4799c4f2182.png)
 
-![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image-db5b46eec4b74c568c42055f60ab1b3e.png)
+![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image/image-db5b46eec4b74c568c42055f60ab1b3e.png)
 
 
 
