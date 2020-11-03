@@ -1,4 +1,191 @@
+<style>
+    .inner {
+        margin: 0 auto;
+        max-width: 800px
+    }
 
+    .offsite-links {
+        margin-top: 0px
+    }
+
+    .offsite-links a {
+        margin: 50px 6px 15px
+    }
+
+    .offsite-links a i {
+        color: #fff;
+        font-size: 20px;
+        transition: all .3s
+    }
+
+    .offsite-links a i:hover {
+        color: #fff;
+        font-size: 22px
+    }
+
+    .offsite-links a img {
+        max-width: 20px;
+        margin-bottom: 5px
+    }
+
+    .circle {
+        background-color: transparent;
+        border: 1px solid #d4d3d3;
+        border-radius: 50%;
+        color: #34495e;
+        display: inline-block;
+        font-size: 16px;
+        height: 40px;
+        line-height: 1;
+        position: relative;
+        text-align: center;
+        width: 40px
+    }
+
+    .circle:after {
+        border-radius: 50%;
+        box-shadow: 0 0 0 1px rgba(90, 90, 90, .3);
+        box-sizing: content-box;
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 1;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        transform: scale(1);
+        transition: transform .2s,
+            opacity .4s;
+        width: 100%
+    }
+
+    .circle:hover {
+        color: var(--base-color)
+    }
+
+    .circle:hover:after {
+        left: -7px;
+        opacity: 0;
+        padding: 7px;
+        top: -7px;
+        transform: scale(1.1)
+    }
+
+    .circle svg {
+        fill: currentColor;
+        height: 16px;
+        position: relative;
+        top: 12px
+    }
+
+    .footer {
+        text-align: center;
+        box-shadow: 0 4px 10px 10px rgba(0, 0, 0, .05);
+    }
+    
+    .footer-meta .footer-container {
+        height: 100px;
+    }
+
+    .footer-meta .meta-item {
+        margin: auto;
+        float: none !important;
+        text-align: center;
+    }
+
+    .footer-meta .meta-copyright .info-text a {
+        color: #4682B4;
+    }
+
+    .footer-meta .meta-copyright .info-text a:hover {
+        color: #708090;
+    }
+</style>
+
+<footer id="footer" class="footer bg-white">
+
+
+    <div class="inner">
+
+        <div class="offsite-links">
+
+            <a href="https://www.douban.com/people/181033849/" class="circle" target="_blank" rel="noopener" title="豆瓣">
+                <svg t="1593099514955" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" p-id="2144" xmlns:xlink="http://www.w3.org/1999/xlink" width="36"
+                    height="36">
+                    <defs>
+                        <style type="text/css"></style>
+                    </defs>
+                    <path
+                        d="M745.264 308.007c-76.946-0.652-153.9-0.145-230.852-0.145-78.588 0-157.18-0.511-235.763 0.144-76.913 0.64-113.155 37.479-114.357 115.18-0.532 34.373-0.843 68.785 0.125 103.141 1.924 68.321 39.491 107.783 106.659 108.218 160.443 1.042 320.904 0.99 481.347 0.015 65.212-0.397 103.7-38.239 106.988-103.124 1.905-37.562 1.571-75.326 0.38-112.94-2.338-73.758-39.795-109.858-114.527-110.489z m32.148 194.078c-1.68 36.819-13.986 50.212-50.943 51.24-50.728 1.41-101.523 0.416-152.288 0.443-21.289 0.012-42.579 0.002-63.867 0.002-67.144-0.01-134.29 0.44-201.427-0.156-51.862-0.463-62.317-11.635-63.063-64.29-0.255-18.008-0.949-36.096 0.347-54.019 2.24-31.015 14.765-45.408 46.033-45.622 145.74-1 291.493-1.01 437.235-0.107 33.931 0.212 46.168 14.381 47.94 48.662 1.096 21.232 1 42.602 0.033 63.847zM861.443 820.173c-39.305-0.466-78.624 0.197-117.928-0.354-10.204-0.143-20.37-2.97-33.44-5.016 8.247-15.9 14.03-27.506 20.231-38.883 6.269-11.495 12.97-22.751 19.452-34.131 9.775-17.16 11.232-34.144-2.024-50.226-19.677-23.873-49.125-20.516-68.794 9.95-19.516 30.225-37.157 61.738-54.21 93.445-9.577 17.808-21.533 26.107-42.625 25.489-47.46-1.394-95.001-1.095-142.482-0.13-18.751 0.382-30.287-6.458-39.11-22.822-16.31-30.25-33.654-59.98-51.585-89.304-18.862-30.842-36.95-38.615-59.18-27.413-25.018 12.607-29.538 34.834-12.61 66.94 11.28 21.393 23.67 42.198 40.68 72.334-41.368 0-72.323-0.035-103.278 0.011-22.929 0.033-45.93-0.92-68.771 0.544-26.974 1.725-41.923 15.998-43.028 37.974-1.203 23.947 14.712 39.613 44.007 42.235 11.381 1.018 22.916 0.393 34.38 0.393 219.483 0.014 438.968 0.013 658.45 0.012 6.553 0 13.106 0.077 19.656-0.04 41.871-0.755 61.205-13.087 62.06-39.52 0.879-27.22-18.463-40.998-59.851-41.488zM206.915 204.107c101.541 0.383 203.086 0.121 304.63 0.13 65.512 0.012 131.023 0.056 196.535-0.005 42.583-0.037 85.208 0.927 127.728-0.746 29.951-1.175 44.876-17.368 43.53-41.86-1.223-22.222-15.99-35.763-42.65-38.608-6.484-0.693-13.09-0.313-19.64-0.314-203.087-0.01-406.174-0.118-609.262 0.085-44.895 0.046-64.48 13.86-63.224 42.842 1.164 26.823 18.733 38.31 62.353 38.476z"
+                        p-id="2145"></path>
+                </svg>
+            </a>
+
+            <a href="https://github.com/Ning-Qie" class="circle" target="_blank" rel="noopener" title="Github">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z" />
+                </svg>
+            </a>
+
+            <a href="https://www.zhihu.com/people/jian-mo-10-90" class="circle" target="_blank" rel="noopener"
+                title="知乎">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M12.344 17.963l-1.688 1.074-2.131-3.35c-.44 1.402-1.172 2.665-2.139 3.825-.402.483-.82.918-1.301 1.375-.155.147-.775.717-.878.82l-1.414-1.414c.139-.139.787-.735.915-.856.43-.408.795-.79 1.142-1.206 1.266-1.518 2.03-3.21 2.137-5.231H3v-2h4V7h-.868c-.689 1.266-1.558 2.222-2.618 2.857L2.486 8.143c1.395-.838 2.425-2.604 3.038-5.36l1.952.434c-.14.633-.303 1.227-.489 1.783H11.5v2H9v4h2.5v2H9.185l3.159 4.963zm3.838-.07L17.298 17H19V7h-4v10h.736l.446.893zM13 5h8v14h-3l-2.5 2-1-2H13V5z" />
+                </svg>
+            </a>
+
+            <a href="mailto:ning_0@outlook.com" class="circle" target="_blank" rel="noopener" title="邮箱">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z" />
+                </svg>
+            </a>
+
+            <a href="${atom_url!}" class="circle" target="_blank" rel="noopener" title="RSS">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M3 3c9.941 0 18 8.059 18 18h-3c0-8.284-6.716-15-15-15V3zm0 7c6.075 0 11 4.925 11 11h-3a8 8 0 0 0-8-8v-3zm0 7a4 4 0 0 1 4 4H3v-4z" />
+                </svg>
+            </a>
+        </div>
+
+
+
+        <div class="footer-meta">
+            <div class="footer-container">
+                <div class="meta-item meta-copyright">
+                    <div class="meta-copyright-info">
+                        <a href="${blog_url!}" class="info-logo">
+                        </a>
+                        <div class="info-text">
+
+                            <p>&copy; {{ site.time | date: '%Y' }} <a href="{{site.resume_site}}"><code>{{ site.author }}</code></a></p>
+                            <p>
+                                且乐身前事，宁忧古今愁
+                            </p>
+                            <p>
+
+                                Theme is <a href="https://github.com/chakhsu/pinghsu" target="_blank"><code>Pinghsu</code></a>
+                                by <a href="https://www.linpx.com/" target="_blank"><code>Chakhsu</code></a>
+                                with <a href="https://halo.run" target="_blank" rel="nofollow"><code>Halo</code></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</footer>
+
+
+<!--
 <footer id="footer" class="footer bg-white">
     <div class="footer-social">
         <div class="footer-container clearfix">
@@ -35,7 +222,7 @@
         </div>
     </div>
 </footer>
-
+-->
 <!-- #end -->
 <script src="//cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
 <script>
