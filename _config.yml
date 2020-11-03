@@ -1,11 +1,11 @@
-name: 
-author: 
-url: 
+name: 寧の小棧
+author: 且宁
+url: https://ning-qie.github.io/
 baseurl: 
 resume_site: 
 description: 
-github_username: 
-github: 
+github_username: Ning-Qie
+github: 1425431429@qq.com
 plugins: [jekyll-paginate]
 permalink: /:year-:month-:day-:title
 paginate: 12
