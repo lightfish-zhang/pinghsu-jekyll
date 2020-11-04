@@ -28,7 +28,7 @@ layout: default
 
 
 
-        
+
 
 
 
@@ -199,8 +199,8 @@ layout: default
                     {% if page.previous %}
                     <a href="{{ BASE_PATH }}{{ page.previous.url }}" data-ajax class="nav-previous">
                         {% if page.previous.thumbnail?? && page.previous.thumbnail!='' %}
-                        <div class="nav-bg ">
-                            <img src="${prevPost.thumbnail!}" alt="" />
+                        <div class="nav-bg "> 
+                            <img src="{{ BASE_PATH }}{{ page.previous.thumbnail }}" alt="" />
                         </div>
                         {% else %}
                         <div class="nav-bg default-cover-bg">
@@ -219,7 +219,7 @@ layout: default
                     <a href="{{ BASE_PATH }}{{ page.next.url }}" data-ajax class="nav-next">
                         {% if page.next.thumbnail?? && page.next.thumbnail!='' %}
                         <div class="nav-bg ">
-                            <img src="${nextPost.thumbnail!}" alt="" />
+                            <img src="{{ BASE_PATH }}{{ page.next.thumbnail }}" alt="" />
                         </div>
                         {% else %}
                         <div class="nav-bg default-cover-bg">
