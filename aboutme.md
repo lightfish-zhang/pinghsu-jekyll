@@ -1,13 +1,14 @@
 ---
 layout: post
-title: About Ning
-thumbnail: /style/image/mayday_001.jpg
+title: 关于我
+thumbnail: /style/image/jem-sahagun-r5aIkOlEj0M-unsplash.jpg
+category: something
 ---
 
 **且宁**
 
 <img src="http://qiening.top/upload/2020/06/%E5%A4%B4%E5%83%8F2020-030316e8fe2d41f89a2408042a63bb1e.png" 
-width="20%" div align=right div border-radius=25px />
+width="10%" div align=right div border-radius=25px />
 
 
 
