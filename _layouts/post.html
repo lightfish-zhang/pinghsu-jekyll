@@ -9,7 +9,7 @@ layout: default
             {{ page.title }}
         </h1>
         <div class="post-data">
-            <time itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time>
+            <time itemprop="datePublished">{{ page.date | date: "yyyy-MM-dd" }}</time>
         </div>
     </div>
 </article>
@@ -19,9 +19,11 @@ layout: default
             <h1>Contents</h1>
             <ul class="nav sidenav"></ul>
         </div>
+        {% if page.content %}
         <article class="post-content">
             {{ content }}
         </article>
+        {% endif %}
         <!--
         评论插件：目前错误中
         <div class="post-content">
@@ -215,9 +217,7 @@ layout: default
                 <div class="nav-inside">
                     <span class="nav-before">上一篇</span>
                     <span class="nav-title">{{ page.previous.title }}</span>
-                    <span class="nav-date"><time class="published"
-                            datetime="{{ page.previous.date?string("yyyy-MM-dd") }}">{{ page.previous.date?string("yyyy-MM-dd") }}
-                        </time></span>
+                    <span class="nav-date"><time itemprop="datePublished">{{ page.previous.date | date: "yyyy-MM-dd" }}</time></span>
                 </div>
             </a>
             {% endif %}
@@ -234,9 +234,7 @@ layout: default
                 <div class="nav-inside">
                     <span class="nav-before">下一篇</span>
                     <span class="nav-title">{{ page.next.title }}</span>
-                    <span class="nav-date"><time class="published"
-                            datetime="{{ page.next.date?string("yyyy-MM-dd") }}">{{ page.next.date?string("yyyy-MM-dd") }}
-                        </time></span>
+                    <span class="nav-date"><time itemprop="datePublished">{{ page.next.date | date: "yyyy-MM-dd" }}</time></span>
                 </div>
             </a>
             {% endif %}
