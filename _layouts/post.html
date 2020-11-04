@@ -2,6 +2,12 @@
 layout: default
 ---
 
+<style>
+    .main-container {
+    margin-bottom: 70px;
+    }
+</style>
+
 
 <article class="main-content page-page" itemscope itemtype="http://schema.org/Article">
     <div class="post-header">
@@ -16,10 +22,10 @@ layout: default
 <div class="main-container">
     <div class="post-container">
         {% if page.content %}
-        <div class="navigation" id="navigation">
+        <!--<div class="navigation" id="navigation">
             <h1>Contents</h1>
             <ul class="nav sidenav"></ul>
-        </div>
+        </div>-->
         <article class="post-content">
             {{ content }}
         </article>
