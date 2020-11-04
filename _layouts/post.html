@@ -25,7 +25,6 @@ layout: default
          {% include comment.html %}
         </div>
     </div>
-</div>
 
 
 
@@ -42,23 +41,7 @@ layout: default
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
@@ -216,53 +199,102 @@ layout: default
 </style>
         
         
-<div class="common-container">
-    <nav class="post-navigation" id="post-navigation">
-        <h2 class="screen-reader-text">Post navigation</h2>
-        <div class="nav-links">
-            {% if page.previous %}
-            <a href="{{ BASE_PATH }}{{ page.previous.url }}" data-ajax class="nav-previous">
-                {% if {{ page.previous.thumbnail }}?? && {{ page.previous.thumbnail }}!='' %}
-                <div class="nav-bg ">
-                    <img src="{{ page.previous.thumbnail }}" alt="" />
-                </div>
-                {% else %}
-                <div class="nav-bg default-cover-bg">
-                </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="common-container">
+        <nav class="post-navigation" id="post-navigation">
+            <h2 class="screen-reader-text">Post navigation</h2>
+            <div class="nav-links">
+                {% if page.previous %}
+                <a href="{{ BASE_PATH }}{{ page.previous.url }}" data-ajax class="nav-previous">
+                    {% if {{ page.previous.thumbnail }} %}
+                    <div class="nav-bg ">
+                        <img src="{{ page.previous.thumbnail }}" alt="" />
+                    </div>
+                    {% else %}
+                    <div class="nav-bg default-cover-bg">
+                    </div>
+                    {% endif %}
+                    <div class="nav-inside">
+                        <span class="nav-before">上一篇</span>
+                        <span class="nav-title">{{ page.previous.title }}</span>
+                        <!--<span class="nav-date"><time class="published"
+                                datetime="{{ page.previous.date | date: "%b %d, %Y" }}">{{ page.previous.date | date: "%b %d, %Y" }}
+                            </time></span>
+                        -->
+                    </div>
+                </a>
                 {% endif %}
-                <div class="nav-inside">
-                    <span class="nav-before">上一篇</span>
-                    <span class="nav-title">{{ page.previous.title }}</span>
-                    <!--<span class="nav-date"><time class="published"
-                            datetime="{{ page.previous.date | date: "%b %d, %Y" }}">{{ page.previous.date | date: "%b %d, %Y" }}
-                        </time></span>
-                    -->
-                </div>
-            </a>
-            {% endif %}
-            {% if page.next %}
-            <a href="{{ BASE_PATH }}{{ page.next.url }}" data-ajax class="nav-next">
-                {% if {{ page.next.thumbnail }}?? && {{ page.next.thumbnail }}!='' %}
-                <div class="nav-bg ">
-                    <img src="{{ page.next.thumbnail }}" alt="" />
-                </div>
-                {% else %}
-                <div class="nav-bg default-cover-bg">
-                </div>
+                {% if page.next %}
+                <a href="{{ BASE_PATH }}{{ page.next.url }}" data-ajax class="nav-next">
+                    {% if {{ page.next.thumbnail }} %}
+                    <div class="nav-bg ">
+                        <img src="{{ page.next.thumbnail }}" alt="" />
+                    </div>
+                    {% else %}
+                    <div class="nav-bg default-cover-bg">
+                    </div>
+                    {% endif %}
+                    <div class="nav-inside">
+                        <span class="nav-before">下一篇</span>
+                        <span class="nav-title">{{ page.next.title }}</span>
+                        <!--<span class="nav-date"><time class="published"
+                                datetime="{{ page.next.date | date: "%b %d, %Y" }}"></time>{{ page.next.date | date: "%b %d, %Y" }}
+                            </time></span>
+                        -->
+                    </div>
+                </a>
                 {% endif %}
-                <div class="nav-inside">
-                    <span class="nav-before">下一篇</span>
-                    <span class="nav-title">{{ page.next.title }}</span>
-                    <!--<span class="nav-date"><time class="published"
-                            datetime="{{ page.next.date | date: "%b %d, %Y" }}"></time>{{ page.next.date | date: "%b %d, %Y" }}
-                        </time></span>
-                    -->
-                </div>
-            </a>
-            {% endif %}
-        </div>
-    </nav>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
