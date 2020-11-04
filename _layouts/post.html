@@ -234,7 +234,7 @@ layout: default
                     <span class="nav-before">上一篇</span>
                     <span class="nav-title">{{ page.previous.title }}</span>
                     <span class="nav-date"><time class="published"
-                            datetime="{{ page.previous.date?string("yyyy-MM-dd") }}">{{ page.previous.date?string("yyyy-MM-dd") }}
+                            datetime="{{ page.previous.date | date: "%b %d, %Y" }}">{{ page.previous.date | date: "%b %d, %Y" }}
                         </time></span>
                 </div>
             </a>
@@ -253,7 +253,7 @@ layout: default
                     <span class="nav-before">下一篇</span>
                     <span class="nav-title">{{ page.next.title }}</span>
                     <span class="nav-date"><time class="published"
-                            datetime="{{ page.next.date?string("yyyy-MM-dd") }}">{{ page.next.date?string("yyyy-MM-dd") }}
+                            datetime="{{ page.next.date | date: "%b %d, %Y" }}">{{ page.next.date | date: "%b %d, %Y" }}
                         </time></span>
                 </div>
             </a>
