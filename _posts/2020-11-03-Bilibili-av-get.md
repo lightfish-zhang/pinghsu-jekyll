@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 通过浏览器开发者工具获取Bilibili视频av号
-date: 2020-11-03 00:00:00 +0800
+date: 2020-06-23 16:44:51 +0800
 category: tutorial
 thumbnail: /style/image/311dfa441ee3658a07b6ccd927662644.jpg
 icon: web
