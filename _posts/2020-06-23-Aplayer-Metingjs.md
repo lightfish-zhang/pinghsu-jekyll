@@ -6,7 +6,6 @@ category: tutorial
 thumbnail: /style/image/daniel-schludi-l8cvrt3Hpec-unsplash.jpg
 icon: design
 summary: 这个音乐插件在跳转网页后就会刷新，所以我只放在了首页，并且将首页都设置为在新标签页中打开。
-
 后续我会尝试解决这个问题，使得其可以在跳转页面后连续播放。
 ---
 
@@ -15,7 +14,9 @@ summary: 这个音乐插件在跳转网页后就会刷新，所以我只放在�
 # 1.前言
 
 个人博客使用Halo搭建：https://halo.run/
+
 Aplayer官网文档：https://aplayer.js.org/#/zh-Hans/
+
 Metingjs官网文档：https://github.com/metowolf/MetingJS
 
 # 2.配置（简单示例）
@@ -42,8 +43,7 @@ Metingjs官网文档：https://github.com/metowolf/MetingJS
 <!--首页音乐播放器-->
 <meting-js server="tencent" type="playlist" id="3441886932" fixed="true" autoplay="true" order="random"></meting-js>
 ```
-效果如下（可点击预览）：<a href="http://qiening.top/" target="_blank"><font color=#20B2AA size=3>且宁の小栈</font></a>
-
+效果如下（可点击预览）：[宁的小栈](https://ning-qie.github.io/)
 ![image.png](http://qiening.top/upload/2020/06/image-4de40ebc0d8a4d0cb864c4fd176fb4aa.png)
 
 # 3.用法说明
@@ -65,31 +65,32 @@ Metingjs官网文档：https://github.com/metowolf/MetingJS
 <meting-js server="tencent" type="playlist" id="3441886932"></meting-js>
 
 ## 2.其他参数
+
 |名称   |默认值  |描述   |
-|-------|-------|-------|
-|container|document.querySelector('.aplayer')|播放器容器元素
-|fixed	|false	|开启吸底模式, <a href="https://aplayer.js.org/#/home?id=fixed-mode" target="_blank"><font color=blue>详情</font></a>
-|mini	|false	|开启迷你模式, <a href="https://aplayer.js.org/#/home?id=mini-mode" target="_blank"><font color=blue>详情</font></a>
-|autoplay	|false	|音频自动播放
-|theme	|'#b7daff'	|主题色
-|loop	|'all'	|音频循环播放, 可选值: 'all', 'one', 'none'
-|order	|'list'	|音频循环顺序, 可选值: 'list', 'random'
-|preload	|'auto' |预加载，可选值: 'none', 'metadata', 'auto'
-|volume	|0.7	|默认音量，请注意播放器会记忆用户设置，<br>用户手动设置音量后默认音量即失效
-|audio	|-	|音频信息, 应该是一个对象或对象数组
-|audio.name	|-	|音频名称
-|audio.artist	|-	|音频艺术家
-|audio.url	|-	|音频链接
-|audio.cover	|-	|音频封面
-|audio.lrc	|-	|<a href="https://aplayer.js.org/#/home?id=lrc" target="_blank"><font color=blue>详情</font></a>
-|audio.theme	|-	|切换到此音频时的主题色，<br>比上面的 theme 优先级高
-|audio.type	|'auto'	|可选值: 'auto', 'hls', 'normal'<br> 或其他自定义类型, <a href="https://aplayer.js.org/#/home?id=mse-support" target="_blank"><font color=blue>详情</font></a>
-|customAudioType	|-	|自定义类型，<a href="https://aplayer.js.org/#/home?id=mse-support" target="_blank"><font color=blue>详情</font></a>
-|mutex	|true	|互斥，阻止多个播放器同时播放，<br>当前播放器播放时暂停其他播放器
-|lrcType	|0	|<a href="https://aplayer.js.org/#/home?id=lrc" target="_blank"><font color=blue>详情</font></a>
-|listFolded	|false	|列表默认折叠
-|listMaxHeight	|-	|列表最大高度
-|storageName	|'aplayer-setting'	|存储播放器设置的 localStorage key
+|-----|-----|-----|
+|container|document.querySelector('.aplayer')|播放器容器元素|
+|fixed	|false	|开启吸底模式, <a href="https://aplayer.js.org/#/home?id=fixed-mode" target="_blank"><font color=blue>详情</font></a>|
+|mini	|false	|开启迷你模式, <a href="https://aplayer.js.org/#/home?id=mini-mode" target="_blank"><font color=blue>详情</font></a>|
+|autoplay	|false	|音频自动播放|
+|theme	|'#b7daff'	|主题色|
+|loop	|'all'	|音频循环播放, 可选值: 'all', 'one', 'none'|
+|order	|'list'	|音频循环顺序, 可选值: 'list', 'random'|
+|preload	|'auto' |预加载，可选值: 'none', 'metadata', 'auto'|
+|volume	|0.7	|默认音量，请注意播放器会记忆用户设置，<br>用户手动设置音量后默认音量即失效|
+|audio	|-	|音频信息, 应该是一个对象或对象数组|
+|audio.name	|-	|音频名称|
+|audio.artist	|-	|音频艺术家|
+|audio.url	|-	|音频链接|
+|audio.cover	|-	|音频封面|
+|audio.lrc	|-	|<a href="https://aplayer.js.org/#/home?id=lrc" target="_blank"><font color=blue>详情</font></a>|
+|audio.theme	|-	|切换到此音频时的主题色，<br>比上面的 theme 优先级高|
+|audio.type	|'auto'	|可选值: 'auto', 'hls', 'normal'<br> 或其他自定义类型, <a href="https://aplayer.js.org/#/home?id=mse-support" target="_blank"><font color=blue>详情</font></a>|
+|customAudioType	|-	|自定义类型，<a href="https://aplayer.js.org/#/home?id=mse-support" target="_blank"><font color=blue>详情</font></a>|
+|mutex	|true	|互斥，阻止多个播放器同时播放，<br>当前播放器播放时暂停其他播放器|
+|lrcType	|0	|<a href="https://aplayer.js.org/#/home?id=lrc" target="_blank"><font color=blue>详情</font></a>|
+|listFolded	|false	|列表默认折叠|
+|listMaxHeight	|-	|列表最大高度|
+|storageName	|'aplayer-setting'	|存储播放器设置的 localStorage key|
 
 ## 3.常用参数示例
 
