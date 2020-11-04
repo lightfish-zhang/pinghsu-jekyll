@@ -2,6 +2,11 @@
 layout: default
 ---
 
+
+<!--添加站点访客数及文章浏览量-->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
 <style>
     .main-container {
         margin-bottom: 70px;
@@ -2782,9 +2787,9 @@ layout: default
                 {{ page.title }}
             </div>
             <div class="post-header-thumb-meta">
-                        <time itemprop="datePublished"> Published on {{ page.date | date: "%Y-%m-%d" }}</time>
+                        <!--<time itemprop="datePublished"> Published on {{ page.date | date: "%Y-%m-%d" }}</time>
                         in
-                        
+                        -->
                       By <a href="{{ '/aboutme' | prepend: site.baseurl }}" target="_blank"><font color=#4682b4>{{ site.author }}</font></a> in 
                         {% if page.categories %}
                             <a href="{{ page.categories }}" target="_blank"><font color=#4682b4 size=3>{{ page.categories }}</font></a>
@@ -2797,8 +2802,10 @@ layout: default
                     <img class="author-avatar"
                                              srcset="{{ '/style/image/favicon.png' | prepend: site.baseurl }}, {{ '/style/image/favicon.png' | prepend: site.baseurl }} 2x"
                                              src="{{ '/style/image/favicon.png' | prepend: site.baseurl }}" alt=""/>
-                                        <!--<span class="post-author">${post.visits} 次访问</span>-->
-                    <time itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
+                                             <span class="post-author">全文共{{ content | strip_html | strip_newlines | split: "" | size }}字</span>
+                                             <!--<span class="post-author">预计花费{{ content | strip_html | strip_newlines | split: "" | size }}/400</span>
+                                        <span class="post-author"><span id="busuanzi_value_page_pv"></span> 次访问</span>-->
+                                        Published on <time itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
                 </span>
             </div>
         </div>
