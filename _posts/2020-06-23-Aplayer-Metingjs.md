@@ -5,14 +5,17 @@ date: 2020-06-23 22:40:10 +0800
 category: tutorial
 thumbnail: /style/image/daniel-schludi-l8cvrt3Hpec-unsplash.jpg
 icon: design
-summary: 这个音乐插件在跳转网页后就会刷新，所以我只放在了首页，并且将首页都设置为在新标签页中打开。
-后续我会尝试解决这个问题，使得其可以在跳转页面后连续播放。
+summary: 这个音乐插件在跳转网页后就会刷新，所以我只放在了首页，并且将首页都设置为在新标签页中打开。后续我会尝试解决这个问题，使得其可以在跳转页面后连续播放。
 ---
 
 * content
 {:toc}
 
 # 1.前言
+
+测试001
+
+
 
 个人博客使用Halo搭建：https://halo.run/
 
