@@ -2726,16 +2726,13 @@ layout: default
                 {{ page.title }}
             </div>
             <div class="post-header-thumb-meta">
-                <!--
-                        <time datetime="${post.createTime}" itemprop="datePublished">
-                            Published on ${post.createTime?string("yyyy-MM-dd")}
-                        </time>
+                        <time itemprop="datePublished"> Published on {{ page.date | date: "%Y-%m-%d" }}</time>
                         in
                         
-                      By <a href="/s/aboutme" target="_blank"><font color=#4682b4>${user.nickname!}</font></a> in 
-                        {% if post.categories?? && post.categories?size gt 0 %}
-                            <a href="${post.categories[0].fullPath!}" target="_blank"><font color=#4682b4 size=3>${post.categories[0].name}</font></a>
-                        {% endif %}-->
+                      By <a href="{{site.resume_site}}" target="_blank"><font color=#4682b4>{{ site.author }}</font></a> in 
+                        {% if page.categories %}
+                            <a href="{{ page.categories }}" target="_blank"><font color=#4682b4 size=3>{{ page.categories }}</font></a>
+                        {% endif %}
             </div>
 
 
