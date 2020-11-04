@@ -7,6 +7,17 @@ layout: default
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
 
+<!-- 动态显示当前时间 -->
+<span style="font-size:12px;">
+    <script type="text/javascript" language="javascript">
+        function setTime() {
+            var date = new Date();
+            currentTimeHtml = date.toLocaleString();
+            document.getElementById("now_time").innerHTML = currentTimeHtml;
+        }
+        setInterval(setTime, 1000);
+    </script></span>
+
 <style>
     .main-container {
         margin-bottom: 70px;
@@ -2787,10 +2798,8 @@ layout: default
                 {{ page.title }}
             </div>
             <div class="post-header-thumb-meta">
-                        <!--<time itemprop="datePublished"> Published on {{ page.date | date: "%Y-%m-%d" }}</time>
-                        in
-                        -->
-                      By <a href="{{ '/aboutme' | prepend: site.baseurl }}" target="_blank"><font color=#4682b4>{{ site.author }}</font></a> in 
+                        <time itemprop="datePublished"> Published on {{ page.date | date: "%Y-%m-%d" }}</time>
+                        By <a href="{{ '/aboutme' | prepend: site.baseurl }}" target="_blank"><font color=#4682b4>{{ site.author }}</font></a> in 
                         {% if page.categories %}
                             <a href="{{ page.categories }}" target="_blank"><font color=#4682b4 size=3>{{ page.categories }}</font></a>
                         {% endif %}
@@ -2805,7 +2814,8 @@ layout: default
                                              <span class="post-author">全文共{{ content | strip_html | strip_newlines | split: "" | size }}字</span>
                                              <!--<span class="post-author">预计花费{{ content | strip_html | strip_newlines | split: "" | size }}/400</span>
                                         <span class="post-author"><span id="busuanzi_value_page_pv"></span> 次访问</span>-->
-                                        Published on <time itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
+                                        <time itemprop="datePublished"><span id="now_time"></span>
+      </time>
                 </span>
             </div>
         </div>
