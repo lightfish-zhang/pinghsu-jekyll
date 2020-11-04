@@ -49,31 +49,23 @@ layout: default
                             Published on ${post.createTime?string("yyyy-MM-dd")}
                         </time>
                         in
-                        -->
+                        
                       By <a href="/s/aboutme" target="_blank"><font color=#4682b4>${user.nickname!}</font></a> in 
                         {% if post.categories?? && post.categories?size gt 0 %}
                             <a href="${post.categories[0].fullPath!}" target="_blank"><font color=#4682b4 size=3>${post.categories[0].name}</font></a>
-                        {% endif %}
+                        {% endif %}-->
                     </div>
                   
                   
                     <div class="post-meta">
                                     <span class="post-meta-wrap">
-                                        <img class="author-avatar"
+                                        <!--<img class="author-avatar"
                                              srcset="${user.avatar!}, ${user.avatar!} 2x"
                                              src="${user.avatar!}" alt=""/>
-                                        <span class="post-author">${post.visits} 次访问</span>
+                                        <span class="post-author">${post.visits} 次访问</span>-->
                                         <time itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
                                     </span>
                      </div>
-                  
-                    <!--<div class="post-tags">
-                        {% if tags?? && tags?size gt 0>
-                            <#list tags as tag>
-                                <a href="${tag.fullPath!}">${tag.name!}</a>
-                            </#list>-->
-                        {% endif %}
-                    </div>
                 </div>
             </div>
         </div>
@@ -90,13 +82,6 @@ layout: default
                         in
                         {% if post.categories?? && post.categories?size gt 0 %}
                             <a href="${post.categories[0].fullPath!}">${post.categories[0].name}</a>
-                        {% endif %}
-                    </div>
-                    <!--<div class="post-tags">
-                        {% if tags?? && tags?size gt 0>
-                            <#list tags as tag>
-                                <a href="${tag.fullPath!}">${tag.name!}</a>
-                            </#list>-->
                         {% endif %}
                     </div>
                 </div>
