@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 利用基于
+title: 利用基于Aplayer插件封装好的Metingjs，为博客首页添加音乐播放器
 date: 2020-06-23 22:40:10 +0800
 category: tutorial
 thumbnail: /style/image/daniel-schludi-l8cvrt3Hpec-unsplash.jpg
@@ -12,10 +12,6 @@ summary: 这个音乐插件在跳转网页后就会刷新，所以我只放在�
 {:toc}
 
 # 1.前言
-
-测试001
-
-
 
 个人博客使用Halo搭建：https://halo.run/
 
