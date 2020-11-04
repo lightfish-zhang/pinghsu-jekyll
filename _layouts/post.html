@@ -2738,10 +2738,10 @@ layout: default
 
             <div class="post-meta">
                 <span class="post-meta-wrap">
-                    <!--<img class="author-avatar"
-                                             srcset="${user.avatar!}, ${user.avatar!} 2x"
-                                             src="${user.avatar!}" alt=""/>
-                                        <span class="post-author">${post.visits} 次访问</span>-->
+                    <img class="author-avatar"
+                                             srcset="{{ '/style/image/favicon.png' | prepend: site.baseurl }}, {{ '/style/image/favicon.png' | prepend: site.baseurl }} 2x"
+                                             src="{{ '/style/image/favicon.png' | prepend: site.baseurl }}" alt=""/>
+                                        <!--<span class="post-author">${post.visits} 次访问</span>-->
                     <time itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
                 </span>
             </div>
