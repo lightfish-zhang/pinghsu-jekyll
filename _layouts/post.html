@@ -38,15 +38,16 @@ layout: default
 
 
 
+
         <div class="common-container">
             <nav class="post-navigation" id="post-navigation">
                 <h2 class="screen-reader-text">Post navigation</h2>
                 <div class="nav-links">
-                    {% if {{ page.previous }} %}
+                    {% if page.previous %}
                     <a href="{{ BASE_PATH }}{{ page.previous.url }}" data-ajax class="nav-previous">
-                        {% if {{ page.previous.thumbnail }} %}
+                        {% if page.previous.thumbnail?? && page.previous.thumbnail!='' %}
                         <div class="nav-bg ">
-                            <img src="{{ BASE_PATH }}{{ page.previous.thumbnail }}" alt="" />
+                            <img src="${prevPost.thumbnail!}" alt="" />
                         </div>
                         {% else %}
                         <div class="nav-bg default-cover-bg">
@@ -55,18 +56,17 @@ layout: default
                         <div class="nav-inside">
                             <span class="nav-before">上一篇</span>
                             <span class="nav-title">{{ page.previous.title }}</span>
-                            <!--<span class="nav-date"><time class="published"
-                                datetime="{{ page.previous.date | date: "%b %d, %Y" }}">{{ page.previous.date | date: "%b %d, %Y" }}
-                            </time></span>
-                        -->
+                            <span class="nav-date"><time class="published"
+                                    datetime="{{ page.previous.date?string("yyyy-MM-dd") }}">{{ page.previous.date?string("yyyy-MM-dd") }}
+                                </time></span>
                         </div>
                     </a>
                     {% endif %}
-                    {% if {{ page.next }} %}
+                    {% if page.next %}
                     <a href="{{ BASE_PATH }}{{ page.next.url }}" data-ajax class="nav-next">
-                        {% if {{ page.next.thumbnail }} %}
+                        {% if page.next.thumbnail?? && page.next.thumbnail!='' %}
                         <div class="nav-bg ">
-                            <img src="{{ BASE_PATH }}{{ page.next.thumbnail }}" alt="" />
+                            <img src="${nextPost.thumbnail!}" alt="" />
                         </div>
                         {% else %}
                         <div class="nav-bg default-cover-bg">
@@ -75,10 +75,9 @@ layout: default
                         <div class="nav-inside">
                             <span class="nav-before">下一篇</span>
                             <span class="nav-title">{{ page.next.title }}</span>
-                            <!--<span class="nav-date"><time class="published"
-                                datetime="{{ page.next.date | date: "%b %d, %Y" }}"></time>{{ page.next.date | date: "%b %d, %Y" }}
-                            </time></span>
-                        -->
+                            <span class="nav-date"><time class="published"
+                                    datetime="{{ page.next.date?string("yyyy-MM-dd") }}">{{ page.next.date?string("yyyy-MM-dd") }}
+                                </time></span>
                         </div>
                     </a>
                     {% endif %}
