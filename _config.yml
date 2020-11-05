@@ -16,7 +16,7 @@ markdown: kramdown
 comments :
   gitalk :
     clientID : 567f25b1c9cdbe7ae3e6
-    clientSecret : ab72036726389458a9b935bbf18b9b3d448efc73
-    repo : blog-comments
-    owner : 
-    admin : 
+    clientSecret : 2e8b0918e783064e9528c866b13c57291bf4e0e7
+    repo : Ning-Qie.github.io
+    owner : Ning-Qie
+    admin : Ning-Qie
