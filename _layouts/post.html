@@ -2995,7 +2995,16 @@ layout: default
         </p>
 
 
-        
+        <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+        <div id="vcomments"></div>
+        <script>
+            new Valine({
+                el: '#vcomments',
+                appId: 'jv4PrwUFlejBLlEhoe051nCj-gzGzoHsz',
+                appKey: 'y10aG30yajUAFgHUsG5KtitN'
+            })
+        </script>
+
         <!--
         <div id="gitmentContainer"></div>
         <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
