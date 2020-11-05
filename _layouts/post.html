@@ -2808,9 +2808,9 @@ layout: default
             </div>
             <div class="post-header-thumb-meta">
                         <time itemprop="datePublished"> Published on {{ page.date | date: "%Y-%m-%d" }}</time>
-                        By <a href="{{ '/aboutme' | prepend: site.baseurl }}" target="_blank"><font color=#4682b4>{{ site.author }}</font></a> in 
+                        By <a href="{{ '/aboutme' | prepend: site.baseurl }}" target="_blank"><font color=#4682b4>{{ site.author }}</font></a> 
                         {% if page.categories %}
-                            <a href="categories/{{ page.categories }}" target="_blank"><font color=#4682b4 size=3>{{ page.categories }}</font></a>
+                              in <a href="categories/{{ page.categories }}" target="_blank"><font color=#4682b4 size=3>{{ page.categories }}</font></a>
                         {% endif %}
             </div>
 
