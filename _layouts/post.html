@@ -2810,7 +2810,7 @@ layout: default
                         <time itemprop="datePublished"> Published on {{ page.date | date: "%Y-%m-%d" }}</time>
                         By <a href="{{ '/aboutme' | prepend: site.baseurl }}" target="_blank"><font color=#4682b4>{{ site.author }}</font></a> in 
                         {% if page.categories %}
-                            <a href="{{ page.categories }}" target="_blank"><font color=#4682b4 size=3>{{ page.categories }}</font></a>
+                            <a href="categories/{{ page.categories }}" target="_blank"><font color=#4682b4 size=3>{{ page.categories }}</font></a>
                         {% endif %}
             </div>
 
