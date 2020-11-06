@@ -7,7 +7,7 @@ category: Web
 thumbnail: /ning_file/thumbnail/mhmd-sedky-4u_NwZCnwuY-unsplash.jpg
 icon: web
 summary: 在测试了Gittalk、Gitment等多款产品后，意外发现的惊喜！
-tag:[valine,web,github.io]
+tag: [valine,web,github.io]
 ---
 
 
