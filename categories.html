@@ -5,6 +5,20 @@ permalink: /categories
 thumbnail: https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/46d913191a37038f7ca829c34b5bb710192183ab.jpg
 ---
 
+
+    <!-- 动态显示当前时间 -->
+
+    <span style="font-size:12px;">
+        <script type="text/javascript" language="javascript">
+            function setTime() {
+                var date = new Date();
+                currentTimeHtml = date.toLocaleString();
+                document.getElementById("now_time").innerHTML = currentTimeHtml;
+            }
+            setInterval(setTime, 1000);
+        </script>
+    </span>
+
 <!-- 动态显示停留时间 -->
 <span style="font-size:12px;">
     <script type="text/javascript" language="javascript">
@@ -2592,6 +2606,10 @@ thumbnail: https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/46d913
         font-weight: 900;
     }
 
+    .archive-page .categorys-title :hover{
+        color: #eb5055;
+    }
+
     .post-header-thumb-container {
         max-width: 70%;
     }
@@ -2614,10 +2632,11 @@ thumbnail: https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/46d913
                 {{ page.title }}
             </div>
             <div class="post-header-thumb-meta">
-                <span id="{{ page.permalink }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+                <time itemprop="datePublished"><span id="now_time"></span></time>
+                <!--<span id="{{ page.permalink }}" class="leancloud_visitors" data-flag-title="{{ page.permalink }}">
                     <em class="post-meta-item-text">👁‍🗨 </em>
                     <font class="leancloud-visitors-count">-</font>
-                </span>
+                </span>-->
             </div>
 
 
@@ -2626,10 +2645,10 @@ thumbnail: https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/46d913
                     <img class="author-avatar"
                         srcset="{{ '/style/image/logo.png' | prepend: site.baseurl }}, {{ '/style/image/logo.png' | prepend: site.baseurl }} 2x"
                         src="{{ '/style/image/logo.png' | prepend: site.baseurl }}" alt="" />
-                    <span class="post-author">全文共{{ content | strip_html | strip_newlines | split: "" | size }}字</span>
-                    <!--<span class="post-author">预计花费{{ content | strip_html | strip_newlines | split: "" | size }}/400</span>
-                                        <span class="post-author"><span id="busuanzi_value_page_pv"></span> 次访问</span>-->
-                    <time itemprop="datePublished"><span id="Browse_time"></span></span>
+                    <!--<span class="post-author">全文共{{ content | strip_html | strip_newlines | split: "" | size }}字</span>
+                    <span class="post-author">预计花费{{ content | strip_html | strip_newlines | split: "" | size }}/400</span>
+                                        <span class="post-author"><span id="busuanzi_value_page_pv"></span> 次访问</span>
+                    <time itemprop="datePublished"><span id="Browse_time"></span></span>-->
                 </time>
                 </span>
             </div>
@@ -2650,7 +2669,7 @@ thumbnail: https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/46d913
     {% if category[1].size == i %}
     <div class="common-item">
         <div class="categorys-title">
-            Category：<a href="#{{ category[0] }}">{{ category[0] }} 【{{ category[1].size }}】</a><span></span>
+            Category：<a href="/category/{{ category[0] }}">{{ category[0] }} 【{{ category[1].size }}】</a><span></span>
         </div>
 
 
