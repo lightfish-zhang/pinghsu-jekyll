@@ -3206,3 +3206,28 @@ layout: default
         </div>
     </div>
 </div>
+
+<style>
+    .post-bottom-bar.animated.slideUp{-webkit-animation-name:slideUp;animation-name:slideUp}
+    .post-bottom-bar.animated.slideDown{-webkit-animation-name:slideDown;animation-name:slideDown}
+</style>
+
+
+<script src="//cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+<script>
+	!window.jQuery && document.write(unescape('%3Cscript src="{{ site.baseurl }}/style/js/jquery.min.js"%3E%3C/script%3E'))
+</script>
+<script src="{{ site.baseurl }}/style/js/headroom.min.js"></script>
+<script src="{{ site.baseurl }}/style/js/nav.min.js"></script>
+<script type="text/javascript">
+    var postSharer = new Headroom(document.getElementById("post-bottom-bar"), {
+        tolerance: 10,
+        offset : 80,
+        classes: {
+            initial: "animated",
+            pinned: "pinned",
+            unpinned: "unpinned"
+        }
+    });
+    postSharer.init();
+</script>
