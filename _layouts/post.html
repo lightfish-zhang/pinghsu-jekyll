@@ -1598,33 +1598,37 @@ layout: default
         margin: 20px auto 10px
     }
 
-    .directory-content {
+    .navigation {
         position: relative;
         z-index: 0;
         max-width: 720px;
         margin-right: auto !important;
         margin-left: auto !important;
         text-align: right;
+        opacity: 0;
+        margin-left: -226px !important;
+    }
+    .post-container .navigation {
+        top: 100px;
+    }
+
+    .navigation.initial {
         opacity: 0
     }
 
-    .directory-content.initial {
-        opacity: 0
-    }
-
-    .directory-content.pinned {
+    .navigation.pinned {
         opacity: 1
     }
 
-    .directory-content.unpinned {
+    .navigation.unpinned {
         opacity: 1
     }
 
-    .directory-content.headroom--top {
+    .navigation.headroom--top {
         opacity: 0
     }
 
-    .directory-content.headroom--not-top {
+    .navigation.headroom--not-top {
         -webkit-transition: opacity .5s ease-in-out;
         transition: opacity .5s ease-in-out;
         opacity: 1
@@ -2133,7 +2137,7 @@ layout: default
     }
 
     @media(max-width:1000px) {
-        .directory-content {
+        .navigation {
             display: none
         }
 
@@ -2355,7 +2359,8 @@ layout: default
         .post-container {
             margin-top: 20px;
         }
-        .post-header-thumb-container .post-tags{
+
+        .post-header-thumb-container .post-tags {
             display: none;
         }
     }
@@ -2900,10 +2905,11 @@ layout: default
 <!--tag样式修改-->
 <style>
     .post-tags {
-    padding-right: 213px;
+        padding-right: 213px;
     }
+
     .post-meta-wrap {
-    width: 35%;
+        width: 35%;
     }
 </style>
 
@@ -2916,7 +2922,7 @@ layout: default
         background-repeat: repeat-x;
         background-position: bottom;
         background-size: 100% 6px;
-        color:skyblue;
+        color: skyblue;
         background-image: linear-gradient(transparent, transparent 5px, skyblue 5px, skyblue);
     }
 
@@ -2967,9 +2973,9 @@ layout: default
 
             <div class="post-tags">
                 {% if page.tag %}
-                    {% for tag in page.tag %}
-                        <a href="/tags/" target="_blank">{{ tag }}</a>
-                    {% endfor %}
+                {% for tag in page.tag %}
+                <a href="/tags/" target="_blank">{{ tag }}</a>
+                {% endfor %}
                 {% endif %}
             </div>
 
@@ -3207,22 +3213,16 @@ layout: default
     </div>
 </div>
 
-<style>
-    .post-bottom-bar.animated.slideUp{-webkit-animation-name:slideUp;animation-name:slideUp}
-    .post-bottom-bar.animated.slideDown{-webkit-animation-name:slideDown;animation-name:slideDown}
-</style>
-
-
 <script src="//cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
 <script>
-	!window.jQuery && document.write(unescape('%3Cscript src="{{ site.baseurl }}/style/js/jquery.min.js"%3E%3C/script%3E'))
+    !window.jQuery && document.write(unescape('%3Cscript src="{{ site.baseurl }}/style/js/jquery.min.js"%3E%3C/script%3E'))
 </script>
 <script src="{{ site.baseurl }}/style/js/headroom.min.js"></script>
 <script src="{{ site.baseurl }}/style/js/nav.min.js"></script>
 <script type="text/javascript">
     var postSharer = new Headroom(document.getElementById("post-bottom-bar"), {
         tolerance: 10,
-        offset : 80,
+        offset: 80,
         classes: {
             initial: "animated",
             pinned: "pinned",
@@ -3231,3 +3231,45 @@ layout: default
     });
     postSharer.init();
 </script>
+
+<style>
+    .navigation.initial {
+        opacity: 0
+    }
+
+    .navigation.pinned {
+        opacity: 0
+    }
+
+    .navigation.unpinned {
+        opacity: 0
+    }
+
+    .navigation.headroom--top {
+        opacity: 0
+    }
+    .navigation.headroom--bottom {
+        opacity: 0
+    }
+
+    .navigation.headroom--not-top {
+        -webkit-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
+        opacity: 1
+    }
+</style>
+
+<script type="text/javascript">
+    var navigation = new Headroom(document.getElementById("navigation"), {
+        tolerance: 0,
+        offset: 350,
+        classes: {
+            initial: "initial",
+            pinned: "pinned",
+            unpinned: "unpinned",
+            bottom : "headroom--bottom",
+        }
+    });
+    navigation.init();
+</script>
+
