@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+<body class="bg-grey" gtools_scp_screen_capture_injected="true">
+
+    {% include header.html %}
+
+    <style>
+        .archive-page .post-list-item-container .item-label .item-title a {
+            white-space: normal;
+        }
+    
+        .archive-page .post-list-item-container .item-label {
+            /*height: auto;*/
+            min-height: 130px;
+        }
+        .archive-page .categorys-title :hover{
+            color:#eb5055;
+        }
+        .post-margin{
+            background-color: lightpink;
+        }
+    </style>
+
+    <div class="main-content archive-page clearfix">
+        <div class="categorys-item">
+            <div class="post-lists">
+                <div class="post-lists-body">
+                    {% assign category_count = 0 %}
+                    {% for post in site.posts %}
+                    {% if post.tag == page.tag %}
+                    {% if category_count == 0%}
+                    <div class="categorys-title" style="font-size: 20px;font-weight: bold;"> <a href="/tags" target="_blank">All Categories</a></div>
+                    <div class="categorys-title"> {{page.tag}}</div>
+                    {% endif %}
+                    {% assign category_count = 1  %}
+                    <div class="post-list-item">
+                        <div class="post-list-item-container">
+                            <div class="item-thumb bg-deepgrey"
+                                style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}{% else %}{{ '/style/image/thumbnail.png' | prepend: site.baseurl }}{% endif %});">
+                            </div>
+                            <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">
+                                <div class="item-desc">
+                                    <p>{{ post.summary }} </p>
+                                </div>
+                            </a>
+                            <div class="item-slant reverse-slant bg-deepgrey"></div>
+                            <div class="item-slant"></div>
+                            <div class="item-label">
+                                <div class="item-title"><a href="{{ post.url | prepend: site.baseurl }}"
+                                        target="_blank">{{ post.title }}</a>
+                                    <br />
+                                    {{ post.date | date: "%Y-%m-%d" }}
+                                </div>
+                                <div class="item-meta clearfix">
+                                    <div class="item-meta-ico {% if post.icon %}bg-ico-{{ post.icon }}{% endif %}"
+                                        style="background: url({{ '/style/image/bg-ico.png' | prepend: site.baseurl }}) no-repeat;background-size: 40px auto;">
+                                    </div>
+                                    <div class="item-meta-cat">
+                                        <a href="/tags" target="_blank"">{{ post.tag }}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>              
+                    
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    {% include footer.html %}
+
+  </body>
+</html>
