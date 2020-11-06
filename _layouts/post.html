@@ -2,11 +2,6 @@
 layout: default
 ---
 
-
-<!--添加站点访客数及文章浏览量-->
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-
 <!-- 动态显示停留时间 -->
 <span style="font-size:12px;">
     <script type="text/javascript" language="javascript">
@@ -2899,6 +2894,24 @@ layout: default
     }
 </style>
 
+<style>
+    .post-header-thumb-meta a :hover {
+        text-decoration: none;
+        word-wrap: break-word;
+        padding-bottom: 1px;
+        background-repeat: repeat-x;
+        background-position: bottom;
+        background-size: 100% 6px;
+        color:skyblue;
+        background-image: linear-gradient(transparent, transparent 5px, skyblue 5px, skyblue);
+    }
+
+    .category-ning {
+        font-family: cursive;
+        padding-bottom: 1px;
+        border-bottom: 1px solid;
+    }
+</style>
 
 {% if page.thumbnail %}
 <div class="post-header-thumb">
@@ -2909,13 +2922,17 @@ layout: default
                 {{ page.title }}
             </div>
             <div class="post-header-thumb-meta">
-                <time itemprop="datePublished"> Published on {{ page.date | date: "%Y-%m-%d" }}</time>
-                By <a href="{{ '/aboutme' | prepend: site.baseurl }}" target="_blank">
+                <time itemprop="datePublished">🕘 {{ page.date | date: "%Y-%m-%d" }} </time>
+                <!--By <a href="{{ '/aboutme' | prepend: site.baseurl }}" target="_blank">
                     <font color=#4682b4>{{ site.author }}</font>
-                </a>
+                </a>-->
+                <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+                    <em class="post-meta-item-text">👁‍🗨 </em>
+                    <font class="leancloud-visitors-count">-</font>
+                </span>
                 {% if page.categories %}
-                in <a href="categories/{{ page.categories }}" target="_blank">
-                    <font color=#4682b4 size=3>{{ page.categories }}</font>
+                <a href="categories/{{ page.categories }}" target="_blank">
+                    📚 <span size="3" class="category-ning">{{ page.categories }}</span>
                 </a>
                 {% endif %}
             </div>
@@ -2933,6 +2950,15 @@ layout: default
                 </time>
                 </span>
             </div>
+
+            <div class="post-tags">
+                {% if page.tag %}
+                    {% for tag in page.tag %}
+                        <a href="{{ page.tag[] }}">{{ tag }}</a>
+                    {% endfor %}
+                {% endif %}
+            </div>
+
         </div>
     </div>
 </div>
@@ -2990,10 +3016,6 @@ layout: default
             {{ content }}
         </article>
         <!-- id 将作为查询条件 -->
-        <span id="{{ site.url}}{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}" style="float: right;">
-            <em class="post-meta-item-text">阅读量 </em>
-            <i class="leancloud-visitors-count">1000000</i>
-        </span>
         <p class="post-info">
             本文由 <a href="{{site.url}}"><b>{{ site.author }}</b></a> 创作，采用 <a
                 href="https://creativecommons.org/licenses/by/4.0/" target="_blank"

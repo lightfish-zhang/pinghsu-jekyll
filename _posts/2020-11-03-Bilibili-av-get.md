@@ -6,6 +6,7 @@ category: Someting
 thumbnail: /style/image/311dfa441ee3658a07b6ccd927662644.jpg
 icon: web
 summary: 获取B站视频av号
+tag: [Bilibili,B站]
 ---
 
 

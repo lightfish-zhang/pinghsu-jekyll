@@ -7,7 +7,7 @@ category: Code
 thumbnail: /style/image/stephanie-harlacher-jMGnXrHYDv0-unsplash.jpg
 icon: code
 summary: 为了更方便的测试github.io样式，安装jekyll从而实现本地静态网页的显示。
-
+tag: [Jekyll,web,github.io]
 ---
 
 * content

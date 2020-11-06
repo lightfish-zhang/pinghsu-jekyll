@@ -6,6 +6,7 @@ category: Code
 thumbnail: /style/image/blur-close-up-code-computer-546819-524c72d599c7470489c543f29c5bcc5e.jpg
 icon: code
 summary: 日常使用Xshell管理服务器，无界面操控编辑代码时还是较为难受的；阿里云提供远程连接，但由于登录验证比较麻烦，无意间看见VSCode的web版，即CodeServer。
+tag: [Code server,VS code,在线编程,服务器]
 ---
 
 * content
