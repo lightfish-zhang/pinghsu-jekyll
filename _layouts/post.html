@@ -2978,6 +2978,8 @@ layout: default
     </div>
 </article>-->
 
+
+
 <div class="main-container">
     <div class="post-container">
         <div class="navigation" id="navigation">
@@ -2987,6 +2989,11 @@ layout: default
         <article class="post-content">
             {{ content }}
         </article>
+        <!-- id 将作为查询条件 -->
+        <span id="{{ site.url}}{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}" style="float: right;">
+            <em class="post-meta-item-text">阅读量 </em>
+            <i class="leancloud-visitors-count">1000000</i>
+        </span>
         <p class="post-info">
             本文由 <a href="{{site.url}}"><b>{{ site.author }}</b></a> 创作，采用 <a
                 href="https://creativecommons.org/licenses/by/4.0/" target="_blank"
@@ -3002,7 +3009,8 @@ layout: default
                 el: '#vcomments',
                 appId: 'jv4PrwUFlejBLlEhoe051nCj-gzGzoHsz',
                 appKey: 'y10aG30yajUAFgHUsG5KtitN',
-                avatar: 'monsterid'
+                avatar: 'monsterid',
+                visitor: true // 阅读量统计
             })
         </script>
 
