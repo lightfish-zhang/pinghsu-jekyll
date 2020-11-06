@@ -2904,6 +2904,7 @@ layout: default
     }
 </style>
 
+<!--文章数据-->
 <style>
     .post-header-thumb-meta a :hover {
         text-decoration: none;
@@ -2964,7 +2965,7 @@ layout: default
             <div class="post-tags">
                 {% if page.tag %}
                     {% for tag in page.tag %}
-                        <a href="{{ tag }}">{{ tag }}</a>
+                        <a href="/tags/">{{ tag }}</a>
                     {% endfor %}
                 {% endif %}
             </div>
