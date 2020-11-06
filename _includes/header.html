@@ -17,14 +17,16 @@
             <span>{{ site.name }}</span>
         </a>-->
         <div class="navbar-menu">
-            <a href="{{ '/archives' | prepend: site.baseurl }}" target="_blank">文章</a>
-            <a href="{{ '/about' | prepend: site.baseurl }}" target="_blank">About</a>
+            <a href="{{ '/archives' | prepend: site.baseurl }}" target="_blank">归档</a>
+            <a href="{{ '/categories' | prepend: site.baseurl }}" target="_blank">分类</a>
+            <a href="{{ '/aboutme' | prepend: site.baseurl }}" target="_blank">About</a>
         </div>
         <div class="navbar-mobile-menu" onclick="">
             <span class="icon-menu cross"><span class="middle"></span></span>
             <ul>
-                <li><a href="{{ '/archives' | prepend: site.baseurl }}" target="_blank">文章</a></li>
-                <li><a href="{{ '/about' | prepend: site.baseurl }}" target="_blank">About</a></li>
+                <li><a href="{{ '/archives' | prepend: site.baseurl }}" target="_blank">归档</a></li>
+                <li><a href="{{ '/categories' | prepend: site.baseurl }}" target="_blank">分类</a></li>
+                <li><a href="{{ '/aboutme' | prepend: site.baseurl }}" target="_blank">About</a></li>
             </ul>
         </div>
     </div>

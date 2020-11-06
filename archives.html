@@ -2,31 +2,72 @@
 layout: default
 ---
 
+
+<style>
+    .archive-page .post-list-item-container .item-label .item-title a {
+        white-space: normal;
+    }
+
+    .archive-page .post-list-item-container .item-label {
+        height: auto;
+    }
+
+    .archive-page .categorys-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .post-margin{
+        background-color: lightpink;
+    }
+</style>
+
 <div class="main-content archive-page clearfix">
     <div class="categorys-item">
         <div class="post-lists">
             <div class="post-lists-body">
                 {% for post in site.posts %}
                 {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-                {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+                {% capture this_month %}{{ post.date | date: "%m" }}{% endcapture %}
+                {% capture last_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+                {% capture last_month %}{{ post.previous.date | date: "%m" }}{% endcapture %}
                 {% capture next_year %}{{ post.next.date | date: "%Y" }}{% endcapture %}
-                {% capture next_month %}{{ post.next.date | date: "%B" }}{% endcapture %}
+                {% capture next_month %}{{ post.next.date | date: "%m" }}{% endcapture %}
 
                 {% if this_month != next_month or this_year != next_year %}
-                <div class="categorys-title">{{ this_month }} {{ this_year }}</div>
+                <div class="categorys-title"> {{ this_year }}-{{ this_month }}</div>
                 {% endif %}
+
 
                 <div class="post-list-item">
                     <div class="post-list-item-container">
+                        <div class="item-thumb bg-deepgrey"
+                            style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}{% else %}{{ '/style/image/thumbnail.png' | prepend: site.baseurl }}{% endif %});">
+                        </div>
+                        <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">
+                            <div class="item-desc">
+                                <p>{{ post.summary }} </p>
+                            </div>
+                        </a>
+                        <div class="item-slant reverse-slant bg-deepgrey"></div>
+                        <div class="item-slant"></div>
                         <div class="item-label">
-                            <div class="item-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                            <div class="item-title"><a href="{{ post.url | prepend: site.baseurl }}"
+                                    target="_blank">{{ post.title }}</a>
+                                <br />
+                                {{ post.date | date: "%Y-%m-%d" }}
+                            </div>
                             <div class="item-meta clearfix">
-                                <div class="item-meta-date"> {{ post.date | date: "%b %d, %Y" }} </div>
+                                <div class="item-meta-ico {% if post.icon %}bg-ico-{{ post.icon }}{% endif %}"
+                                    style="background: url({{ '/style/image/bg-ico.png' | prepend: site.baseurl }}) no-repeat;background-size: 40px auto;">
+                                </div>
+                                <div class="item-meta-cat">
+                                    <a href="javascript:void(0);">{{ post.category }}</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </div>              
+                
                 {% endfor %}
             </div>
         </div>
