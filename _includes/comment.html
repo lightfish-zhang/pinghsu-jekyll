@@ -1,17 +1,25 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<div id="gitalk-container"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'jv4PrwUFlejBLlEhoe051nCj-gzGzoHsz',
+        appKey: 'y10aG30yajUAFgHUsG5KtitN',
+        avatar: 'monsterid',
+        enableQQ: true,
+        visitor: true // 阅读量统计
+    })
+</script>
 
-<script data-no-instant type="text/javascript">
-const gitalk = new Gitalk({
-  clientID: '{{ site.comments.gitalk.clientID }}',
-  clientSecret: '{{ site.comments.gitalk.clientSecret }}',
-  repo: '{{ site.comments.gitalk.repo }}',
-  owner: '{{ site.comments.gitalk.owner }}',
-  admin: ['{{ site.comments.gitalk.admin }}'],
-  id: location.pathname,      // Ensure uniqueness and length less than 50
-  distractionFreeMode: true  // Facebook-like distraction free mode
-})
-
-gitalk.render('gitalk-container')
+<!--修改comment的昵称说明-->
+<script type="text/javascript" language="javascript">
+  function update_nick() {
+      var inputs=	document.getElementsByClassName("vnick vinput");//通常获取的是表单标签name
+      document.getElementsByClassName("vnick vinput")[0].setAttribute('placeholder','昵称/QQ（qq可以自动获取昵称头像！！！）');
+      document.getElementsByClassName("vmail vinput")[0].setAttribute('placeholder','邮箱（可不填）');
+      document.getElementsByClassName("vlink vinput")[0].setAttribute('placeholder','个人主页（可不填）');
+      document.getElementsByClassName("veditor vinput")[0].setAttribute('placeholder','来都来了，给我留个言吧[○･｀Д´･ ○]');
+      //console.log(inputs);
+  }
+  setInterval(update_nick,1000);
 </script>
