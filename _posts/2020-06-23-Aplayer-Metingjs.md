@@ -22,7 +22,7 @@ Metingjs官网文档：https://github.com/metowolf/MetingJS
 
 # 2.配置（简单示例）
 ## 1.在header中插入以下内容
-```language
+```html
 <!--音乐播放器-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
@@ -30,7 +30,7 @@ Metingjs官网文档：https://github.com/metowolf/MetingJS
 ![image.png](http://qiening.top/upload/2020/06/image-aad57a004b4944a1942e4bf01f662144.png)
 
 ## 2.在footer中插入以下内容
-```language
+```html
 <!--音乐播放器-->
 <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
 ```
@@ -40,7 +40,7 @@ Metingjs官网文档：https://github.com/metowolf/MetingJS
 
 ![image.png](http://qiening.top/upload/2020/06/image-f004538a0d694e6d9a303102d887af8c.png)
 
-```language
+```html
 <!--首页音乐播放器-->
 <meting-js server="tencent" type="playlist" id="3441886932" fixed="true" autoplay="true" order="random"></meting-js>
 ```
@@ -50,7 +50,7 @@ Metingjs官网文档：https://github.com/metowolf/MetingJS
 # 3.用法说明
 
 ## 1.最基本的语法介绍
-```language
+```html
 <meting-js server="tencent" type="playlist" id="3441886932"></meting-js>
 ```
 
@@ -97,7 +97,7 @@ Metingjs官网文档：https://github.com/metowolf/MetingJS
 
 #### 1.mini="true"
 迷你播放器
-```language
+```html
 <meting-js server="tencent" type="playlist" id="3441886932" mini="true"></meting-js>
 ```
 
@@ -105,7 +105,7 @@ Metingjs官网文档：https://github.com/metowolf/MetingJS
 
 #### 2.list-folded="true"
 列表是否应该首先折叠
-```language
+```html
 <meting-js server="tencent" type="playlist" id="3441886932" list-folded="true"></meting-js>
 ```
 
@@ -113,7 +113,7 @@ Metingjs官网文档：https://github.com/metowolf/MetingJS
 
 #### 3.fixed="true"
 开启吸底模式，见网页左下角
-```language
+```html
 <meting-js server="tencent" type="playlist" id="3441886932" fixed="true"></meting-js>
 ```
 
