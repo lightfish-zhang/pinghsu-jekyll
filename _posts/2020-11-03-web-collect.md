@@ -3,7 +3,7 @@ layout: post
 title: 网址收藏
 date: 2020-06-22 22:24:30 +0800
 category: Something
-thumbnail: /style/image/clay-banks-hwLAI5lRhdM-unsplash.jpg
+thumbnail: https://raw.githubusercontent.com/Ning-Qie/github_image/master/images/clay-banks-hwLAI5lRhdM-unsplash.jpg
 icon: link
 summary: 常用网址汇总
 tag: [网站,设计]
