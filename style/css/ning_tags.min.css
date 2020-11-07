@@ -2578,3 +2578,9 @@
         max-width: 70%;
         margin-bottom: 40px;
     }
+    .archive-page .categorys-title a {
+        font-family: 'Noto Sans SC';
+    }
+    .archive-page .categorys-title a:hover {
+        color: #eb5055;
+    }
