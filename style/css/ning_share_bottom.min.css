@@ -1,0 +1,123 @@
+    /*post-bottom-share样式*/
+ 
+    .share_icon {
+        background-color: transparent;
+        border: 1px solid #d4d3d3;
+        border-radius: 50%;
+        color: #34495e;
+        display: inline-block;
+        font-size: 16px;
+        height: 40px;
+        line-height: 1;
+        position: relative;
+        text-align: center;
+        width: 40px
+    }
+
+    .share_icon svg {
+        fill: currentColor;
+        height: 16px;
+        position: relative;
+        top: 2px
+    }
+
+    .share_icon svg:hover {
+        fill: #42b983;
+    }
+
+    /*share:qzone样式*/.share_icon_qzone {
+        background-color: transparent;
+        border-radius: 50%;
+        color: #34495e;
+        display: inline-block;
+        font-size: 16px;
+        height: 40px;
+        line-height: 1;
+        position: relative;
+        text-align: center;
+        width: 40px
+    }
+
+    .share_icon_qzone svg {
+        fill: currentColor;
+        height: 16px;
+        position: relative;
+        top: 2px
+    }
+
+    .share_icon_qzone svg:hover {
+        fill: #ffce00;
+    }
+
+    /*share:weibo样式*/.share_icon_weibo {
+        background-color: transparent;
+        border-radius: 50%;
+        color: #34495e;
+        display: inline-block;
+        font-size: 16px;
+        height: 40px;
+        line-height: 1;
+        position: relative;
+        text-align: center;
+        width: 40px
+    }
+
+    .share_icon_weibo svg {
+        fill: currentColor;
+        height: 16px;
+        position: relative;
+        top: 2px
+    }
+
+    .share_icon_weibo svg:hover {
+        fill: #ff763b;
+    }
+
+    /*share:qq样式*/.share_icon_qq {
+        background-color: transparent;
+        border-radius: 50%;
+        color: #34495e;
+        display: inline-block;
+        font-size: 16px;
+        height: 40px;
+        line-height: 1;
+        position: relative;
+        text-align: center;
+        width: 40px
+    }
+
+    .share_icon_qq svg {
+        fill: currentColor;
+        height: 16px;
+        position: relative;
+        top: 2px
+    }
+
+    .share_icon_qq svg:hover,
+    svg:active {
+        fill: #56b6e7;
+    }
+
+    /*share:douban样式*/.share_icon_douban {
+        background-color: transparent;
+        border-radius: 50%;
+        color: #34495e;
+        display: inline-block;
+        font-size: 16px;
+        height: 40px;
+        line-height: 1;
+        position: relative;
+        text-align: center;
+        width: 40px
+    }
+
+    .share_icon_douban svg {
+        fill: currentColor;
+        height: 16px;
+        position: relative;
+        top: 2px
+    }
+
+    .share_icon_douban svg:hover {
+        fill: #33b045;
+    }
