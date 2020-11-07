@@ -2,29 +2,7 @@
 layout: default
 ---
 
-<!-- 动态显示停留时间 -->
-<span style="font-size:12px;">
-    <script type="text/javascript" language="javascript">
-        var start_time = new Date();
-        function setTime() {
-            var date = new Date();
-            s_time = Math.round(((date.getTime() - start_time.getTime()) / 1000) % 60);
-            m_time = parseInt(((date.getTime() - start_time.getTime()) / 1000) / 60);
-            currentTimeHtml = '你已阅读' + m_time + '分钟' + s_time + '秒';
-            document.getElementById("Browse_time").innerHTML = currentTimeHtml;
-        }
-        setInterval(setTime, 1000);
-    </script>
-</span>
-
-<!--
-<style>
-    .main-container {
-        margin-bottom: 70px;
-        margin-top: 70px;
-    }
-</style>
--->
+<script src="{{ site.baseurl }}/style/js/Browse_time.min.js"></script>
 
 <!--post-header样式-->
 <style>
