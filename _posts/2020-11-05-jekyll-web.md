@@ -3,9 +3,9 @@
 layout: post
 title: 本地安装jekyll环境实现静态网页运行
 date: 2020-11-05 22:03:00 +0800
-category: Code
+category: Web
 thumbnail: https://raw.githubusercontent.com/Ning-Qie/github_image/master/images/stephanie-harlacher-jMGnXrHYDv0-unsplash.jpg
-icon: code
+icon: web
 summary: 为了更方便的测试github.io样式，安装jekyll从而实现本地静态网页的显示。
 tag: [Jekyll,web,github.io]
 ---
@@ -35,7 +35,7 @@ tag: [Jekyll,web,github.io]
 ruby -v
 ```
 
-出现版本号即安装成功：`ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x64-mingw32]`
+出现版本号即安装成功，例：`ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x64-mingw32]`
 
 
 
@@ -51,25 +51,13 @@ ruby -v
 gem -v
 ```
 
-出现版本号即为正常：`3.1.4`
-
----
-
-
-
-**2.2 为gem换源**
-
-```
-gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
-
-gem sources -l
-```
+出现版本号即为正常，例：`3.1.4`
 
 
 
 ---
 
-**2.3 安装jekyll** 
+**2.2 安装jekyll** 
 
 ```
 gem install jekyll
@@ -77,27 +65,19 @@ gem install jekyll
 
 > 注意：需要等待一些时间，不用着急
 
-
-
----
-
-**2.4  安装jekyll-paginate**
-
-```
-gem install jekyll-paginate
-```
-
 验证jekyll安装情况：
 
 ```
 jekyll -v
 ```
 
+![](https://raw.githubusercontent.com/Ning-Qie/github_image/master/images/20201108133709.png)
+
 
 
 ---
 
-**2.5 安装 Bundler**
+**2.3 安装 Bundler**
 
 ```
 gem install bundler 
@@ -112,6 +92,20 @@ gem install bundler
 ```
 cd C:\Users\14254\Documents\Code\github_io\Ning-Qie.github.io
 ```
+
+
+
+打开Gemfile文件，将`source "https://rubygems.org"`改为`source "http://rubygems.org"`
+
+
+
+继续在命令行执行命令：
+
+```
+bundle install
+```
+
+
 
 然后输入jekyll serve，如果不成功可以尝试bundle exec jekyll serve
 
