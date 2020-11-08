@@ -1,0 +1,81 @@
+---
+layout: page_content
+title: 搜索
+permalink: /search
+---
+
+
+<style>
+    #search-input {
+        display: none;
+    }
+
+    #search-demo-container {
+        text-align: justify;
+    }
+
+    #search-tittle {
+        margin-top: 50px;
+    }
+
+    .common-title::before {
+        position: inherit;
+        padding: 0 10px 0 10px;
+        content: '#';
+        color: #eb5055;
+    }
+    .common-title {
+        font-size: 25px;
+        color: #5f5f5f;
+    }
+</style>
+
+<div id="search-tittle" class="common-title">
+    Search : ---
+</div>
+
+<div id="search-demo-container">
+    <input type="search" id="search-input" placeholder="search..." value="h">
+    <ul id="results-container"></ul>
+</div>
+
+<script src="/style/js/simple-jekyll-search.min.js"></script>
+
+
+<script>
+    window.simpleJekyllSearch = new SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+        searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}" target="_blank">{title}</a></li>',
+        noResultsText: '没有找到内容,请换别的关键字进行检索',
+        limit: 10,
+        fuzzy: false,
+        exclude: ['Welcome']
+    })
+    console.log(document.getElementById('search-input'));
+</script>
+
+
+<script>
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg); //获取url中"?"符后的字符串并正则匹配
+        var context = "";
+        if (r != null)
+            context = r[2];
+        reg = null;
+        r = null;
+        return context == null || context == "" || context == "undefined" ? "" : context;
+    }
+    function saerch_change() {
+        var input = document.getElementById("search-input");
+        input.value = GetQueryString("keyword");
+        var evt = document.createEvent('HTMLEvents');
+        evt.initEvent('input', true, true);
+        input.dispatchEvent(evt);
+        document.getElementById("search-tittle").innerHTML = "Search :" + "&nbsp;&nbsp;" + GetQueryString("keyword");;
+    }
+    setTimeout(saerch_change, 100);
+    //setInterval(saerch_change, 1000);
+</script>

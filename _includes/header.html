@@ -22,6 +22,17 @@
             <a href="{{ '/tags' | prepend: site.baseurl }}" target="_blank">标签</a>
             <a href="{{ '/aboutme' | prepend: site.baseurl }}" target="_blank">About</a>
         </div>
+
+
+        <div class="navbar-search" onclick="">
+            <span class="icon-search"></span>
+            <form id="search" method="get" action="/search" role="search" target="_blank">
+                <span class="search-box">
+                    <input type="text" id="input" class="input" name="keyword" required="true" placeholder="Search..." maxlength="30" autocomplete="off">
+                </span>
+            </form>
+        </div>
+
         <div class="navbar-mobile-menu" onclick="">
             <span class="icon-menu cross"><span class="middle"></span></span>
             <ul>
