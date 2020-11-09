@@ -176,3 +176,22 @@ layout: default
     navigation.init();
 </script>
 
+<!--导航栏自动隐藏-->
+<script>
+    window.onscroll = function() {
+        var navigation_bottom_height = document.getElementById("navigation").getBoundingClientRect().bottom;
+        var navigation_top_height = document.getElementById("navigation").getBoundingClientRect().top;
+        var post_header_thumb_bottom_height = document.getElementsByClassName("post-header-thumb")[0].getBoundingClientRect().bottom;
+        var common_container_top_height = document.getElementsByClassName("common-container")[0].getBoundingClientRect().top;
+        //console.log("common-container:"+common_container_top_height);
+        //console.log("navigation:"+navigation_bottom_height);
+        if(common_container_top_height-200<navigation_bottom_height || navigation_top_height-50<post_header_thumb_bottom_height){ 
+            document.getElementById("navigation").style.opacity = 0;
+            //console.log("隐藏");
+        }
+        else{
+            document.getElementById("navigation").style.opacity = 1;
+            //console.log("显示");
+        }
+      }
+  </script>
