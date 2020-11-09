@@ -101,26 +101,8 @@ layout: default
     <nav class="post-navigation" id="post-navigation">
         <!--<h2 class="screen-reader-text">Post navigation</h2>-->
         <div class="nav-links">
-            {% if page.previous %}
-            <a href="{{ BASE_PATH }}{{ page.previous.url }}" data-ajax class="nav-previous">
-                {% if page.previous.thumbnail %}
-                <div class="nav-bg ">
-                    <img src="{{ BASE_PATH }}{{ page.previous.thumbnail }}" alt="" />
-                </div>
-                {% else %}
-                <div class="nav-bg default-cover-bg">
-                </div>
-                {% endif %}
-                <div class="nav-inside">
-                    <span class="nav-before">上一篇</span>
-                    <span class="nav-title">{{ page.previous.title }}</span>
-                    <span class="nav-date"><time
-                            itemprop="datePublished">{{ page.previous.date | date: "%Y-%m-%d" }}</time></span>
-                </div>
-            </a>
-            {% endif %}
             {% if page.next %}
-            <a href="{{ BASE_PATH }}{{ page.next.url }}" data-ajax class="nav-next">
+            <a href="{{ BASE_PATH }}{{ page.next.url }}" data-ajax class="nav-previous">
                 {% if page.next.thumbnail %}
                 <div class="nav-bg ">
                     <img src="{{ BASE_PATH }}{{ page.next.thumbnail }}" alt="" />
@@ -130,10 +112,28 @@ layout: default
                 </div>
                 {% endif %}
                 <div class="nav-inside">
-                    <span class="nav-before">下一篇</span>
+                    <span class="nav-before">上一篇</span>
                     <span class="nav-title">{{ page.next.title }}</span>
                     <span class="nav-date"><time
                             itemprop="datePublished">{{ page.next.date | date: "%Y-%m-%d" }}</time></span>
+                </div>
+            </a>
+            {% endif %}
+            {% if page.previous %}
+            <a href="{{ BASE_PATH }}{{ page.previous.url }}" data-ajax class="nav-next">
+                {% if page.previous.thumbnail %}
+                <div class="nav-bg ">
+                    <img src="{{ BASE_PATH }}{{ page.previous.thumbnail }}" alt="" />
+                </div>
+                {% else %}
+                <div class="nav-bg default-cover-bg">
+                </div>
+                {% endif %}
+                <div class="nav-inside">
+                    <span class="nav-before">下一篇</span>
+                    <span class="nav-title">{{ page.previous.title }}</span>
+                    <span class="nav-date"><time
+                            itemprop="datePublished">{{ page.previous.date | date: "%Y-%m-%d" }}</time></span>
                 </div>
             </a>
             {% endif %}
