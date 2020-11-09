@@ -144,42 +144,39 @@ permalink: /search
         //console.log('saerch_change！')
         document.getElementById("search-tittle").innerHTML = "Search :" + "&nbsp;&nbsp;" + getCharFromUtf8(GetQueryString("keyword"));
     }
-    const id = setInterval(saerch_change, 10);
+    const id = setInterval(saerch_change, 50);
     setTimeout(() => {
         clearInterval(id);
         //console.log('我结束定时器了！')
-    }, 1500);
+    }, 4500);
 
     var s_r;
     function get_sr() {
         s_r = document.getElementById("results-container").getElementsByTagName("li").length;
         //console.log(s_r);
     }
-    const id_sr = setInterval(get_sr, 10);
+    const id_sr = setInterval(get_sr, 50);
     setTimeout(() => {
         clearInterval(id_sr);
         //console.log('我结束定时器了！')
-    }, 1000);
+    }, 4000);
     function vvv() {
         if (s_r == 0) {
             //console.log("no found!");
             document.getElementById("search-input").style.display = "block";
             //document.getElementById("search-tittle").innerHTML = "Search :";
         }
-        else {
-            const id_2 = setInterval(saerch_change, 500);
-            setTimeout(() => {
-                clearInterval(id_2);
-                //console.log('我结束定时器了！')
-            }, 1500);
+        else{
+            clearInterval(id);
         }
     }
-    const id_vvv = setInterval(vvv, 10);
+    const id_vvv = setInterval(vvv, 50);
     setTimeout(() => {
         clearInterval(id_vvv);
         //console.log('我结束定时器了！')
-    }, 15000);
+    }, 4500);
     document.getElementById("search-input").addEventListener("input", function () {
+        clearInterval(id);
         document.getElementById("search-tittle").innerHTML = "Search :";
     });
 </script>
