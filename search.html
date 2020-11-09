@@ -114,8 +114,10 @@ permalink: /search
         input.dispatchEvent(evt);
         document.getElementById("search-tittle").innerHTML = "Search :" + "&nbsp;&nbsp;" + getCharFromUtf8(GetQueryString("keyword"));
     }
-    setTimeout(saerch_change, 1);
-    setTimeout(saerch_change, 50);
-    setTimeout(saerch_change, 100);
-    //setInterval(saerch_change, 1000);
+    const id = setInterval(saerch_change, 10);
+    setTimeout(() => {
+        clearInterval(id);
+        console.log('我结束定时器了！')
+    }, 1500);
+    setInterval(saerch_change, 500);
 </script>
