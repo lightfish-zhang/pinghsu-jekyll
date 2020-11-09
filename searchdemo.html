@@ -1,7 +1,7 @@
 ---
 layout: page_content
 title: 搜索
-permalink: /search
+permalink: /searchdemo
 ---
 
 
@@ -132,49 +132,48 @@ permalink: /search
     }
 
 
-
     function saerch_change() {
         var input = document.getElementById("search-input");
         input.value = getCharFromUtf8(GetQueryString("keyword"));
         var evt = document.createEvent('HTMLEvents');
         evt.initEvent('input', true, true);
         input.dispatchEvent(evt);
-        //console.log('saerch_change！')
+        console.log('saerch_change！')
         document.getElementById("search-tittle").innerHTML = "Search :" + "&nbsp;&nbsp;" + getCharFromUtf8(GetQueryString("keyword"));
     }
     const id = setInterval(saerch_change, 10);
     setTimeout(() => {
         clearInterval(id);
-        //console.log('1:我结束定时器id了！')
+        console.log('1:我结束定时器id了！')
     }, 1000);
     
     var s_r=0;
     function get_sr() {
         s_r = document.getElementById("results-container").getElementsByTagName("li").length;
-        //console.log(s_r);
+        console.log(s_r);
     }
     const id_sr = setInterval(get_sr, 10);
     setTimeout(() => {
         clearInterval(id_sr);
-        //console.log('我结束定时器id_sr了！')
+        console.log('我结束定时器id_sr了！')
     }, 1000);
     
     function vvv() {
         if (s_r == 0) {
-            //console.log("no found!");
+            console.log("no found!");
             document.getElementById("search-input").style.display = "block";
             //document.getElementById("search-tittle").innerHTML = "Search :";
         }
         else{
             document.getElementById("search-input").style.display = "none";
             clearInterval(id);
-            //console.log('2:我结束定时器id了！')
+            console.log('2:我结束定时器id了！')
         }
     }
     const id_vvv = setInterval(vvv, 10);
     setTimeout(() => {
         clearInterval(id_vvv);
-        //console.log('我结束定时器id_vvv了！')
+        console.log('我结束定时器id_vvv了！')
     }, 1000);
 
     setTimeout(() => {
