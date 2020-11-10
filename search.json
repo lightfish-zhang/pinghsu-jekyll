@@ -11,6 +11,7 @@ layout: none
       "date"     : "{{ post.date }}",
       "description" : "{{ post.summary  }}",
       "content"  : "{{ post.content 
+        | strip_html  | strip | rstrip | replace: '	',''
         | replace: '@','' | replace: ']','' | replace: '[','' | replace: ':','' | replace: '?','' | replace: '=','' 
         | replace: '{{','' | replace: '\','' | replace: '/','' | replace: '#','' | replace: '\/','' | replace: '//','' | replace: '.','' 
         | replace: '>','' | replace: '<','' | replace: '%','' | replace: '&','' | replace: '"',' ' | replace: '\\','&#92;' 
