@@ -1,41 +1,88 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
 <body class="bg-grey" gtools_scp_screen_capture_injected="true">
 
     {% include header.html %}
 
-    <style>
-        .archive-page .post-list-item-container .item-label .item-title a {
-            white-space: normal;
-        }
-    
-        .archive-page .post-list-item-container .item-label {
-            /*height: auto;*/
-            min-height: 130px;
-        }
-        .archive-page .categorys-title :hover{
-            color:#eb5055;
-        }
-        .post-margin{
-            background-color: lightpink;
-        }
-    </style>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script>
+        new Valine({
+            appId: 'jv4PrwUFlejBLlEhoe051nCj-gzGzoHsz',
+            appKey: 'y10aG30yajUAFgHUsG5KtitN',
+            visitor: true // 阅读量统计
+        })
+    </script>
+
+    <!-- 动态显示当前时间 -->
+    <script src="{{ site.baseurl }}/style/js/now_time.min.js"></script>
+
+
+    <link href="{{ '/style/css/ning_category.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+
+    {% assign tag_count = 0 %}
+    {% for post in site.posts %}
+    {% for post_tag in post.tag %}
+    {% if post_tag == page.tag %}
+    {% if tag_count == 0 %}
+    {% assign tag_thumbnail = post.thumbnail %}
+    {% endif %}
+    {% assign tag_count = 1  %}
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+
+
+    <div class="post-header-thumb">
+        <div class="post-header-thumb-op" style="background-image:url({{ tag_thumbnail }});"></div>
+        <div class="post-header-thumb-cover">
+            <div class="post-header-thumb-container">
+                <div class="post-header-thumb-title">
+                    标签 | {{ page.tag }}
+                </div>
+                <div class="post-header-thumb-meta">
+                    <time itemprop="datePublished"><span id="now_time"></span></time>
+                    <!--<span id="{{ page.permalink }}" class="leancloud_visitors" data-flag-title="{{ page.permalink }}">
+                        <em class="post-meta-item-text">👁‍🗨 </em>
+                        <font class="leancloud-visitors-count">-</font>
+                    </span>-->
+                </div>
+
+
+                <div class="post-meta">
+                    <span class="post-meta-wrap">
+                        <img class="author-avatar"
+                            srcset="{{ '/style/image/logo.png' | prepend: site.baseurl }}, {{ '/style/image/logo.png' | prepend: site.baseurl }} 2x"
+                            src="{{ '/style/image/logo.png' | prepend: site.baseurl }}" alt="" />
+                        <!-- <span
+                            class="post-author">全文共{{ content | strip_html | strip_newlines | split: "" | size }}字</span>
+                        <span class="post-author">预计花费{{ content | strip_html | strip_newlines | split: "" | size }}/400</span>
+                                        <span class="post-author"><span id="busuanzi_value_page_pv"></span> 次访问</span>
+                        <time itemprop="datePublished"><span id="Browse_time"></span></span>-->
+                        </time>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <div class="main-content archive-page clearfix">
         <div class="categorys-item">
             <div class="post-lists">
                 <div class="post-lists-body">
-                    {% assign category_count = 0 %}
+                    {% assign tag_count = 0 %}
                     {% for post in site.posts %}
-                    {% if post.tag == page.tag %}
-                    {% if category_count == 0%}
-                    <div class="categorys-title" style="font-size: 20px;font-weight: bold;"> <a href="/tags" target="_blank">All Categories</a></div>
+                    {% for post_tag in post.tag %}
+                    {% if post_tag == page.tag %}
+                    {% if tag_count == 0 %}
+                    <div class="categorys-title" style="font-size: 20px;font-weight: bold;"> <a href="/tags" target="_blank">All Tags</a></div>
                     <div class="categorys-title"> {{page.tag}}</div>
                     {% endif %}
-                    {% assign category_count = 1  %}
+                    {% assign tag_count = 1  %}
                     <div class="post-list-item">
                         <div class="post-list-item-container">
                             <div class="item-thumb bg-deepgrey"
@@ -59,14 +106,15 @@
                                         style="background: url({{ '/style/image/bg-ico.png' | prepend: site.baseurl }}) no-repeat;background-size: 40px auto;">
                                     </div>
                                     <div class="item-meta-cat">
-                                        <a href="/tags" target="_blank"">{{ post.tag }}</a>
+                                        <a href="/category/{{ page.category }}" target="_blank"">{{ post.category }}</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>              
                     
-                    {% endif %}
+                    {% endif %}         
+                    {% endfor %}
                     {% endfor %}
                 </div>
             </div>
