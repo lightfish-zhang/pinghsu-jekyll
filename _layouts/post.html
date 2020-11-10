@@ -47,7 +47,7 @@ layout: default
             <div class="post-tags">
                 {% if page.tag %}
                 {% for tag in page.tag %}
-                <a href="/tags" target="_blank">{{ tag }}</a>
+                <a href="/tag/{{ tag }}" target="_blank">{{ tag }}</a>
                 {% endfor %}
                 {% endif %}
             </div>
