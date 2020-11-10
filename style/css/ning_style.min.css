@@ -100,3 +100,20 @@
 .footer-meta .meta-copyright .info-text a:hover {
     color: #708090;
 }
+
+/*夜间模式样式*/
+.admin_button{}
+.admin_button:after{}
+.admin_button:hover{color:#eb5055}
+.admin_button svg{
+    z-index:10;
+    fill:currentColor;
+    height:16px;
+    top:12px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.navbar-search:active>form, .navbar-search:focus>form, .navbar-search:hover>form {
+   padding-right: 40px;
+}
