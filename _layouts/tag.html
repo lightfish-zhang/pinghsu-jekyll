@@ -22,10 +22,11 @@
 
     <link href="{{ '/style/css/ning_category.min.css' | prepend: site.baseurl }}" rel="stylesheet">
 
+    {% assign tag_url = page.url %}
     {% assign tag_count = 0 %}
     {% for post in site.posts %}
     {% for post_tag in post.tag %}
-    {% if post_tag == page.tag %}
+    {% if post_tag == tag_url %}
     {% if tag_count == 0 %}
     {% assign tag_thumbnail = post.thumbnail %}
     {% endif %}
@@ -40,7 +41,7 @@
         <div class="post-header-thumb-cover">
             <div class="post-header-thumb-container">
                 <div class="post-header-thumb-title">
-                    标签 | {{ page.tag }}
+                    标签 | {{tag_url}}
                 </div>
                 <div class="post-header-thumb-meta">
                     <time itemprop="datePublished"><span id="now_time"></span></time>
@@ -77,10 +78,10 @@
                     {% assign tag_count = 0 %}
                     {% for post in site.posts %}
                     {% for post_tag in post.tag %}
-                    {% if post_tag == page.tag %}
+                    {% if post_tag == tag_url %}
                     {% if tag_count == 0 %}
                     <div class="categorys-title" style="font-size: 20px;font-weight: bold;"> <a href="/tags" target="_blank">All Tags</a></div>
-                    <div class="categorys-title"> {{page.tag}}</div>
+                    <div class="categorys-title"> {{tag_url}}</div>
                     {% endif %}
                     {% assign tag_count = 1  %}
                     <div class="post-list-item">
