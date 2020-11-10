@@ -26,8 +26,9 @@
 
         <div class="navbar-search" onclick="">
             <span class="icon-search"></span>
-            <form id="search" method="get" action="/search" role="search" target="_blank">
+            <form id="search" method="get" action="/search" role="search" target="_self">
                 <span class="search-box">
+                    <input type="hidden" id="site_url" value="{{ site.url }}/">
                     <input type="text" id="input" class="input" name="keyword" required="true" placeholder="Search..." maxlength="30" autocomplete="off">
                 </span>
             </form>
@@ -44,3 +45,18 @@
         </div>
     </div>
 </header>
+
+<!--首页搜索时打开新标签页，其他覆盖本页-->
+<script>
+    var s_in =document.getElementById("search");
+    console.log(document.getElementById("search").target);
+    var this_url = window.location.href;
+    var site_ul=document.getElementById("site_url").value;
+    console.log(this_url);
+    console.log(site_ul);
+    if( this_url==site_ul ){
+        console.log("index");
+        document.getElementById("search").setAttribute('target','_blank');
+        console.log(document.getElementById("search").target);
+    }
+</script>
