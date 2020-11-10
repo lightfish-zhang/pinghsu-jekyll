@@ -8,7 +8,7 @@ github_username: Ning-Qie
 github: 1425431429@qq.com
 plugins: [jekyll-paginate]
 permalink: /:year-:month-:day-:title
-paginate: 12
+paginate: 6
 paginate_path: "/page/:num/"
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 highlighter: rouge
