@@ -184,3 +184,23 @@ permalink: /search
     });
     }, 1000);
 </script>
+
+<script>
+    function day_(){
+        day();
+    }
+    function night_(){
+        night();
+    }
+    function nod(){
+        var n_o_d = document.getElementById("night_or_day").value;
+        console.log(n_o_d);
+        if(n_o_d=="night"){
+            night();
+        }
+        else if(n_o_d=="day"){
+            day();
+        }
+    }
+    setInterval(nod,100);
+</script>
