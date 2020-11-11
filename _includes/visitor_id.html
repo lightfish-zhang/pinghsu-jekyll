@@ -1,3 +1,7 @@
+<!--夜间日间模式-->
+<script src="{{ site.baseurl }}/style/js/night_theme.min.js"></script>
+
+
 <script src="https://cdn.staticfile.org/fingerprintjs2/2.1.0/fingerprint2.min.js"></script>
 <script>
 
@@ -17,9 +21,10 @@
 
 <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.7.0/dist/av-min.js"></script>
 <script>
-    var input_vid_value;
+    var input_vid_value,day_or_night_value;
     function add_vid() {
         input_vid_value = document.getElementById("visitor_id").value;
+        day_or_night_value = document.getElementById("night_or_day").value;
         if (input_vid_value != "default") {
             AV.init({
                 appId: "HYXrGkqM9CECl22sL7ftDoOU-MdYXbMMI",
@@ -27,18 +32,69 @@
             });
             const VisitorID = AV.Object.extend('Visitor_Ning0_web');
             const visitor = new VisitorID();
-            visitor.set('visitor_id',input_vid_value);
-            visitor.save().then((visitor) => {
-                console.log('保存visitor_id成功。')
-            })
+
+
+            const query = new AV.Query('Visitor_Ning0_web');
+            query.equalTo('visitor_id', input_vid_value);
+            query.count().then((count) => {
+                console.log("count:",count);
+                if(count!=0){
+                    console.log('查询到vid');
+                    const change_don = new AV.Query('Visitor_Ning0_web');
+                    change_don.equalTo('visitor_id', input_vid_value);
+                    change_don.first().then((vis) => {
+                        online_theme = vis.get('day_or_night');
+                        if(day_or_night_value != online_theme && day_or_night_value=="default"){
+                            if(online_theme=="day"){ 
+                                day(); 
+                                document.getElementById("night_or_day").setAttribute("value","day");
+                            }
+                            else if(online_theme=="night"){
+                                night();
+                                document.getElementById("night_or_day").setAttribute("value","night");
+                            }
+                            console.log("don:",day_or_night_value)
+                            document.getElementById("night_or_day").value = vis.get('day_or_night');
+                            console.log("vis_obj:",vis.get('day_or_night'));
+                            console.log("night_or_day:",document.getElementById("night_or_day").value);
+                        }
+                        else
+                        {
+                            vis.set('day_or_night',day_or_night_value);
+                            vis.save();
+                            console.log("online_theme修改为:",day_or_night_value);
+                        }
+                    });
+                }
+                else{
+                    visitor.set('visitor_id',input_vid_value);
+                    visitor.set('day_or_night',day_or_night_value);
+                    visitor.save().then((visitor) => {
+                        console.log('保存visitor_id成功。');
+                    })
+                }
+            });
         }
     }
-    const id_addvid = setInterval(add_vid, 100);
+    const id_addvid = setInterval(add_vid, 10);
     setInterval(function(){
         if(input_vid_value != "default") clearInterval(id_addvid);;
     }, 100);
     setTimeout(() => {
         clearInterval(id_addvid);
-        console.log('我结束定时器id_addvid了！')
+        console.log('我结束定时器id_addvid了！');
     }, 5000);
+
+    //const id_day,id_night;
+
+    function start_ning_night() {
+        night();
+        document.getElementById("night_or_day").setAttribute("value","night");
+        add_vid();
+    }
+    function start_ning_day() {
+        day();
+        document.getElementById("night_or_day").setAttribute("value","day");
+        add_vid();
+    }
 </script>

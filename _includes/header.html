@@ -36,7 +36,7 @@
         
         <!--用以js函数判断的内容-->
         <input type="hidden" id="site_url" value="{{ site.url }}/">
-        <input type="hidden" id="night_or_day" value="day">
+        <input type="hidden" id="night_or_day" value="default">
         <input type="hidden" id="visitor_id" value="default">
         
 
@@ -75,20 +75,6 @@
     }
 </script>
 
-<!--夜间日间模式-->
-<script src="{{ site.baseurl }}/style/js/night_theme.min.js"></script>
-<script>
-    //const id_day,id_night;
-
-    function start_ning_night() {
-        night();
-        document.getElementById("night_or_day").setAttribute("value","night");
-    }
-    function start_ning_day() {
-        day();
-        document.getElementById("night_or_day").setAttribute("value","day");
-    }
-</script>
 
 <!--用户标识符-->
 {% include visitor_id.html %}
