@@ -28,11 +28,15 @@
             <span class="icon-search"></span>
             <form id="search" method="get" action="/search" role="search" target="_self">
                 <span class="search-box">
-                    <input type="hidden" id="site_url" value="{{ site.url }}/">
                     <input type="text" id="input" class="input" name="keyword" required="true" placeholder="Search..." maxlength="30" autocomplete="off">
                 </span>
             </form>
         </div>
+
+        
+            <input type="hidden" id="site_url" value="{{ site.url }}/">
+            <input type="hidden" id="night_or_day" value="day">
+        
 
         <a href="javascript:start_ning_night();" οnclick="js_method()" class="night_button" style="display: initial;" title="夜间模式">
             <svg t="1605026871804" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2958" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36"><defs><style type="text/css"></style></defs><path d="M505.310647 959.626877c-233.812163 0-425.498904-179.354877-445.723527-408.037207 1.283226-21.998013 19.138896-39.659255 41.533952-39.659255 12.82305 0 24.26873 5.723352 31.962969 14.800078 0.396019 0.393973 0.594541 0 0.594541-0.890276 49.523927 52.582589 119.468952 85.535095 197.507306 85.535095 151.139256 0 273.668916-122.528638 273.668916-273.571702 0-78.529541-33.346479-148.770302-86.423325-198.296275 0.100284-0.197498 0.594541-0.197498 0.396019-0.393973-8.287757-7.696286-13.515828-18.745946-13.515828-30.978549 0-22.591531 17.856693-40.644699 40.053228-41.926902 228.484831 20.320814 407.642211 211.910341 407.642211 445.721481C953.005063 759.160169 752.638639 959.626877 505.310647 959.626877L505.310647 959.626877z" p-id="2959"></path></svg>
@@ -69,15 +73,16 @@
     }
 </script>
 
-
+<script src="{{ site.baseurl }}/style/js/night_theme.min.js"></script>
 <script>
     //const id_day,id_night;
 
     function start_ning_night() {
         night();
+        document.getElementById("night_or_day").setAttribute("value","night");
     }
     function start_ning_day() {
         day();
+        document.getElementById("night_or_day").setAttribute("value","day");
     }
-    
 </script>
