@@ -1,0 +1,44 @@
+<script src="https://cdn.staticfile.org/fingerprintjs2/2.1.0/fingerprint2.min.js"></script>
+<script>
+
+    Fingerprint2.get(function (components) {
+        // 参数
+        const values = components.map(function (component) {
+            return component.value
+        });
+        // 指纹
+        const murmur = Fingerprint2.x64hash128(values.join(''), 31);
+        console.log("vid:",murmur);
+        document.getElementById("visitor_id").value = murmur;
+    });
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.7.0/dist/av-min.js"></script>
+<script>
+    var input_vid_value;
+    function add_vid() {
+        input_vid_value = document.getElementById("visitor_id").value;
+        if (input_vid_value != "default") {
+            AV.init({
+                appId: "HYXrGkqM9CECl22sL7ftDoOU-MdYXbMMI",
+                appKey: "FfBgXOnF3vCgS1YfXrQqECOM",
+            });
+            const VisitorID = AV.Object.extend('Visitor_Ning0_web');
+            const visitor = new VisitorID();
+            visitor.set('visitor_id',input_vid_value);
+            visitor.save().then((visitor) => {
+                console.log('保存visitor_id成功。')
+            })
+        }
+    }
+    const id_addvid = setInterval(add_vid, 100);
+    setInterval(function(){
+        if(input_vid_value != "default") clearInterval(id_addvid);;
+    }, 100);
+    setTimeout(() => {
+        clearInterval(id_addvid);
+        console.log('我结束定时器id_addvid了！')
+    }, 5000);
+</script>
