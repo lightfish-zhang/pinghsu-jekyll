@@ -5,8 +5,19 @@ permalink: /tags
 thumbnail: https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/5d8b2b6f67e4955e06f5ed150ed2e09fddbb489c.jpg
 ---
 
-<!-- 动态显示停留时间 -->
-<script src="{{ site.baseurl }}/style/js/Browse_time.min.js"></script>
+
+    <!-- 动态显示当前时间 -->
+
+    <span style="font-size:12px;">
+        <script type="text/javascript" language="javascript">
+            function setTime() {
+                var date = new Date();
+                currentTimeHtml = date.toLocaleString();
+                document.getElementById("now_time").innerHTML = currentTimeHtml;
+            }
+            setInterval(setTime, 1000);
+        </script>
+    </span>
 
 <link href="{{ '/style/css/ning_tags.min.css' | prepend: site.baseurl }}" rel="stylesheet">
 
@@ -18,10 +29,11 @@ thumbnail: https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/5d8b2b
                 {{ page.title }}
             </div>
             <div class="post-header-thumb-meta">
-                <span id="/tags/" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+                <time itemprop="datePublished"><span id="now_time"></span></time>
+                <!--<span id="/tags/" class="leancloud_visitors" data-flag-title="{{ page.title }}">
                     <em class="post-meta-item-text">👁‍🗨 </em>
                     <font class="leancloud-visitors-count">-</font>
-                </span>
+                </span>-->
             </div>
 
 
@@ -30,10 +42,10 @@ thumbnail: https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/5d8b2b
                     <img class="author-avatar"
                         srcset="{{ '/style/image/logo.png' | prepend: site.baseurl }}, {{ '/style/image/logo.png' | prepend: site.baseurl }} 2x"
                         src="{{ '/style/image/logo.png' | prepend: site.baseurl }}" alt="" />
-                    <span class="post-author">全文共{{ content | strip_html | strip_newlines | split: "" | size }}字</span>
-                    <!--<span class="post-author">预计花费{{ content | strip_html | strip_newlines | split: "" | size }}/400</span>
+                    <!--<span class="post-author">全文共{{ content | strip_html | strip_newlines | split: "" | size }}字</span>
+                    <span class="post-author">预计花费{{ content | strip_html | strip_newlines | split: "" | size }}/400</span>
                                         <span class="post-author"><span id="busuanzi_value_page_pv"></span> 次访问</span>-->
-                    <time itemprop="datePublished"><span id="Browse_time"></span></span>
+                    <!--<time itemprop="datePublished"><span id="Browse_time"></span></span>-->
                 </time>
                 </span>
             </div>
@@ -90,15 +102,6 @@ thumbnail: https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/5d8b2b
     {% endfor %}
     {% endfor %}
 </div>
-
 {% include share_bottom.html %}
 
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-<div id="vcomments"></div>
-<script>
-    new Valine({
-        appId: 'HYXrGkqM9CECl22sL7ftDoOU-MdYXbMMI',
-        appKey: 'FfBgXOnF3vCgS1YfXrQqECOM',
-        visitor: true // 阅读量统计
-    })
-</script>
+
