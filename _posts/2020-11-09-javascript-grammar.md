@@ -3,7 +3,7 @@ layout: post
 title: JavaScript语法归纳
 date: 2020-11-10 09:24:00 +0800
 category: Code
-thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/kobu-agency-ipARHaxETRk-unsplash.jpg
+thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/kobu-agency-ipARHaxETRk-unsplash.jpg
 icon: web
 summary: 在这里记录JavaScript自己常用的语法
 tag: [JavaScript,语法]

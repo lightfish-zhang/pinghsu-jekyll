@@ -4,7 +4,7 @@ layout: post
 title: Valine——为静态网页添加评论组件
 date: 2020-11-05 23:50:00 +0800
 category: Web
-thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/halacious-tZc3vjPCk-Q-unsplash.jpg
+thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/halacious-tZc3vjPCk-Q-unsplash.jpg
 icon: lock
 summary: 在测试了Gittalk、Gitment等多款产品后，意外发现的惊喜！
 tag: [valine,web,github.io,javascript]

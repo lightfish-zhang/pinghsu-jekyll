@@ -3,7 +3,7 @@ layout: post
 title: 利用Simple-Jekyll-Search为网页增加搜索功能
 date: 2020-11-08 21:35:10 +0800
 category: Web
-thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/miguel-teirlinck-qeiyUaSX6fk-unsplash.jpg
+thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/miguel-teirlinck-qeiyUaSX6fk-unsplash.jpg
 icon: link
 summary: 折腾了半天，把jekyll环境搞崩了，又折腾了半天只为了能够在新页面显示结果。
 tag: [web,jekyll,javascript,github.io,html]

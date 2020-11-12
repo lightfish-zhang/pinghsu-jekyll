@@ -3,7 +3,7 @@ layout: post
 title: Markdown语法归纳
 date: 2020-11-08 17:14:00 +0800
 category: Collect
-thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/kelly-sikkema--1_RZL8BGBM-unsplash.jpg
+thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/kelly-sikkema--1_RZL8BGBM-unsplash.jpg
 icon: note
 summary: 在这里记录Markdown自己常用的语法
 tag: [Markdown,语法]

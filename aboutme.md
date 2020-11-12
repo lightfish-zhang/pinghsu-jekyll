@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 关于我
-thumbnail: /style/image/jem-sahagun-r5aIkOlEj0M-unsplash.jpg
-category: something
+thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/jem-sahagun-r5aIkOlEj0M-unsplash.jpg
 ---
 
 **且宁**
