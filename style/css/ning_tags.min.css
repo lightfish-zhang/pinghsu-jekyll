@@ -2584,3 +2584,6 @@
     .archive-page .categorys-title a:hover {
         color: #eb5055;
     }
+    .post-tags a{
+        margin: 4px 8px 15px 0px;
+    }
