@@ -18,15 +18,14 @@ tag: [PhP,语法]
 
 ```php
 <?php
-    for ($x=1; $x<=$totalPage; $x++) {
-        if($x==$page){ echo $x;}
-        else{
+    for ($x=1; $x<=10; $x++) {
 ?>
-    <a href=message_show.php?page=<?php echo $x ?>&key=<?php echo $key?>><?php echo $x ?></a>
-    <?php
-        }
+    <p>Hello World！</p>
+<?php
     }
 ?>
 ```
+
+
 
 

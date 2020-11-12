@@ -404,7 +404,17 @@ setTimeout(() => {
 
 ### 全文搜索
 
-先写到这，现在的样式就是修改后的，等有空了再补充。
+**①修改`search.json`文件**
+
+因为liquid语句会自动执行，所以请自提内容：<a href="https://github.com/Ning-Qie/Ning-Qie.github.io/blob/master/search.json" target="_blank">search.json</a>
+
+主要就是增加了post.content内容，然后把非法字符移除。
+
+> `| replace: "a","b"`的功能是用b内容替换a内容，此项是为了替换掉非法字符
+
+
+
+这样就可以扩展到全文搜索了，如果出现问题请打开生成的`_site`文件内找`search.json`查看有什么非法字符，添加到规则就行。
 
 <br>
 
