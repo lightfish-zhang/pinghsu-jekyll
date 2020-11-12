@@ -1,3 +1,30 @@
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<style>
+    #veditor {
+	background-image: url(https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/something/Mayday_JRI_comment_picture.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: rgba(255, 255, 255, 0);
+	resize: vertical
+}
+#veditor:focus{
+	background-position-y: 200px;
+	transition: all 0.2s ease-in-out 0s;
+}
+.fab {
+    margin-right: 5px;
+}
+
+</style>
+<script>
+    //可以与 valine 的配置 js 文件放一起，或放置到公共 js 文件中
+$("#veditor").focus(function(){$(this).css("background-image","none");});
+$("#veditor").blur(function(){
+      $(this).css("background-image","url(https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/something/Mayday_JRI_comment_picture.png)");
+   }
+});
+</script>
+<!--<script src='//unpkg.com/valine/dist/Valine.min.js'></script>-->
+<script src='https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js'></script>
 <div id="vcomments"></div>
 <script src="{{ site.baseurl }}/style/js/Valine_comment.min.js"></script>
