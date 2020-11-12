@@ -4,7 +4,7 @@ layout: post
 title: 本地安装jekyll环境实现静态网页运行
 date: 2020-11-05 22:03:00 +0800
 category: Web
-thumbnail: https://raw.githubusercontent.com/Ning-Qie/github_image/master/images/stephanie-harlacher-jMGnXrHYDv0-unsplash.jpg
+thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/stephanie-harlacher-jMGnXrHYDv0-unsplash.jpg
 icon: web
 summary: 为了更方便的测试github.io样式，安装jekyll从而实现本地静态网页的显示。
 tag: [Jekyll,web,github.io]
