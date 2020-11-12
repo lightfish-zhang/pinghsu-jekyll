@@ -45,7 +45,7 @@
                     change_don.first().then((vis) => {
                         online_theme = vis.get('day_or_night');
                         if(day_or_night_value != online_theme && day_or_night_value=="default"){
-                            if(online_theme=="day"){ 
+                            if(online_theme=="day" && day_or_night_value!="default"){ 
                                 day(); 
                                 document.getElementById("night_or_day").setAttribute("value","day");
                             }
