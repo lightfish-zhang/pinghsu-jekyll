@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PhP语法归纳
-date: 2020-11-10T10:25:00+00:00
+date: 2020-11-10 10:25:00 +0800
 updatetime: 2020/11/13 下午7:51:56
 category: Code
 thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/kobu-agency-67L18R4tW_w-unsplash.jpg

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Valine——为静态网页添加评论组件
-date: 2020-11-05T23:50:00+00:00
+date: 2020-11-05 23:50:00 +0800
 updatetime: 2020/11/13 下午7:44:54
 category: Web
 thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/halacious-tZc3vjPCk-Q-unsplash.jpg

@@ -92,9 +92,9 @@ layout: default
             <br>
             {% include icon_updatetime.html %}
             更新于：{% if page.updatetime %}
-                         {{ page.updatetime }}
+                         {{ page.updatetime | replace:"/","-" | replace:"午","午 "}}
                     {% else %}
-                         {{ page.date | replace:"T"," " | replace:"+00:00","" }}
+                         {{ page.date | replace:"+0800","" }}
                     {% endif %}
             <br>
             {% include icon_link.html %}

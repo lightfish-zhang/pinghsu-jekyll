@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 记录：网页美化Tips
-date: 2020-11-13T19:37:00+00:00
+date: 2020-11-13 19:37:00 +0800
 updatetime: 2020/11/13 下午7:51:19
 category: Web
 thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/tim-mossholder-GOMhuCj-O9w-unsplash.jpg
