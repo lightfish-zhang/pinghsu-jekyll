@@ -7,7 +7,13 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <meta name="baidu-site-verification" content="code-u0RuRoo0TW" />
     <meta name="google-site-verification" content="ACa0omNmlnz7yQHrbbcNWDJAldBG6Bh44RLauCedxgE" />
-    <title>{{ page.title | default: site.name }}</title>
+    <title>
+            {% if page.title %}
+                  {{ page.title}} | {{ site.name }}
+            {% else %}
+                  {{ site.name }}
+            {% endif %}
+    </title>
     <meta name="description" content="{{site.meta_description}}">
     <link type='text/css' href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" media='all'/>
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.5.0/css/all.css" rel="stylesheet">
