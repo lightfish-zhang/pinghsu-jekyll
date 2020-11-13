@@ -27,4 +27,8 @@ window.aid
 ![image.png](https://raw.githubusercontent.com/Ning-Qie/Ning-Qie.github.io/master/ning_file/image/image-9cf5b88ef5e440cd8ca8bd7fa365e0bd.png)
 
 
-<iframe width="100%" height="468" src="//player.bilibili.com/player.html?aid=56315372" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<div style="position: relative; padding: 30% 45%;">
+    <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+        src="//player.bilibili.com/player.html?aid=56315372&as_wide=1&danmaku=1" scrolling="no" border="0"
+        frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</div>

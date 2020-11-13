@@ -2,7 +2,7 @@
 layout: post
 title: 记录：网页美化Tips
 date: 2020-11-13 19:37:00 +0800
-updatetime: 2020/11/13 下午7:51:19
+updatetime: 2020/11/14 上午00:57:19
 category: Web
 thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/tim-mossholder-GOMhuCj-O9w-unsplash.jpg
 icon: design
@@ -122,6 +122,37 @@ tag: [web,HTML,css]
 <div class="note danger">这里是 danger 标签样式</div>
 
 <div class="note danger no-icon">这里是不带符号的 danger 标签样式</div>
+
+<br>
+
+### B站视频自适应屏幕大小
+
+```html
+<div style="position: relative; padding: 30% 45%;">
+    <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+        src="//player.bilibili.com/player.html?aid=***&bvid=***&cid=***&page=*&as_wide=*&high_quality=*&danmaku=*"
+        scrolling="no" border="0" frameborder="no" framespacing="0"                               allowfullscreen="true">
+    </iframe>
+</div>
+```
+
+参数说明：
+
+| key          | 说明                                                         |
+| ------------ | ------------------------------------------------------------ |
+| aid          | 之前 B 站使用的 AV 号                                        |
+| bvid         | 目前的 BV 号                                                 |
+| page         | 第几个视频, 起始下标为 1 (默认值也是为 1)就是 B 站视频, 选集里的, 第几个视频 |
+| as_wide      | 是否宽屏 【1: 宽屏, 0: 小屏】                                |
+| high_quality | 是否高清 【1: 高清(最高1080p) / 0: 最低视频质量(默认)】      |
+| danmaku      | 是否开启弹幕 【1: 开启(默认), 0: 关闭】                      |
+
+<div style="position: relative; padding: 30% 45%;">
+    <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+        src="//player.bilibili.com/player.html?bvid=BV1wJ411o7qD&as_wide=1&danmaku=1"
+        scrolling="no" border="0" frameborder="no" framespacing="0"                               allowfullscreen="true">
+    </iframe>
+</div>
 
 <br>
 
