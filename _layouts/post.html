@@ -147,13 +147,25 @@ layout: default
 
 {% include share_bottom.html %}
 
+
+<!--滚动隐藏header和footer-->
 <script src="//cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
 <script>
-    !window.jQuery && document.write(unescape('%3Cscript src="{{ site.baseurl }}/style/js/jquery.min.js"%3E%3C/script%3E'))
+	!window.jQuery && document.write(unescape('%3Cscript src="{{ site.baseurl }}/style/js/jquery.min.js"%3E%3C/script%3E'))
 </script>
 <script src="{{ site.baseurl }}/style/js/headroom.min.js"></script>
 <script src="{{ site.baseurl }}/style/js/nav.min.js"></script>
 <script type="text/javascript">
+    var header = new Headroom(document.getElementById("header"), {
+        tolerance: 10,
+        offset : 80,
+        classes: {
+            initial: "animated",
+            pinned: "slideDown",
+            unpinned: "slideUp"
+        }
+    });
+    header.init();
     var postSharer = new Headroom(document.getElementById("post-bottom-bar"), {
         tolerance: 10,
         offset: 80,
@@ -164,20 +176,6 @@ layout: default
         }
     });
     postSharer.init();
-</script>
-
-<script type="text/javascript">
-    var navigation = new Headroom(document.getElementById("navigation"), {
-        tolerance: 0,
-        offset: 350,
-        classes: {
-            initial: "initial",
-            pinned: "pinned",
-            unpinned: "unpinned",
-            bottom : "headroom--bottom",
-        }
-    });
-    navigation.init();
 </script>
 
 <!--导航栏自动隐藏-->
