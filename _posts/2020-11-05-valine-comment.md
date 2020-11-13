@@ -152,6 +152,31 @@ setInterval(update_nick, 1000);
 
 ![](https://raw.githubusercontent.com/Ning-Qie/github_image/master/images/20201107214016.png)
 
+# Valine评论Plus
+直接将原生的 Valine 替换为以下的 `Valine.min.js` 文件。
+
+```html
+https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js
+```
+
+> 与原生的相比，多了以下功能：
+>
+>1. 添加博主，小伙伴，访客标签，请使用 <a href="https://md5jiami.51240.com/" target="_blank">**MD5加密**</a>邮箱。
+>2. 添加浏览器和操作系统图标，需引入 <a href="https://www.bootcdn.cn/font-awesome/5.5.0/" target="_blank">`fontawesome v5.0+`</a>的 CSS 样式
+>3. 邮箱检测更严格
+>4. 增加 QQ 邮箱识别（原版只能通过昵称栏输入 QQ 号识别）
+>5. meta placeholder 可自定义
+
+使用方法与原生的类似，不同的是可以多设置几个参数：
+
+| 参数            | 类型         | 说明                               | 默认                     | 示例                                         |
+| --------------- | ------------ | ---------------------------------- | ------------------------ | -------------------------------------------- |
+| tagMeta         | Array        | 标签要显示的文字                   | [“博主”,“小伙伴”,“访客”] | ["博主","小伙伴","访客"]                     |
+| master          | Array/String | md5 加密后的博主邮箱               | []                       | ["fe01ce2a7fbac8fafaed7c982a04e229"]         |
+| friends         | Array        | md5 加密后的小伙伴邮箱             | []                       | ["fe01ce2a7fbac8fafaed7c982a04e229"]         |
+| metaPlaceholder | Object       | meta placeholder 内容              | {}                       | {“nick”:“昵称 / QQ 号”,“mail”:“邮箱 (必填)”} |
+| verify          | Boolean      | 评论时是否需要验证，需 jQuery 支持 | false                    | true                                         |
+
 <br>
 <br>
 <br>
@@ -165,3 +190,5 @@ setInterval(update_nick, 1000);
 > 2.<a href='https://valine.js.org/' target="_blank">Valine官网文档</a>
 >
 > 3.<a href='https://lovelijunyi.gitee.io/posts/e52c.html' target="_blank">Valine评论系统详解</a>
+>
+> 4.<a href='https://bestzuo.cn/posts/763113948.html' target="_blank">博客Valine评论样式美化</a>
