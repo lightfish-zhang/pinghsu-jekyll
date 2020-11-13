@@ -1,112 +1,28 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>{{ site.url }}</loc>
+        <priority>1.00</priority>
+    </url>
 
+    {% for post in site.posts %}
+    <url>
+        <loc>{{ site.url }}{{ post.url | remove: 'index.html' }}</loc>
+        <priority>0.80</priority>
+    </url>
+    {% endfor %}
 
-<url>
-  <loc>http://ning0.top/</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://ning0.top/archives</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/categories</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/tags</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/aboutme</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/2020-11-10-php-grammar</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/category/Code/</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/2020-11-10-javascript-grammar</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/2020-11-08-blog-jekyll-search</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/category/Web/</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/2020-11-08-markdown-grammar</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/category/Collect/</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/2020-11-05-valine-comment</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/2020-11-05-jekyll-web</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/2020-06-26-zhaichao</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/2020-06-23-Aplayer-Metingjs</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/2020-06-23-Bilibili-av-get</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/category/Something/</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/2020-06-22-web-collect</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://ning0.top/2020-06-19-CentOS7-code-server</loc>
-  <lastmod>2020-11-12T10:15:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+    {% for page in site.pages %}
+    {% if page.layout != nil %}
+    {% if page.layout != 'redirect' %}
+    <url>
+        <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
+        <priority>0.60</priority>
+    </url>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
 </urlset>
