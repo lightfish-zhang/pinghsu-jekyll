@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 服务器CentOS7安装code-server，快乐地用web修改代码
-date: 2020-06-19 22:33:50 +0800
+date: 2020-06-19T22:33:50+00:00
+updatetime: 2020/11/12 下午6:11:20
 category: Code
 thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/blur-close-up-code-computer-546819-524c72d599c7470489c543f29c5bcc5e.jpg
 icon: code

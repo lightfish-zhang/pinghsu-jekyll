@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 利用基于Aplayer插件封装好的Metingjs，为博客首页添加音乐播放器
-date: 2020-06-23 22:40:10 +0800
+date: 2020-06-23T22:40:10+00:00
+updatetime: 2020/11/12 下午6:11:20
 category: Web
 thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/daniel-schludi-l8cvrt3Hpec-unsplash.jpg
 icon: design

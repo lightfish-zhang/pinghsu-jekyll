@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Markdown语法归纳
-date: 2020-11-08 17:14:00 +0800
+date: 2020-11-08T17:14:00+00:00
+updatetime: 2020/11/12 下午6:11:20
 category: Collect
 thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/kelly-sikkema--1_RZL8BGBM-unsplash.jpg
 icon: note

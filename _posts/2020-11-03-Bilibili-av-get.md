@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 通过浏览器开发者工具获取Bilibili视频av号
-date: 2020-06-23 16:44:51 +0800
+date: 2020-06-23T16:44:51+00:00
+updatetime: 2020/11/12 下午6:11:23
 category: Something
 thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/311dfa441ee3658a07b6ccd927662644.jpg
 icon: web

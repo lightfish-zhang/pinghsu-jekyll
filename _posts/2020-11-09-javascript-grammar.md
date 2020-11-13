@@ -1,7 +1,8 @@
 ---
 layout: post
 title: JavaScript语法归纳
-date: 2020-11-10 09:24:00 +0800
+date: 2020-11-10T09:24:00+00:00
+updatetime: 2020/11/12 下午6:11:20
 category: Code
 thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/kobu-agency-ipARHaxETRk-unsplash.jpg
 icon: web

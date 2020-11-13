@@ -91,7 +91,11 @@ layout: default
             本文由 <b><a href="{{site.domain}}/aboutme" data-pjax-state="" target="_blank">{{ site.author }}</a></b> 创作
             <br>
             {% include icon_updatetime.html %}
-            更新于：{{ page.updatetime | default: page.date | replace:" +0800","" }}
+            更新于：{% if page.updatetime %}
+                         {{ page.updatetime }}
+                    {% else %}
+                         {{ page.date | replace:"T"," " | replace:"+00:00","" }}
+                    {% endif %}
             <br>
             {% include icon_link.html %}
             原文链接：<a href="{{site.domain}}{{page.url}}" data-pjax-state="" target="_blank">{{site.domain}}{{page.url}}</a>

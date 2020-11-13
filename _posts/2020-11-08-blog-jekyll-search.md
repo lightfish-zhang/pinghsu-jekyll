@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 利用Simple-Jekyll-Search为网页增加搜索功能
-date: 2020-11-08 21:35:10 +0800
+date: 2020-11-08T21:35:10+00:00
+updatetime: 2020/11/13 下午7:44:25
 category: Web
 thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/miguel-teirlinck-qeiyUaSX6fk-unsplash.jpg
 icon: link

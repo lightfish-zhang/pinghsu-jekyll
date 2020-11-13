@@ -1,8 +1,8 @@
 ---
-
 layout: post
 title: 本地安装jekyll环境实现静态网页运行
-date: 2020-11-05 22:03:00 +0800
+date: 2020-11-05T22:03:00+00:00
+updatetime: 2020/11/12 下午6:11:20
 category: Web
 thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/stephanie-harlacher-jMGnXrHYDv0-unsplash.jpg
 icon: web
