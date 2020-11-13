@@ -7,7 +7,7 @@ category: Web
 thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/halacious-tZc3vjPCk-Q-unsplash.jpg
 icon: lock
 summary: 在测试了Gittalk、Gitment等多款产品后，意外发现的惊喜！
-tag: [valine,web,github.io,javascript]
+tag: [valine,web,github.io,JavaScript]
 ---
 
 
