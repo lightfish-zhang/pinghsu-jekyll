@@ -1,14 +1,6 @@
-<!--音乐播放器-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-
-<!--音乐播放器-->
-<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
-
-
 <header id="header" class="header bg-white">
     <div class="navbar-container">
-        <a href="{{ site.domain }}" class="navbar-logo">
+        <a href="{{ site.domain }}" id="header-site-title" class="navbar-logo">
             {{ site.name }}
         </a>
         <!--
@@ -38,6 +30,22 @@
         <input type="hidden" id="site_url" value="{{ site.url }}/">
         <input type="hidden" id="night_or_day" value="default">
         <input type="hidden" id="visitor_id" value="default">
+            <!--首页搜索时打开新标签页，其他覆盖本页-->
+            <script>
+                var s_in = document.getElementById("search");
+                //console.log(document.getElementById("search").target);
+                var this_url = window.location.href;
+                var site_ul = document.getElementById("site_url").value;
+                //console.log(this_url);
+                //console.log(site_ul);
+                if (this_url == site_ul) {
+                    console.log("index");
+                    document.getElementById("search").setAttribute('target', '_blank');
+                    //首页修复站点名称显示
+                    document.getElementById("header-site-title").style.cssText += "line-height: 55px !important;";
+                    //console.log(document.getElementById("search").target);
+                }
+            </script>
         
 
         <a href="javascript:start_ning_night();" οnclick="js_method()" class="night_button" style="display: initial;" title="夜间模式">
@@ -59,18 +67,3 @@
         </div>
     </div>
 </header>
-
-<!--首页搜索时打开新标签页，其他覆盖本页-->
-<script>
-    var s_in =document.getElementById("search");
-    //console.log(document.getElementById("search").target);
-    var this_url = window.location.href;
-    var site_ul=document.getElementById("site_url").value;
-    //console.log(this_url);
-    //console.log(site_ul);
-    if( this_url==site_ul ){
-        console.log("index");
-        document.getElementById("search").setAttribute('target','_blank');
-        //console.log(document.getElementById("search").target);
-    }
-</script>
