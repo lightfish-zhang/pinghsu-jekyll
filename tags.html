@@ -41,14 +41,13 @@ thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbn
 
             <div class="post-meta">
                 <span class="post-meta-wrap">
-                    <img class="author-avatar"
-                        srcset="{{ '/style/image/logo.png' | prepend: site.baseurl }}, {{ '/style/image/logo.png' | prepend: site.baseurl }} 2x"
-                        src="{{ '/style/image/logo.png' | prepend: site.baseurl }}" alt="" />
+                    <div class="author-avatar">
+                        <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ site.avatar }}" alt="" >
+                    </div>
                     <!--<span class="post-author">全文共{{ content | strip_html | strip_newlines | split: "" | size }}字</span>
                     <span class="post-author">预计花费{{ content | strip_html | strip_newlines | split: "" | size }}/400</span>
                                         <span class="post-author"><span id="busuanzi_value_page_pv"></span> 次访问</span>-->
-                    <!--<time itemprop="datePublished"><span id="Browse_time"></span></span>-->
-                </time>
+                    <!--<time itemprop="datePublished"><span id="Browse_time"></span></time>-->
                 </span>
             </div>
         </div>

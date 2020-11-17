@@ -2531,7 +2531,8 @@ thumbnail: https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/46d913
         }
     }
 
-    < !--post作者头像及访问量样式-->.post-meta .author-avatar {
+    < !--post作者头像及访问量样式-->
+    .post-meta .author-avatar img{
         border-radius: 50%;
     }
 
@@ -2547,7 +2548,7 @@ thumbnail: https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/46d913
         width: 50%
     }
 
-    .post-meta-wrap .author-avatar {
+    .post-meta-wrap .author-avatar img{
         border-radius: 50%;
         border: 2px solid #adabac;
         float: right;
@@ -2628,9 +2629,9 @@ thumbnail: https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/46d913
 
             <div class="post-meta">
                 <span class="post-meta-wrap">
-                    <img class="author-avatar"
-                        srcset="{{ '/style/image/logo.png' | prepend: site.baseurl }}, {{ '/style/image/logo.png' | prepend: site.baseurl }} 2x"
-                        src="{{ '/style/image/logo.png' | prepend: site.baseurl }}" alt="" />
+                    <div class="author-avatar">
+                        <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ site.avatar }}" alt="" >
+                    </div>
                     <!--<span class="post-author">全文共{{ content | strip_html | strip_newlines | split: "" | size }}字</span>
                     <span class="post-author">预计花费{{ content | strip_html | strip_newlines | split: "" | size }}/400</span>
                                         <span class="post-author"><span id="busuanzi_value_page_pv"></span> 次访问</span>
