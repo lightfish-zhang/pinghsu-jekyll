@@ -43,8 +43,8 @@ layout: default
 
                 <div class="post-list-item">
                     <div class="post-list-item-container">
-                        <div class="item-thumb bg-deepgrey"
-                            style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}{% else %}{{ '/style/image/thumbnail.png' | prepend: site.baseurl }}{% endif %});">
+                        <div class="post-card">
+                            <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ post.thumbnail }}">
                         </div>
                         <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">
                             <div class="item-desc">

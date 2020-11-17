@@ -22,7 +22,9 @@ thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbn
 <link href="{{ '/style/css/ning_tags.min.css' | prepend: site.baseurl }}" rel="stylesheet">
 
 <div class="post-header-thumb">
-    <div class="post-header-thumb-op" style="background-image:url({{ page.thumbnail }});"></div>
+    <div class="post-header-thumb-op">
+        <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ page.thumbnail }}" alt="" >
+    </div>
     <div class="post-header-thumb-cover">
         <div class="post-header-thumb-container">
             <div class="post-header-thumb-title">

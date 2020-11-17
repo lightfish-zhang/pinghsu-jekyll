@@ -209,6 +209,7 @@
     color: #d9534f;
 }
 
+/*适配懒加载*/
 /*文章展示卡片*/
 .post-card {
     width: auto;
@@ -220,4 +221,20 @@
     width: auto;
     height: 250px;
     left: -20%;
+}
+
+/*文章页面标题显示图片*/
+.post-header-thumb-op img{
+    width: 100%;
+    height: -webkit-fill-available;
+}
+
+.category-card {
+    width: auto;
+    height: 250px;
+}
+
+.category-card img{
+    position: absolute;
+    width: 100%;
 }

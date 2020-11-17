@@ -8,7 +8,9 @@ layout: default
 
 {% if page.thumbnail %}
 <div class="post-header-thumb">
-    <div class="post-header-thumb-op" style="background-image:url({{ page.thumbnail }});"></div>
+    <div class="post-header-thumb-op">
+        <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ page.thumbnail }}" alt="" >
+    </div>
     <div class="post-header-thumb-cover">
         <div class="post-header-thumb-container">
             <div class="post-header-thumb-title">
@@ -116,7 +118,7 @@ layout: default
             <a href="{{ BASE_PATH }}{{ page.next.url }}" data-ajax class="nav-previous">
                 {% if page.next.thumbnail %}
                 <div class="nav-bg ">
-                    <img src="{{ BASE_PATH }}{{ page.next.thumbnail }}" alt="" />
+                    <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ BASE_PATH }}{{ page.next.thumbnail }}" alt="" />
                 </div>
                 {% else %}
                 <div class="nav-bg default-cover-bg">
@@ -134,7 +136,7 @@ layout: default
             <a href="{{ BASE_PATH }}{{ page.previous.url }}" data-ajax class="nav-next">
                 {% if page.previous.thumbnail %}
                 <div class="nav-bg ">
-                    <img src="{{ BASE_PATH }}{{ page.previous.thumbnail }}" alt="" />
+                    <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ BASE_PATH }}{{ page.previous.thumbnail }}" alt="" />
                 </div>
                 {% else %}
                 <div class="nav-bg default-cover-bg">
