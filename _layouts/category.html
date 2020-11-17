@@ -37,7 +37,9 @@
 
 
     <div class="post-header-thumb">
-        <div class="post-header-thumb-op" style="background-image:url({{ category_thumbnail }});"></div>
+        <div class="post-header-thumb-op">
+            <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ page.thumbnail }}" alt="" >
+        </div>
         <div class="post-header-thumb-cover">
             <div class="post-header-thumb-container">
                 <div class="post-header-thumb-title">
@@ -87,8 +89,8 @@
                     {% assign category_count = 1  %}
                     <div class="post-list-item">
                         <div class="post-list-item-container">
-                            <div class="item-thumb bg-deepgrey"
-                                style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}{% else %}{{ '/style/image/thumbnail.png' | prepend: site.baseurl }}{% endif %});">
+                            <div class="category-card">
+                                <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ post.thumbnail }}">
                             </div>
                             <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">
                                 <div class="item-desc">

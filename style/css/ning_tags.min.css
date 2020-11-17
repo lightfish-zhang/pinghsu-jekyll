@@ -2511,7 +2511,7 @@
     }
 
     /*post作者头像及访问量样式*/
-    .post-meta .author-avatar {
+    .post-meta .author-avatar img{
         border-radius: 50%;
     }
 
@@ -2527,7 +2527,7 @@
         width: 50%
     }
 
-    .post-meta-wrap .author-avatar {
+    .post-meta-wrap .author-avatar img{
         border-radius: 50%;
         border: 2px solid #adabac;
         float: right;
