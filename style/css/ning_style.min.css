@@ -102,38 +102,49 @@
 }
 
 /*夜间模式样式*/
-.night_button{}
-.night_button:after{}
-.might_button:hover{color:#eb5055}
-.night_button svg{
-    z-index:10;
-    fill:currentColor;
-    height:16px;
-    top:12px;
+
+.night_button {}
+
+.night_button:after {}
+
+.might_button:hover {
+    color: #eb5055
+}
+
+.night_button svg {
+    z-index: 10;
+    fill: currentColor;
+    height: 16px;
+    top: 12px;
     position: relative;
     margin-bottom: 10px;
 }
 
 /*日间模式样式*/
-.day_button{}
-.day_button:after{}
-.day_button:hover{color:#eb5055}
-.day_button svg{
-    z-index:10;
-    fill:currentColor;
-    height:20px;
-    top:14px;
+
+.day_button {}
+
+.day_button:after {}
+
+.day_button:hover {
+    color: #eb5055
+}
+
+.day_button svg {
+    z-index: 10;
+    fill: currentColor;
+    height: 20px;
+    top: 14px;
     position: relative;
     margin-bottom: 10px;
 }
 
 .navbar-search:active>form, .navbar-search:focus>form, .navbar-search:hover>form {
-   padding-right: 40px;
+    padding-right: 40px;
 }
 
-
-
 /* note 公共样式 */
+
 .note {
     position: relative;
     padding: 15px;
@@ -142,8 +153,8 @@
     border: initial;
     border-left: 3px solid #eee;
     background-color: #f9f9f9;
-	border-radius: 3px;
-	font-size: var(--content-font-size);
+    border-radius: 3px;
+    font-size: var(--content-font-size);
 }
 
 .note:not(.no-icon):before {
@@ -160,7 +171,7 @@
 
 .note.info {
     background-color: #eef7fa;
-	border-left-color: #428bca;
+    border-left-color: #428bca;
 }
 
 .note.info:not(.no-icon):before {
@@ -196,4 +207,17 @@
 .note.danger:not(.no-icon):before {
     content: "\f056";
     color: #d9534f;
+}
+
+/*文章展示卡片*/
+.post-card {
+    width: auto;
+    height: 250px;
+}
+
+.post-card img{
+    position: absolute;
+    width: auto;
+    height: 250px;
+    left: -20%;
 }
