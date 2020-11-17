@@ -221,14 +221,26 @@
     width: auto;
     height: 250px;
     left: -20%;
+    object-fit: cover;
 }
 
+@media (max-width: 580px){
+.post-card img{
+    position: absolute;
+    width: auto;
+    height: 250px;
+    left: -10%;
+}
+
+}
 /*文章页面标题显示图片*/
 .post-header-thumb-op img{
     width: 100%;
     height: -webkit-fill-available;
+    object-fit: cover;
 }
 
+/*分类界面显示文章卡片*/
 .category-card {
     width: auto;
     height: 250px;
