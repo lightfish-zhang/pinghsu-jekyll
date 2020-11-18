@@ -103,14 +103,6 @@
 
 /*夜间模式样式*/
 
-.night_button {}
-
-.night_button:after {}
-
-.might_button:hover {
-    color: #eb5055
-}
-
 .night_button svg {
     z-index: 10;
     fill: currentColor;
@@ -121,14 +113,6 @@
 }
 
 /*日间模式样式*/
-
-.day_button {}
-
-.day_button:after {}
-
-.day_button:hover {
-    color: #eb5055
-}
 
 .day_button svg {
     z-index: 10;
@@ -249,4 +233,19 @@
 .category-card img{
     position: absolute;
     width: 100%;
+}
+
+/*icon按钮*/
+.icon_menu_ning svg{
+    z-index: 10;
+    display: initial;
+    fill: currentColor;
+    height: 20px;
+    top: 14px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.navbar-search:active>form, .navbar-search:focus>form, .navbar-search:hover>form {
+    margin-right: 40px;
 }

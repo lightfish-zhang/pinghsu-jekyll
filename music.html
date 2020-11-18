@@ -1,0 +1,71 @@
+---
+layout: default
+title: 音乐
+permalink: /music
+thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/luke-stackpoole-lj1MF5M3LAk-unsplash.jpg
+---
+
+
+<!--音乐播放器-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<style>
+    .navbar-logo {
+        line-height: 60px;
+    }
+    .music_playlist_first{
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    .music_playlist{
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .main-container {
+        min-height: 450px;
+    }
+    .aplayer {
+        border-radius: 25px;
+    }
+    .music_title{
+        font-size: 25px;
+        font-family: cursive;
+    }
+    .music_playlist_first a:hover{
+        color: aquamarine !important;
+    }
+    .music_playlist a:hover{
+        color: aquamarine !important;
+    }
+    .footer {
+        margin-top: 100px;
+    }
+</style>
+
+<div class="main-container">
+    <div class="music_playlist_first">
+        <a class="music_title" href="https://y.qq.com/n/yqq/playlist/3441886932.html" target="_blank">QQ音乐-我喜欢💗</a>
+        <meting-js server="tencent" type="playlist" id="3441886932" order="random"></meting-js>
+    </div>
+    <div class="music_playlist">
+        <a class="music_title" href="https://y.qq.com/n/yqq/playlist/7368357801.html" target="_blank">五月天演唱会解锁歌单</a>
+        <meting-js server="tencent" type="playlist" id="7368357801"></meting-js>
+    </div>
+    <div class="music_playlist">
+        <a class="music_title" href="https://y.qq.com/n/yqq/playlist/7167734168.html" target="_blank" style="color:skyblue;">Mayday Blue蓝色三部曲</a>
+        <meting-js server="tencent" type="playlist" id="7167734168"></meting-js>
+    </div>
+    <div style="max-width: 70%; text-align: center; margin: 0 auto; margin-top: 100px;">
+        {% include comment.html %}
+    </div>
+</div>
+
+
+<!--音乐播放器-->
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>

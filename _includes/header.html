@@ -30,6 +30,10 @@
         <input type="hidden" id="site_url" value="{{ site.url }}/">
         <input type="hidden" id="night_or_day" value="default">
         <input type="hidden" id="visitor_id" value="default">
+
+        <a href="{{ '/music' | prepend: site.baseurl }}" class="icon_menu_ning" target="_blank">
+            {% include icon_music.html %}
+        </a>
         
 
         <a href="javascript:start_ning_night();" οnclick="js_method()" class="night_button" style="display: initial;" title="夜间模式">

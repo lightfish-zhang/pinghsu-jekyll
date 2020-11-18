@@ -3,3 +3,7 @@ _site
 _posts/测试.md
 _drafts
 _includes/index_autoplay.html
+gallery/index.md
+gallery/LifeTour/index.md
+_layouts/gallery.html
+gallery.json
