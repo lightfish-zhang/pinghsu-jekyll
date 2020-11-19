@@ -1,0 +1,154 @@
+---
+layout: default
+title: 时光机
+permalink: /Hourglass
+thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/ocean-ng-L0xOtAnv94Y-unsplash.jpg
+---
+
+
+<link href="{{ '/style/css/ning_category.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+<!--音乐播放器-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<style>
+    .main-container{
+        min-height: 800px;
+    }
+    .music_playlist{
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .aplayer {
+        border-radius: 25px;
+    }
+    .card {
+        margin: 35px auto;
+        display: block;
+        background-color: white;
+        width: 75%;
+        min-height: 100px;
+        border-radius: 35px;
+        text-align: center;
+    }
+    .post-header-thumb-title {
+        font-size: 36px;
+        font-family: cursive;
+    }
+    .post-header-thumb {
+        margin-bottom: 65px;
+    }
+    .biaotis {
+    margin: 10px auto;
+    text-align: center;
+}
+.biaotis .zhuti {
+    border-bottom: 2px solid #e96900;
+}
+.biaotis span {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 19px;
+    margin: 15px auto;
+    padding-bottom: 6px;
+}
+.HotDate {
+    color: #e96900;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px auto;
+}
+.card-content {
+    padding: 12px!important;
+}
+</style>
+
+<div class="main-container">
+
+
+    <div class="post-header-thumb">
+        <div class="post-header-thumb-op">
+            <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ page.thumbnail }}" alt="" >
+        </div>
+        <div class="post-header-thumb-cover">
+            <div class="post-header-thumb-container">
+                <div class="post-header-thumb-title">
+                    人生海海
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="music_playlist">
+        <meting-js server="tencent" type="playlist" id="7786899573" listFolded="true" listMaxHeight="100" loop="none" autoplay="true"></meting-js>
+    </div>
+
+    {% for thing in site.data.hourglass %}
+    <div class="card">
+        <div class="card-content">
+            <div class="biaotis">
+                <span>距离</span>
+                <span class="zhuti">{{ thing.name }}</span>
+                {% if thing.Timing-sequence == "future" %}
+                <span>仅有</span>
+                {% else if %}
+                <span>已过去</span>
+                {% endif %}
+            </div>
+            <div id="CountMsg" class="HotDate">
+                <span id="t_d_{{ thing.id }}">00天</span>
+                <span id="t_h_{{ thing.id }}">00时</span>
+                <span id="t_m_{{ thing.id }}">00分</span>
+                <span id="t_s_{{ thing.id }}">00秒</span>
+            </div>  
+            <script type="text/javascript">
+                function getRTime(){
+                var EndTime = new Date('{{ thing.time }}'); //截止时间
+                var NowTime = new Date();
+                var t = EndTime.getTime() - NowTime.getTime();
+                console.log(t);
+
+                //累加
+                if(t >= 0 ){
+                //var y=parseInt(t/1000/60/60/24/365);
+                var d=Math.floor(t/1000/60/60/24);
+                var h=Math.floor(t/1000/60/60%24);
+                var m=Math.floor(t/1000/60%60);
+                var s=Math.floor(t/1000%60);
+                }
+                else{
+                //var y=-(parseInt(t/1000/60/60/24/365));
+                var d=-(Math.floor(t/1000/60/60/24));
+                var h=-(Math.floor(t/1000/60/60%24));
+                var m=-(Math.floor(t/1000/60%60));
+                var s=-(Math.floor(t/1000%60));
+                }
+                /*
+                if(y>0){
+                document.getElementById("t_y_{{ thing.id }}").innerHTML = y + "年";
+                }
+                else{
+                    document.getElementById("t_y_{{ thing.id }}").setAttribute("style","display: none;");
+                }
+                */
+                document.getElementById("t_d_{{ thing.id }}").innerHTML = d + "天";
+                document.getElementById("t_h_{{ thing.id }}").innerHTML = h + "时";
+                document.getElementById("t_m_{{ thing.id }}").innerHTML = m + "分";
+                document.getElementById("t_s_{{ thing.id }}").innerHTML = s + "秒";
+                }
+
+                setInterval(getRTime,1000);
+                </script>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div style="max-width: 100%; text-align: center; margin: 0 auto; margin-top: 100px;">
+        {% include comment.html %}
+    </div>
+</div>
+
+<!--音乐播放器-->
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
