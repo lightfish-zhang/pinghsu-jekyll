@@ -91,11 +91,7 @@ thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbn
             <div class="biaotis">
                 <span>距离</span>
                 <span class="zhuti">{{ thing.name }}</span>
-                {% if thing.Timing-sequence == "future" %}
-                <span>仅有</span>
-                {% else if %}
-                <span>已过去</span>
-                {% endif %}
+                <span id="past_or_future_{{ thing.id }}">有</span>
             </div>
             <div id="CountMsg" class="HotDate">
                 <span id="t_d_{{ thing.id }}">00天</span>
@@ -117,6 +113,12 @@ thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbn
                 var h=Math.floor(t/1000/60/60%24);
                 var m=Math.floor(t/1000/60%60);
                 var s=Math.floor(t/1000%60);
+                if(d<=60){
+                    document.getElementById("past_or_future_{{ thing.id }}").innerHTML = "仅有";
+                }
+                else{
+                    document.getElementById("past_or_future_{{ thing.id }}").innerHTML = "有";
+                }
                 }
                 else{
                 //var y=-(parseInt(t/1000/60/60/24/365));
@@ -124,6 +126,7 @@ thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbn
                 var h=-(Math.floor(t/1000/60/60%24));
                 var m=-(Math.floor(t/1000/60%60));
                 var s=-(Math.floor(t/1000%60));
+                document.getElementById("past_or_future_{{ thing.id }}").innerHTML = "已过去";
                 }
                 /*
                 if(y>0){
