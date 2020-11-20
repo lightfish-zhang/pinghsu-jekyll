@@ -1,309 +1,186 @@
-- name: 常用推荐
+- name: 常用
   icon: linecons-star
   links: 
-    - title: Dribbble
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/dribbble.png
-      url: https://dribbble.com/
-      description: 全球UI设计师作品分享平台。
-    - title: Behance
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/behance.png
-      url: https://behance.net/
-      description: Adobe旗下的设计师交流平台，来自世界各地的设计师在这里分享自己的作品。
-    - title: UI中国
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uicn.png
-      url: https://www.ui.cn/
-      description: 图形交互与界面设计交流、作品展示、学习平台。
-    - title: 站酷
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/zcool.png
-      url: https://www.zcool.com.cn/
-      description: 中国人气设计师互动平台
-    - title: Pinterest
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/pinterest.png
-      url: https://www.pinterest.com/
-      description: 全球美图收藏采集站
-    - title: 花瓣
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/huaban.png
-      url: https://huaban.com/
-      description: 收集灵感,保存有用的素材
-    - title: Medium
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/medium.png
-      url: https://medium.com/
-      description: 高质量设计文章
-    - title: 优设
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uisdc.png
-      url: https://www.uisdc.com/
-      description: 设计师交流学习平台
-    - title: Producthunt
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/producthunt.png
-      url: https://www.producthunt.com/
-      description: 发现新鲜有趣的产品
+    - title: Github
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/GitHub.png
+      url: https://github.com/
+      description: 全球最大同性交友网站。
+    - title: Unsplash
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/unsplash.png
+      url: https://unsplash.com/
+      description: 一个免费的照片共享网站。
     - title: Youtube
       logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/youtube.png
       url: https://www.youtube.com/
-      description: 全球最大的学习分享平台
+      description: 目前全球最大的视频搜索和分享平台。
     - title: Google
       logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/google.png
       url: https://www.google.com/
-      description: 全球最大的UI学习分享平台
-    
+      description: 互联网上最大、影响最广泛的搜索引擎。
+    - title: 豆瓣
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/%E8%B1%86%E7%93%A3.png
+      url: https://www.douban.com/
+      description: 致力于帮助发现生活中有用以及有趣的事物。
+    - title: 知乎
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/%E7%9F%A5%E4%B9%8E.png
+      url: https://www.zhihu.com/
+      description: 分享你刚编的故事~
+    - title: 谷歌翻译
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/GoogleTranslate.png
+      url: https://translate.google.cn/
+      description: 较为靠谱的翻译工具。
+    - title: 菜鸟教程
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/runoob..png
+      url: https://www.runoob.com/
+      description: 编程菜鸟在这里（我）
 
-- name: 社区资讯
-  icon: linecons-doc
+- name: Something
+  icon: linecons-thumbs-up
   links: 
-    - title: 雷锋网
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/leiphone.png
-      url: https://www.leiphone.com/
-      description: 人工智能和智能硬件领域的互联网科技媒体
-    - title: 36kr
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/36kr.png
-      url: https://36kr.com/
-      description: 创业资讯、科技新闻
-    - title: 数英网
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/digitaling.png
-      url: https://www.digitaling.com/
-      description: 数字媒体及职业招聘网站
-    - title: 猎云网
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/lieyunwang.png
-      url: https://www.lieyunwang.com/
-      description: 互联网创业项目推荐和创业创新资讯
-    - title: 人人都是产品经理
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/woshipm.png
-      url: http://www.woshipm.com/
-      description: 产品经理、产品爱好者学习交流平台
-    - title: 互联网早读课
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/zaodula.png
-      url: https://www.zaodula.com/
-      description: 互联网行业深度阅读与学习平台
-    - title: 产品壹佰 
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/chanpin100.png
-      url: http://www.chanpin100.com/
-      description: 为产品经理爱好者提供最优质的产品资讯、原创内容和相关视频课程
-    - title: PMCAFF
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/pmcaff.png
-      url: http://www.pmcaff.com/
-      description: 中国第一产品经理人气组织，专注于研究互联网产品
-    - title: 爱运营
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/iyunying.png
-      url: http://www.iyunying.org/
-      description: 网站运营人员学习交流，专注于网站产品运营管理、淘宝运营。
-    - title: 鸟哥笔记
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/niaogebiji.png
-      url: http://www.niaogebiji.com/
-      description: 移动互联网第一干货平台
-    - title: 古田路9号
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/gtn9.png
-      url: http://www.gtn9.com/
-      description: 国内专业品牌创意平台
-    - title: 优阁网
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uigreat.png
-      url: http://www.uigreat.com/
-      description: UI设计师学习交流社区
-    
+    - title: Topbook
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/topbook.png
+      url: https://topbook.cc/
+      description: 高效视频生活书。
+    - title: 白描OCR
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/%E7%99%BD%E6%8F%8F.png
+      url: https://web.baimiaoapp.com/
+      description: 还不错的在线OCR。
+    - title: 小鸡词典
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/jikipedia.jpg
+      url: https://jikipedia.com/
+      description: out了？在这查网络流行语
+    - title: 句子控
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/%E5%8F%A5%E5%AD%90%E6%8E%A7.png
+      url: https://www.juzikong.com/
+      description: 收集与分享你喜欢的句子。
 
-- name: 灵感采集
+
+
+    - title: Mixlr
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/Mixlr.png
+      url: http://mixlr.com/
+      description: 偷听演唱会的地方。
+    - title: 问卷星
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/wjx.png
+      url: https://www.wjx.cn/
+      description: 用这个做问卷吧
+    - title: 网易云游戏平台
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/wygame.png
+      url: https://cg.163.com/
+      description: 每天两小时，不香吗？
+    - title: 华为云
+      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/huawei.png
+      url: https://cloud.huawei.com/
+      description: 我用来找手机的。
+
+- name: Code
+  icon: linecons-thumbs-up
+  links: 
+  sub: 
+    - name: 常用网页
+      links:
+        - title: 阿里云
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/alicloud.png
+          url: https://www.aliyun.com/
+          description: 全球领先的云计算及人工智能科技公司。
+        - title: 腾讯云
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/Tencentcloud.png
+          url: https://cloud.tencent.com/
+          description: 为数百万的企业和开发者提供安全稳定的云计算服务。
+        - title: 微信开放社区
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/weixindeveloper.png
+          url: https://developers.weixin.qq.com/
+          description: 微信相关开发交流社区。
+        - title: W3School
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/w3s.png
+          url: https://www.w3school.com.cn/
+          description: 领先的Web技术教程。
+        - title: 菜鸟教程
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/runoob..png
+          url: https://www.runoob.com/
+          description: 编程菜鸟在这里（我）
+        - title: Gitee
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/gitee.png
+          url: https://gitee.com/
+          description: 码云，开源中国推出的基于Git的代码托管服务。
+        - title: Github
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/GitHub.png
+          url: https://github.com/
+          description: 全球最大同性交友网站。
+        - title: Coding
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/coding.png
+          url: https://coding.net/
+          description: 一站式软件研发管理协作平台。
+
+- name: 书影音
+  icon: linecons-doc
+  sub: 
+    - name: 书
+      links:
+        - title: 豆瓣读书
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/%E8%B1%86%E7%93%A3%E8%AF%BB%E4%B9%A6.png
+          url: https://book.douban.com/
+          description: 记录你读过的、想读和正在读的书。
+        - title: 海子诗全编
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/%E6%B5%B7.png
+          url: https://haizi.huhaitai.com/
+          description: 坐在纸箱上想起疯了的朋友们
+      
+    - name: 影
+      links:
+        - title: 豆瓣电影
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1.png
+          url: https://movie.douban.com/
+          description: 影迷发烧友后花园！
+        - title: IMDB
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/IMDb.png
+          url: https://www.imdb.com/
+          description: 有时候也需要看看歪果仁的评价！
+        - title: 爱奇艺
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/%E7%88%B1%E5%A5%87%E8%89%BA.png
+          url: https://www.iqiyi.com/
+          description: 百度系视频网站。
+        - title: Bilibili
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/bilibili.png
+          url: https://www.bilibili.com/
+          description: 亁杯！
+        - title: 腾讯视频
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91.png
+          url: https://v.qq.com/
+          description: 独家视频真的让人头大啊！
+        - title: 优酷
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/%E4%BC%98%E9%85%B7.png
+          url: https://www.youku.com/
+          description: 阿里系视频网站。
+
+    - name: 音
+      links:
+        - title: QQ音乐
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/QQ%E9%9F%B3%E4%B9%90.png
+          url: https://y.qq.com/
+          description: 我常听的音乐平台。
+    
+- name: 设计
   icon: linecons-lightbulb
   sub: 
-    - name: 发现产品
+    - name: 素材资源
       links:
-        - title: Producthunt
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/producthunt.png
-          url: https://www.producthunt.com/
-          description: 发现新鲜有趣的产品
-        - title: NEXT
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/NEXT.png
-          url: https://next.36kr.com/posts
-          description: 不错过任何一个新产品
-        - title: 少数派
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/sspai.png
-          url: https://sspai.com/
-          description: 高品质数字消费指南
-        - title: 利器
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/liqi.png
-          url: https://liqi.io/
-          description: 创造者和他们的工具
-        - title: Today
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/today.png
-          url: http://today.itjuzi.com/
-          description: 为身边的新产品喝彩
-        - title: 小众软件
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/appinn.png
-          url: https://faxian.appinn.com/
-          description: 在这里发现更多有趣的应用
-      
-    - name: 界面灵感
-      links:
-        - title: Pttrns
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Pttrns.png
-          url: https://www.pttrns.com/
-          description: Check out the finest collection of design patterns, resources, mobile apps and inspiration
-        - title: Collect UI
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/CollectUI.png
-          url: http://collectui.com/
-          description: Daily inspiration collected from daily ui archive and beyond.
-        - title: UI uigreat
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uiuigreat.png
-          url: http://ui.uigreat.com/
-          description: APP界面截图参考
-        - title: Android Niceties
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/AndroidNiceties.png
-          url: https://androidniceties.tumblr.com/
-          description: A collection of screenshots encompassing some of the most beautiful looking Android apps.
-      
-    - name: 网页灵感
-      links:
-        - title: Awwwards
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/awwwards.png
-          url: https://www.awwwards.com/
-          description: Awwwards are the Website Awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.
-        - title: CSS Design Awards
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/CSSDesignAwards.png
-          url: https://www.cssdesignawards.com/
-          description: Website Awards & Inspiration - CSS Gallery
-        - title: The FWA
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/fwa.png
-          url: https://thefwa.com/
-          description: FWA - showcasing innovation every day since 2000
-        - title: Ecommercefolio
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Ecommercefolio.png
-          url: http://www.ecommercefolio.com/
-          description: Only the Best Ecommerce Design Inspiration
-        - title: Lapa
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Lapa.png
-          url: http://www.lapa.ninja/
-          description: The best landing page design inspiration from around the web.
-        - title: Reeoo
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/reeoo.png
-          url: http://reeoo.com/
-          description: web design inspiration and website gallery
-        - title: Designmunk
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/designmunk.png
-          url: https://designmunk.com/
-          description: Best Homepage Design Inspiration
-        - title: Best Websites Gallery
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/BWG.png
-          url: https://bestwebsite.gallery/
-          description: Website Showcase Inspiration | Best Websites Gallery
-        - title: Pages
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/pages.png
-          url: http://www.pages.xyz/
-          description: Curated directory of the best Pages
-        - title: SiteSee
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/SiteSee.png
-          url: https://sitesee.co/
-          description: SiteSee is a curated gallery of beautiful, modern websites collections.
-        - title: Site Inspire
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/siteInspire.png
-          url: https://www.siteinspire.com/
-          description: A CSS gallery and showcase of the best web design inspiration.
-        - title: WebInspiration
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/WebInspiration.png
-          url: http://web.uedna.com/
-          description: 网页设计欣赏,全球顶级网页设计
-        - title: navnav
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/navnav.png
-          url: https://navnav.co/
-          description: A ton of CSS, jQuery, and JavaScript responsive navigation examples, demos, and tutorials from all over the web.
-        - title: Really Good UX
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/ReallyGoodUX.png
-          url: https://www.reallygoodux.io/
-          description: A library of screenshots and examples of really good UX. Brought to you by
-
-      
-- name: 素材资源
-  icon: linecons-thumbs-up
-  sub: 
-    - name: 图标素材
-      links:
-        - title: Iconfinder
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Iconfinder.png
-          url: https://www.iconfinder.com
-          description: 2,100,000+ free and premium vector icons.
         - title: iconfont
           logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/iconfont.png
           url: http://www.iconfont.cn/
           description: 阿里巴巴矢量图标库
-        - title: iconmonstr
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/iconmonstr.png
-          url: https://iconmonstr.com/
-          description: Free simple icons for your next project
-        - title: Icon Archive
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/iconarchive.png
-          url: http://www.iconarchive.com/
-          description: Search 590,912 free icons
-        - title: FindIcons
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/FindIcons.png
-          url: https://findicons.com/
-          description: Search through 300,000 free icons
-        - title: IcoMoonApp
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/IcoMoonApp.png
-          url: https://icomoon.io/app/
-          description: Icon Font, SVG, PDF &amp; PNG Generator
-        - title: easyicon
+        - title: Easyicon
           logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/easyicon.png
           url: http://www.easyicon.net/
           description: PNG、ICO、ICNS格式图标搜索、图标下载服务
-        - title: flaticon
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/flaticon.png
-          url: https://www.flaticon.com/
-          description: 634,000+ Free vector icons in SVG, PSD, PNG, EPS format or as ICON FONT.
-        - title: UICloud
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/UICloud.png
-          url: http://ui-cloud.com/
-          description: The largest user interface design database in the world.
-        - title: Material icons
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Materialicons.png
-          url: https://material.io/icons/
-          description: Access over 900 material system icons, available in a variety of sizes and densities, and as a web font.
-        - title: Font Awesome Icon
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/fontawesomeicon.png
-          url: https://fontawesome.com/icons/
-          description: The complete set of 675 icons in Font Awesome
-        - title: ion icons
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/ionicons.png
-          url: http://ionicons.com/
-          description: The premium icon font for Ionic Framework.
-        - title: Simpleline Icons
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/simplelineicons.png
-          url: http://simplelineicons.com/
-          description: Simple line Icons pack
-      
-    - name: LOGO设计
-      links:
-        - title: Iconsfeed
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/iconsfeed.png
-          url: http://www.iconsfeed.com/
-          description: iOS icons gallery
-        - title: iOS Icon Gallery
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/iosicongallery.png
-          url: http://iosicongallery.com/
-          description: Showcasing beautiful icon designs from the iOS App Store
-        - title: World Vector Logo
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/worldvectorlogo.png
-          url: https://worldvectorlogo.com/
-          description: Brand logos free to download
-        - title: Instant Logo Search
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/InstantLogoSearch.png
-          url: http://instantlogosearch.com/
-          description: Search & download thousands of logos instantly
-
-    - name: 平面素材
-      links:
-        - title: freepik
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/freepik.png
-          url: https://www.freepik.com/
-          description: More than a million free vectors, PSD, photos and free icons.
-        - title: wallhalla
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/wallhalla.png
-          url: https://wallhalla.com/
-          description: Find awesome high quality wallpapers for desktop and mobile in one place.
-        - title: 365PSD
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/365PSD.png
-          url: https://365psd.com/
-          description: Free PSD &amp; Graphics, Illustrations
-        - title: Medialoot
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Medialoot.png
-          url: https://medialoot.com/
-          description: Free &amp; Premium Design Resources &mdash; Medialoot
+        - title: Unsplash
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/unsplash.png
+          url: https://unsplash.com/
+          description: 一个免费的照片共享网站。
+        - title: Pinterest
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/pinterest.png
+          url: https://www.pinterest.com/
+          description: 全球美图收藏采集站
         - title: 千图网
           logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/qiantu.png
           url: http://www.58pic.com/
@@ -315,120 +192,15 @@
         - title: 我图网
           logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/wotu.png
           url: http://www.ooopic.com/
-          description: 我图网,提供图片素材及模板下载,专注正版设计作品交易
-        - title: 90设计
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/90sheji.png
-          url: http://90sheji.com/
-          description: 电商设计（淘宝美工）千图免费淘宝素材库
-        - title: 昵图网
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/nipic.png
-          url: http://www.nipic.com/
-          description: 原创素材共享平台
-        - title: 懒人图库
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/lanrentuku.png
-          url: http://www.lanrentuku.com/
-          description: 懒人图库专注于提供网页素材下载
-        - title: 素材搜索
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/sousucai.png
-          url: http://so.ui001.com/
-          description: 设计素材搜索聚合
-        - title: PS饭团网
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/psefan.png
-          url: http://psefan.com/
-          description: 不一样的设计素材库！让自己的设计与众不同！
-        - title: 素材中国
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/sccnn.png
-          url: http://www.sccnn.com/
-          description: 免费素材共享平台
-      
-    - name: UI资源
-      links:
-        - title: Freebiesbug
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/freebiesbug.png
-          url: https://freebiesbug.com/
-          description: Hand-picked resources for web designer and developers, constantly updated.
-        - title: Freebie Supply
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/freebiesupply.png
-          url: https://freebiesupply.com/
-          description: Free Resources For Designers
-        - title: 云瑞
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/yrucd.png
-          url: https://www.yrucd.com/
-          description: 优秀设计资源的分享网站
-        - title: Designmodo
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Designmodo.png
-          url: https://designmodo.com/
-          description: Web Design Blog and Shop
-        - title: 稀土区
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/xituqu.png
-          url: https://xituqu.com/
-          description: 优质设计开发资源分享
-        - title: ui8
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/ui8.png
-          url: https://ui8.net/
-          description: UI Kits, Wireframe Kits, Templates, Icons and More
-        - title: uplabs
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uplabs.png
-          url: https://www.uplabs.com/
-          description: Daily resources for product designers & developers
-        - title: UIkit.me
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uikitme.png
-          url: http://www.uikit.me/
-          description: 最便捷新鲜的uikit资源下载网站
-        - title: Fribbble
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Fribbble.png
-          url: http://www.fribbble.com/
-          description: Free PSD files and other free design resources by Dribbblers.
-        - title: PrincipleRepo
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/PrincipleRepo.png
-          url: http://principlerepo.com/
-          description: Free, High Quality Principle Resources
-      
-    - name: Sketch资源
-      links:
-        - title: Sketch
-          url: https://sketchapp.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Sketch.png
-          description: The digital design toolkit
-        - title: Sketch Measure
-          url: http://utom.design/measure/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/SketchMeasure.png
-          description: Friendly user interface offers you a more intuitive way of making marks.
-        - title: Sketch App Sources
-          url: https://www.sketchappsources.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/sketchappsources.png
-          description: Free design resources and plugins - Icons, UI Kits, Wireframes, iOS, Android Templates for Sketch
-        - title: Sketch.im
-          url: http://www.sketch.im/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/sketchIm.png
-          description: Sketch 相关资源汇聚
-        - title: Sketch Hunt
-          url: http://sketchhunt.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/sketchhunt.png
-          description: Sketch Hunt is an independent blog sharing gems in learning, plugins &amp; design tools for fans of Sketch app.
-        - title: Sketch中文网
-          url: http://www.sketchcn.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/sketchcn.png
-          description: 分享最新的Sketch中文手册
-        - title: Awesome Sketch Plugins
-          url: https://awesome-sket.ch/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/AwesomeSketchPlugins.png
-          description: A collection of really useful Sketch plugins.
-        - title: Sketchcasts
-          url: https://www.sketchcasts.net/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/sketchcasts.png
-          description: Learn Sketch Train your design skills with a weekly video tutorial
-      
-    - name: 字体资源
-      links:
-        - title: Google Font
-          url: https://fonts.google.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/googlefont.png
-          description: Making the web more beautiful, fast, and open through great typography
-        - title: Typekit
-          url: https://typekit.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/typekit.png
-          description: Quality fonts from the world’s best foundries.
+          description: 我图网,提供图片素材及模板下载,
+        - title: pixabay
+          url: https://pixabay.com/
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/pixabay.png
+          description: 可在任何地方使用的免费图片和视频
+        - title: OfficePLUS
+          url: http://www.officeplus.cn/Template/Home.shtml
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/officeplus.png
+          description: OfficePLUS，微软Office官方在线模板网站！    
         - title: 方正字库
           url: http://www.foundertype.com/
           logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Fondertype.png
@@ -437,592 +209,28 @@
           url: http://ziticq.com/
           logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/ziticq.png
           description: 中国首个字体品牌设计师交流网
-        - title: 私藏字体
-          url: http://sicangziti.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/sicangziti.png
-          description: 优质字体免费下载站
-        - title: Fontsquirrel
-          url: https://www.fontsquirrel.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/fontsquirrel.png
-          description: FREE fonts for graphic designers
-        - title: Urban Fonts
-          url: https://www.urbanfonts.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/UrbanFonts.png
-          description: Download Free Fonts and Free Dingbats.
-        - title: Lost Type
-          url: http://www.losttype.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/losttype.png
-          description: Lost Type is a Collaborative Digital Type Foundry
-        - title: FONTS2U
-          url: https://fonts2u.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/fonts2u.png
-          description: Download free fonts for Windows and Macintosh.
-        - title: Fontex
-          url: http://www.fontex.org/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/fontex.png
-          description: Free Fonts to Download + Premium Typefaces
-        - title: FontM
-          url: http://fontm.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/FontM.png
-          description: Free Fonts
-        - title: My Fonts
-          url: http://www.myfonts.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/MyFonts.png
-          description: Fonts for Print, Products & Screens
-        - title: Da Font
-          url: https://www.dafont.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/dafont.png
-          description: Archive of freely downloadable fonts.
-        - title: OnlineWebFonts
-          url: https://www.onlinewebfonts.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/OnlineWebFonts.png
-          description: WEB Free Fonts for Windows and Mac / Font free Download
-        - title: Abstract Fonts
-          url: http://www.abstractfonts.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/abstractfonts.png
-          description: Abstract Fonts (13,866 free fonts)
-      
-    - name: Mockup
-      links:
-        - title: MockupZone
-          url: https://mockup.zone/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/MockupZone.png
-          description: Mockup Zone is an online store where you can find free and premium PSD mockup files to show your designs in a professional way.
-        - title: Dunnnk
-          url: http://dunnnk.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Dunnnk.png
-          description:  Generate Product Mockups For Free
-        - title: Graphberry
-          url: http://www.graphberry.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/graphberry.png
-          description: Free design resources, Mockups, PSD web templates, Icons
-        - title: Threed
-          url: http://threed.io/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/threed.png
-          description: Generate 3D Mockups right in your Browser
-        - title: Mockup World
-          url: https://free.lstore.graphics/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/mockupworld.png
-          description: The best free Mockups from the Web
-        - title: Lstore
-          url: https://free.lstore.graphics/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/lstore.png
-          description: Exclusive mindblowing freebies for designers and developers
-        - title: pixeden
-          url: https://www.pixeden.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/pixeden.png
-          description: free web resources and graphic design templates.
-        - title: For Graphic TM
-          url: http://forgraphictm.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/forgraphictm.png
-          description: High Quality PSD Mockups for Graphic Designers.
-      
-    - name: 摄影图库
-      links:
-        - title: Unsplash
-          url: https://unsplash.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/unsplash.png
-          description: Beautiful, free photos.
-        - title: visualhunt
-          url: https://visualhunt.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/visualhunt.png
-          description: 100% Free High Quality Photos
-        - title: librestock
-          url: https://librestock.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/librestock.png
-          description: 65,084 high quality do-what-ever-you-want stock photos
-        - title: pixabay
-          url: https://pixabay.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/pixabay.png
-          description: 可在任何地方使用的免费图片和视频
-        - title: SplitShire
-          url: https://www.splitshire.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/SplitShire.png
-          description: Free Stock Photos and Videos for commercial use.
-        - title: StockSnap
-          url: https://stocksnap.io/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/StockSnap.png
-          description: Beautiful free stock photos
-        - title: albumarium
-          url: http://albumarium.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/albumarium.png
-          description: The best place to find & share beautiful images
-        - title: myphotopack
-          url: https://myphotopack.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/myphotopack.png
-          description: A free photo pack just for you. Every month.
-        - title: Notaselfie
-          url: http://notaselfie.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/notaselfie.png
-          description: Photos that happen along the way. You can use the images anyway you like. Have fun!
-        - title: papers
-          url: http://papers.co/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/papers.png
-          description: Wallpapers Every Hour!Hand collected :)
-        - title: stokpic
-          url: http://stokpic.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/stokpic.png
-          description: Free Stock Photos For Commercial Use
-        - title: 55mm
-          url: https://55mm.co/visuals
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/55mm.png
-          description: Use our FREE photos to tell your story! 
-        - title: thestocks
-          url: http://thestocks.im/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/thestocks.png
-          description: Use our FREE photos to tell your story! 
-        - title: freenaturestock
-          url: http://freenaturestock.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/freenaturestock.png
-          description: Exclusive mindblowing freebies for designers and developers
-        - title: negativespace
-          url: https://negativespace.co/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/negativespace.png
-          description: Beautiful, High-Resolution Free Stock Photos
-        - title: gratisography
-          url: https://gratisography.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/gratisography.png
-          description: Free high-resolution pictures you can use on your personal and commercial projects, free of copyright restrictions. 
-        - title: imcreator
-          url: http://imcreator.com/free
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/imcreator.png
-          description: A curated collection of free web design resources, all for commercial use.
-        - title: lifeofpix
-          url: http://www.lifeofpix.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/lifeofpix.png
-          description: Free high resolution photography
-        - title: skitterphoto
-          url: https://skitterphoto.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/skitterphoto.png
-          description: Free Stock Photos for Creative Professionals
-        - title: mmtstock
-          url: https://mmtstock.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/mmtstock.png
-          description: Free photos for commercial use
-        - title: skitterphoto
-          url: https://skitterphoto.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/skitterphoto.png
-          description: a place to find, show and share public domain photos
-        - title: magdeleine
-          url: https://magdeleine.co/browse/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/magdeleine.png
-          description: HAND-PICKED FREE PHOTOS FOR YOUR INSPIRATION
-        - title: jeshoots
-          url: http://jeshoots.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/jeshoots.png
-          description: New Free Photos & Mockups in to your Inbox!
-        - title: hdwallpapers
-          url: https://www.hdwallpapers.net
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/hdwallpapers.png
-          description: High Definition Wallpapers & Desktop Backgrounds
-        - title: publicdomainarchive
-          url: http://publicdomainarchive.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/publicdomainarchive.png
-          description: New 100% Free Stock Photos. Every. Single. Week.
-      
-    - name: PPT资源
-      links:
-        - title: OfficePLUS
-          url: http://www.officeplus.cn/Template/Home.shtml
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/officeplus.png
-          description: OfficePLUS，微软Office官方在线模板网站！
-        - title: 优品PPT
-          url: http://www.ypppt.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/ypppt.png
-          description: 高质量的模版，而且还有PPT图表，PPT背景图等资源
-        - title: PPT+
-          url: http://www.pptplus.cn/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/pptplus.png
-          description: PPT加直播、录制和分享—PPT+语音内容分享平台
-        - title: PPTMind
-          url: http://www.pptmind.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/pptmind.png
-          description: 分享高端ppt模板与keynote模板的数字作品交易平台
-        - title: tretars
-          url: http://www.tretars.com/ppt-templates
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/tretars.png
-          description: The best free Mockups from the Web
-        - title: 5百丁
-          url: http://ppt.500d.me/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/500d.png
-          description: 中国领先的PPT模板共享平台
-      
 
-- name: 常用工具
-  icon: linecons-diamond
-  sub: 
-    - name: 图形创意
+    - name: 参考教学
       links:
-        - title: photoshop
-          url: https://www.adobe.com/cn/products/photoshop.html
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/photoshop.png
-          description: Photoshop不需要解释
-        - title: Affinity Designer
-          url: https://affinity.serif.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/AffinityDesigner.png
-          description: 专业创意软件
-        - title: Illustrator
-          url: https://www.adobe.com/cn/products/illustrator/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Illustrator.png
-          description: 矢量图形和插图。
-        - title: indesign
-          url: http://www.adobe.com/cn/products/indesign.html
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/INDESIGN .png
-          description: 页面设计、布局和出版。
-        - title: cinema-4d
-          url: https://www.maxon.net/en/products/cinema-4d/overview/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/cinema4d.png
-          description: Cinema 4D is the perfect package for all 3D artists who want to achieve breathtaking results fast and hassle-free.
-        - title: 3ds-max
-          url: https://www.autodesk.com/products/3ds-max/overview
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/3dsmax.png
-          description: 3D modeling, animation, and rendering software
-        - title: Blender
-          url: https://www.blender.org/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/blender.png
-          description: Blender is the free and open source 3D creation suite.
-      
-    - name: 界面设计
-      links:
-        - title: Sketch
-          url: https://sketchapp.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/sketchapp.png
-          description: The digital design toolkit
-        - title: Adobe XD
-          url: http://www.adobe.com/products/xd.html
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/ADOBEXDCC.png
-          description: Introducing Adobe XD. Design. Prototype. Experience.
-        - title: invisionapp
-          url: https://www.invisionapp.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/invisionapp.png
-          description: Powerful design prototyping tools
-        - title: marvelapp
-          url: https://marvelapp.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/marvelapp.png
-          description: Simple design, prototyping and collaboration
-        - title: Muse CC
-          url: https://creative.adobe.com/zh-cn/products/download/muse
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/MuseCC.png
-          description: 无需利用编码即可进行网站设计。
-        - title: figma
-          url: https://www.figma.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/figma.png
-          description: Design, prototype, and gather feedback all in one place with Figma.
-    - name: 交互动效
-      links:
-        - title: Adobe After Effects CC
-          url: https://www.adobe.com/cn/products/aftereffects/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/AdobeAfterEffectsCC.png
-          description: 电影般的视觉效果和动态图形。
-        - title: principle
-          url: http://principleformac.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/principle.png
-          description: Animate Your Ideas, Design Better Apps
-        - title: flinto
-          url: https://www.flinto.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/flinto.png
-          description: Flinto is a Mac app used by top designers around the world to create interactive and animated prototypes of their app designs.
-        - title: framer
-          url: https://framer.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/framer.png
-          description: Design everything from detailed icons to high-fidelity interactions—all in one place.
-        - title: ProtoPie
-          url: http://www.protopie.cn/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/protopie.png
-          description: 高保真交互原型设计
-
-    - name: 在线配色
-      links:
-        - title: khroma
-          url: http://khroma.co/generator/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/khroma.png
-          description: Khroma is the fastest way to discover, search, and save color combos you'll want to use.
-        - title: uigradients
-          url: https://uigradients.com
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uigradients.png
-          description: Beautiful colored gradients
-        - title: gradients
-          url: http://gradients.io/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/gradients.png
-          description: Curated gradients for designers and developers
-        - title: Coolest
-          url: https://webkul.github.io/coolhue/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Coolest.png
-          description: Coolest handpicked Gradient Hues for your next super ⚡ amazing stuff
-        - title: webgradients
-          url: https://webgradients.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/webgradients.png
-          description: WebGradients is a free collection of 180 linear gradients that you can use as content backdrops in any part of your website. 
-        - title: grabient
-          url: https://www.grabient.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/grabient.png
-          description: 2017 Grabient by unfold
-        - title: thedayscolor
-          url: http://www.thedayscolor.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/thedayscolor.png
-          description: The daily color digest
-        - title: flatuicolors
-          url: http://flatuicolors.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/flatuicolors.png
-          description: Copy Paste Color Pallette from Flat UI Theme
-        - title: coolors
-          url: https://coolors.co/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/coolors.png
-          description: The super fast color schemes generator!
-        - title: colorhunt
-          url: http://www.colorhunt.co/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/colorhunt.png
-          description: Beautiful Color Palettes
-        - title: Adobe Color CC
-          url: https://color.adobe.com/zh/create/color-wheel
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/AdobeColorCC.png
-          description: Create color schemes with the color wheel or browse thousands of color combinations from the Color community.
-        - title: flatuicolorpicker
-          url: http://www.flatuicolorpicker.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/flatuicolorpicker.png
-          description: Best Flat Colors For UI Design
-        - title: trianglify
-          url: http://qrohlf.com/trianglify-generator/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/trianglify.png
-          description: Trianglify Generator
-        - title: klart
-          url: https://klart.co/colors/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/klart.png
-          description: Beautiful colors and designs to your inbox every week
-        - title: vanschneider
-          url: http://www.vanschneider.com/colors
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/vanschneider.png
-          description: Color Claim was created in 2012 by Tobias van Schneider with the goal to collect & combine unique colors for my future projects.
-
-    - name: 在线工具
-      links:
-        - title: tinypng
-          url: https://tinypng.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/tinypng.png
-          description: Optimize your images with a perfect balance in quality and file size.
-        - title: goqr
-          url: http://goqr.me/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/goqr.png
-          description: create QR codes for free (Logo, T-Shirt, vCard, EPS)
-        - title: ezgif
-          url: https://ezgif.com
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/ezgif.png
-          description: simple online GIF maker and toolset for basic animated GIF editing.
-        - title: Android 9 patch
-          url: http://inloop.github.io/shadow4android/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Android9patch.png
-          description: Android 9-patch shadow generator fully customizable shadows
-        - title: screen sizes
-          url: http://screensiz.es/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/screensizes.png
-          description: Viewport Sizes and Pixel Densities for Popular Devices
-        - title: svgomg
-          url: https://jakearchibald.github.io/svgomg/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/svgomg.png
-          description: SVG在线压缩平台
-        - title: 稿定抠图
-          url: https://www.gaoding.com
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/gaoding.png
-          description: 免费在线抠图软件,图片快速换背景-抠白底图
-        
-    - name: Chrome插件
-      links:
-        - title: wappalyzer
-          url: https://www.wappalyzer.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/wappalyzer.png
-          description: Identify technology on websites
-        - title: Panda
-          url: http://usepanda.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/usepanda.png
-          description: A smart news reader built for productivity.
-        - title: sizzy
-          url: https://sizzy.co/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/sizzy.png
-          description: A tool for developing responsive websites crazy-fast
-        - title: csspeeper
-          url: https://csspeeper.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/csspeeper.png
-          description: Smart CSS viewer tailored for Designers.
-        - title: insight
-          url: http://insight.io/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/insight.png
-          description: IDE-like code search and navigation, on the cloud
-        - title: mustsee
-          url: http://mustsee.earth/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/mustsee.png
-          description: Discover the world's most beautiful places at every opened tab.
-
-
-- name: 学习教程
-  icon: linecons-pencil
-  sub: 
-    - name: 设计规范
-      links:
-        - title: Design Guidelines
-          url: http://designguidelines.co/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/designguidelines.png
-          description: Design Guidelines &mdash; The way products are built.
-        - title: Awesome design systems
-          url: https://github.com/alexpate/awesome-design-systems
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/awesome_design_systems.png
-          description:  A collection of awesome design systems
-        - title: Material Design
-          url: https://material.io/guidelines/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/Material_Design.png
-          description: Introduction - Material Design
-        - title: Human Interface Guidelines
-          url: https://developer.apple.com/ios/human-interface-guidelines
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/human_interface_guidelines.png
-          description: Human Interface Guidelines iOS
-        - title: Photoshop Etiquette
-          url: http://viggoz.com/photoshopetiquette/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/photoshopetiquette.png
-          description: PS礼仪-WEB设计指南
-
-      
-    - name: 视频教程
-      links:
-        - title: Photoshop Lady
-          url: http://www.photoshoplady.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/PhotoshopLady.png
-          description: Your Favourite Photoshop Tutorials in One Place
         - title: doyoudo
           url: http://doyoudo.com/
           logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/doyoudo.png
           description: 创意设计软件学习平台
-        - title: 没位道
-          url: http://www.c945.com/web-ui-tutorial/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/web_ui_tutorial.png
-          description: WEB UI免费视频公开课
-        - title: 慕课网
-          url: https://www.imooc.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/imooc.png
-          description: 程序员的梦工厂（有UI课程）
-        
-    - name: 设计文章
+        - title: 站酷
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/zcool.png
+          url: https://www.zcool.com.cn/
+          description: 中国人气设计师互动平台
+        - title: 花瓣
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/huaban.png
+          url: https://huaban.com/
+          description: 收集灵感,保存有用的素材
+    - name: 工具及其他
       links:
-        - title: 优设网
-          url: http://www.uisdc.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uisdc.png
-          description: 设计师交流学习平台
-        - title: Web Design Ledger
-          url: https://webdesignledger.com
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/webdesignledger.png
-          description: Web Design Blog
-        - title: Medium
-          url: https://medium.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/medium.png
-          description: Read, write and share stories that matter
-
-    - name: 设计电台
-      links:
-        - title: UX Coffee
-          url: http://uxcoffee.co/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uxcoffee.png
-          description: 《UX Coffee 设计咖》是一档关于用户体验的播客节目。我们邀请来自硅谷和国内的学者和职人来聊聊「产品设计」、「用户体验」和「个人成长」。
-        - title: Anyway.FM
-          url: https://anyway.fm/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/anyway.png
-          description: 设计杂谈 • UI 设计师 JJ 和 Leon 主播的设计播客
-        - title: 异能电台
-          url: https://www.yineng.fm
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/yineng.png
-          description: 将全宇宙设计师的故事讲给你听。
-
-    - name: 交互设计
-      links:
-        - title: Little Big Details
-          url: http://littlebigdetails.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/littlebigdetails.png
-          description: Little Big Details is a curated collection of the finer details of design, updated every day. 
-        - title: Smashing Magazine
-          url: https://www.smashingmagazine.com/category/user-experience
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/smashingmagazine.png
-          description: Below you’ll find the best tips to take not only your UX design process but also the experiences you craft to the next level.
-        - title: nngroup
-          url: https://www.nngroup.com/articles/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/nngroup.png
-          description: Evidence-Based User Experience Research, Training, and Consulting
-        - title: Boxes and Arrows
-          url: http://boxesandarrows.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/boxesandarrows.png
-          description: Boxes and Arrows is devoted to the practice, innovation, and discussion of design; including graphic design, interaction design, information architecture and the design of business. 
-        - title: UX Design Weekly
-          url: http://uxdesignweekly.com/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uxdesignweekly.png
-          description:  get a hand picked list of the best user experience design links every week. 
-        - title: UX Ren
-          url: http://uxren.cn/
-          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uxren.png
-          description: 用户体验人的专业社区
-
-
-
-- name: UED团队
-  icon: linecons-user
-  links: 
-    - title: Airbnb Design
-      url: https://airbnb.design
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/AirbnbDesign.png
-      description: Airbnb Design
-    - title: Facebook Design
-      url: http://facebook.design/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/FacebookDesign.png
-      description: Facebook Design
-    - title: Google Design
-      url: https://design.google/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/GoogleDesign.png
-      description: Google Design
-    - title: eico design
-      url: http://eicodesign.com/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/eico.png
-      description: 数字化咨询与产品专家
-    - title: nice design
-      url: http://www.niceui.cn/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/niceui.png
-      description: nicedesign奈思设计是领先的用户体验设计与互联网品牌建设公司
-    - title: 腾讯CDC
-      url: http://cdc.tencent.com/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/cdc.png
-      description: 腾讯CDC关注于互联网视觉设计、交互设计、用户研究、前端开发。
-    - title: TGideas
-      url: http://tgideas.qq.com/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/tgideas.png
-      description: TGideas隶属于腾讯公司互动娱乐业务系统的专业推广类设计团队
-    - title: ISUX
-      url: https://isux.tencent.com/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/isux.png
-      description: 腾讯社交用户体验设计部
-    - title: MXD
-      url: http://mxd.tencent.com/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/mxd.png
-      description: 腾讯MIG无线互联网事业群设计团队
-    - title: Aliued
-      url: http://www.aliued.com/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/aliued.png
-      description: 阿里巴巴国际UED团队
-    - title: U一点
-      url: http://www.aliued.cn/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/aliuedcn.png
-      description: 阿里巴巴（中国站）用户体验设计部博客U一点设计 UED团队
-    - title: 网易uedc
-      url: http://uedc.163.com/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uedc.png
-      description: 网易用户体验设计中心（User Experience Design Center）
-    - title: 百度用户体验中心
-      url: http://ued.baidu.com/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/uedbaidu.png
-      description: 百度用户体验中心
-    - title: 京东设计中心
-      url: http://jdc.jd.com/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/jdc.png
-      description: 京东设计中心
-    - title: 百度企业产品用户体验中心
-      url: http://eux.baidu.com/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/euxbaidu.png
-      description: 百度企业产品用户体验中心
-    - title: 携程设计委员会
-      url: http://ued.ctrip.com/
-      logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/ctrip.png
-      description: 携程设计委员会-Ctrip Design Committee
-    
+        - title: colorhunt
+          url: http://www.colorhunt.co/
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/logos/colorhunt.png
+          description: 配色网站
+        - title: RGB颜色
+          url: https://www.sioe.cn/yingyong/yanse-rgb-16/
+          logo: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/WebsiteCollection/weblogo/RGBcolor.png
+          description: RGB颜色值与十六进制颜色码转换工具
