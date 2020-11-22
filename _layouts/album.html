@@ -1,0 +1,124 @@
+---
+layout: default
+---
+
+<style>
+    .navbar-logo {
+        line-height: 55px;
+    }
+    .main-content {
+        max-width: 90%;
+    }
+    .post-header-thumb-title {
+        font-size: 36px;
+        font-family: cursive;
+    }
+    .post-header-thumb {
+        text-align: center;
+        display: block;
+    }
+    .miaoshus .title { 
+        font-family: MV Boli; 
+        font-size: xx-large;
+    } 
+    .miaoshus { 
+        padding: 20px; 
+        border: 1px dashed #e6e6e6; 
+        color: #969696; 
+        position: relative; 
+        display: inline-block;
+        width: 100%; 
+        background: #fbfbfb50; 
+        border-radius: 10px; 
+        font-size: 16px; 
+        margin: 24px auto 12px; 
+    }
+    .item-label{
+        display: none;
+    }
+    .item-slant{
+        display: none;
+    }
+    .post-list-item {
+        /*width: fit-content;*/
+    }
+    .post-list-item-container {
+        overflow: unset;
+        background-color: unset;
+    }
+    .post-list-item-container{
+        /*width: fit-content;*/
+    }
+    .post-lists {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .post-card {
+        height: unset;
+        line-height: normal;
+    }
+    .post-card img {
+        width: 100%;
+        position: unset;
+        height: unset;
+    }
+</style>
+
+
+{% for galleries in site.data.gallery %}
+{% if galleries.id == page.id %}
+<div class="post-header-thumb">
+    <div class="post-header-thumb-op">
+        {% if page.thumbnail %}
+        <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ page.thumbnail }}" alt="" >
+        {% else %}
+        <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}"
+        data-src="https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/thumbnail/ocean-ng-L0xOtAnv94Y-unsplash.jpg" alt="" >
+        {% endif %}
+    </div>
+    <div class="post-header-thumb-cover">
+        <div class="post-header-thumb-container">
+            <div class="post-header-thumb-title">
+                {{ galleries.name }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-content index-page clearfix">
+    <div class="post-lists">
+        <div class="post-lists-body">
+
+            {% for images in galleries.album %}
+            <div class="post-list-item">
+                <div class="post-list-item-container">
+                    <div class="post-card">
+                        <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ images.img }}">
+                    </div>
+                    <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">
+                        <div class="item-desc">
+                            <p>{{ images.description }} </p>
+                        </div>
+                    </a>
+                    <div class="item-slant reverse-slant bg-deepgrey"></div>
+                    <div class="item-slant"></div>
+                    <div class="item-label">
+                        <div class="item-title"><a href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ images.title }}</a>
+                        <br />
+                        {{ post.date | date: "%Y-%m-%d" }}
+                        </div>
+                        <div class="item-meta clearfix">
+                            <div class="item-meta-ico {% if post.icon %}bg-ico-{{ post.icon }}{% endif %}" style="background: url({{ '/style/image/bg-ico.png' | prepend: site.baseurl }}) no-repeat;background-size: 40px auto;"></div>
+                            <div class="item-meta-cat">
+                                <a href="/category/{{ post.category}}" target="_blank">{{ post.category }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
