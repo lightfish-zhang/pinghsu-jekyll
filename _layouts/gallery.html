@@ -1,0 +1,176 @@
+---
+layout: default
+---
+
+<!-- 增加相册显示的特效样式 -->
+<style>
+    .photo {
+        padding: 0 40px !important;
+        display: inline-block;
+        position: relative;
+        transition: all .6s;
+    }
+
+    .biaotiss {
+        padding: 8px 10px;
+        color: #4c4c4e;
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .img-item {
+        padding: .2rem;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 1px 2px 2px 0 #aaa;
+        transition: all .4s cubic-bezier(.63, .15, .03, 1.12);
+        margin-bottom: 20px;
+    }
+
+    .photo:nth-child(odd) {
+        transform: rotateZ(-5deg);
+    }
+
+    .photo:nth-child(even) {
+        transform: rotateZ(5deg);
+    }
+
+    .text_des {
+        position: absolute;
+        width: 92%;
+        height: 100%;
+        top: 0;
+        color: #000;
+        overflow: hidden;
+    }
+
+    .text_des h3 {
+        margin: 5px 0 8px 0px;
+        right: 40px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+        position: absolute;
+        top: 10%;
+        font-style: italic;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        /*transform: translateX(200px); */
+    }
+
+    .text_des p {
+        left: 15px;
+        position: absolute;
+        top: 50%;
+        /* transform: translateX(-200px); transition-delay: 0.2s; */
+    }
+
+    .my-gallery .photo img {
+        border-radius: 10px;
+        height: 240px;
+    }
+
+    .card .card-content {
+        padding: 24px 24px 24px 24px;
+    }
+
+    .miaoshus {
+        padding: 20px;
+        border: 1px dashed #e6e6e6;
+        color: #969696;
+        position: relative;
+        display: inline-block;
+        width: 95%;
+        background: #fbfbfb50;
+        border-radius: 10px;
+        font-size: 16px;
+        margin: 12px auto;
+    }
+
+    body.dark .miaoshus {
+        background: 0 0;
+        border: 1px dashed #888;
+    }
+
+    .img-item {
+        transition: all 0.4s ease-out;
+    }
+
+    .img-item a img {
+        opacity: 1;
+        transition: all 0.4s ease-out;
+    }
+
+    .img-item a:hover img {
+        opacity: 0.8;
+    }
+
+    .biaotiss {
+        font-family: MV Boli;
+    }
+
+    .miaoshus .title {
+        font-family: MV Boli;
+    }
+
+    /*大屏幕下(桌面类)的样式*/
+    @media only screen and (min-width: 993px) {
+        .text_des h3 {
+            transform: translateX(200px);
+        }
+
+        .text_des p {
+            transform: translateX(-200px);
+            transition-delay: 0.2s;
+        }
+
+        .animate-text {
+            opacity: 0;
+            transition: all 0.6s ease-in-out;
+        }
+    }
+
+    /*小屏幕下(桌面类)的样式*/
+    @media only screen and (max-width: 500px) {
+        .my-gallery .photo img {
+            height: 186px;
+        }
+    }
+    .row{
+        margin-top: 50px;
+    }
+</style>
+
+
+<main class="main-container">
+    <div class="container chip-container" style="min-height: 700px;">
+        <div class="card">
+            <div class="card-content">
+                <div class="tag-title center-align" style="margin-top: 100px;">
+                    <div class="miaoshus">
+                        <div class="title center-align">{{ page.title }}</div> “
+                        这里有光影流年，还有两朵穿衣裳的云，相拥在明天的河岸。”
+                    </div>
+                </div>
+                <div class="my-gallery">
+                    <div class="row">
+                        {% for galleries in site.data.gallery %}
+                        <div class="photo col s12 m6 l4">
+                            <div class="img-item">
+                                <a href="{{ site.baseurl }}/gallery/{{ galleries.url }}">
+                                    <img class="lazyload"
+                                        src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}"
+                                        data-src="{{ galleries.thumbnail  }}"
+                                        alt="">
+                                    <div class="biaotiss">
+                                        <p>{{ galleries.name }}</p>
+                                        <p>{{ galleries.description }}</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+</main>
