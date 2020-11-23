@@ -4,6 +4,15 @@ layout: default
 
 <!-- 增加相册显示的特效样式 -->
 <style>
+    .navbar-logo {
+        line-height: 55px;
+    }
+    .post-list-item-container:hover .item-desc {
+        background-color: unset;
+        }
+    .post-list-item-container:hover .item-desc p {
+        opacity: 0;
+    }
     .photo {
         padding: 0 40px !important;
         display: inline-block;
@@ -141,7 +150,7 @@ layout: default
     }
 </style>
 
-
+<!--
 <main class="main-container">
     <div class="container chip-container" style="min-height: 700px;">
         <div class="card">
@@ -174,3 +183,40 @@ layout: default
                 </div>
             </div>
 </main>
+-->
+
+
+
+<div class="main-content index-page clearfix">
+    <div class="post-lists">
+        <div class="post-lists-body">
+            {% for galleries in site.data.gallery %}
+            <div class="post-list-item">
+                <div class="post-list-item-container">
+                    <div class="post-card">
+                        <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ galleries.thumbnail  }}">
+                    </div>
+                    <a href="{{ site.baseurl }}/gallery/{{ galleries.url }}" target="_blank">
+                        <div class="item-desc">
+                            <p></p>
+                        </div>
+                    </a>
+                    <div class="item-slant reverse-slant bg-deepgrey"></div>
+                    <div class="item-slant"></div>
+                    <div class="item-label">
+                        <div class="item-title"><a href="{{ site.baseurl }}/gallery/{{ galleries.url }}"" target="_blank">{{ galleries.name }}</a>
+                        <br />
+                        {{ galleries.description }}
+                        </div>
+                        <div class="item-meta clearfix">
+                            <a href="/galleries" target="_blank">
+                                 <div class="item-meta-ico bg-ico-image" style="background: url({{ '/style/image/bg-ico.png' | prepend: site.baseurl }}) no-repeat;background-size: 40px auto;"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

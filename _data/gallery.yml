@@ -4,42 +4,200 @@
   description: 2020.10.1-2020.10.6  CHONG QING
   url: 2020ChongQing
   album: 
-    - title: Github
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/0CCDA20F-EB22-4EF2-8393-FFDB5D97D4A5_big.jpg
       description: Photo by 🐂。 
-    - title: Github
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001805.jpg
       description: 拍摄于湖广会馆旁。
-    - title: Github
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001813.jpg
-      description: photo
-    - title: Github
+      description: 在这里记录生活~
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001818.jpg
-      description: photo
-    - title: Github
+      description: 在这里记录生活~
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001823.jpg
-      description: photo
-    - title: Github
+      description: 在这里记录生活~
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001826.jpg
-      description: photo
-    - title: Github
+      description: 在这里记录生活~
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001830.jpg
-      description: photo
-    - title: Github
+      description: 在这里记录生活~
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001834.jpg
-      description: photo
-    - title: Github
+      description: 在这里记录生活~
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001839.jpg
-      description: photo
-    - title: Github
+      description: 在这里记录生活~
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001842.jpg
-      description: photo
-    - title: Github
+      description: 在这里记录生活~
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001848.jpg
-      description: photo
-    - title: Github
+      description: 在这里记录生活~
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001853.jpg
-      description: photo
-    - title: Github
+      description: 在这里记录生活~
+    - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001857.jpg
-      description: photo
+      description: 在这里记录生活~
+
+
+- id: 2
+  name: 光之崽种
+  thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200720_135647_.jpg
+  description: 温暖的灵魂终将串线~
+  url: Sky
+  album: 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200720_135647_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200721_211106_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200721_212945_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200726_185823_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200801_202757_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200808_163452_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200810_190111_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200811_011012_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200811_204434_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200812_122841_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200813_204220_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200813_212922_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200813_214157_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200818_010748_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200823_203415_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200827_110124_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200903_111005_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200903_150944_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200903_152206_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200903_220536_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200904_014243_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200904_014545_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200904_142809_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200905_202637_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200906_011137_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200906_133404_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200906_185854_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200908_231402_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200915_210306_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200917_204616_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200919_190219_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200919_235159_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200922_212743_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200922_212836_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20200927_190521_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201008_165530_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201009_195538_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201022_132316_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201022_132911_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201022_133824_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201022_134249_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201022_134322_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201022_134423_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201024_153848_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201024_154058_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201024_154313_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201024_154513_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/SKY_20201024_154826_.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/Screenshot_20200820_010056_com.tgc.sky.android.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/Sky/Screenshot_20200820_190006_com.tgc.sky.android.jpg
+      description: 在这里记录生活~ 
