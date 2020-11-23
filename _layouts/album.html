@@ -17,6 +17,10 @@ layout: default
         text-align: center;
         display: block;
     }
+    .Bigimg{
+        color: white;
+        font-family: cursive;
+    }
     .miaoshus .title { 
         font-family: MV Boli; 
         font-size: xx-large;
@@ -81,6 +85,8 @@ layout: default
             <div class="post-header-thumb-title">
                 {{ galleries.name }}
             </div>
+            <a class="Bigimg" href="javascript:Bigimg();">👀看大图</a>
+            <a class="Bigimg" href="javascript:Normalimg();">👁‍🗨恢复</a>
         </div>
     </div>
 </div>
@@ -122,3 +128,24 @@ layout: default
 </div>
 {% endif %}
 {% endfor %}
+
+<script>
+    function Bigimg() {
+        var eml = document.getElementsByClassName("post-list-item");
+        //console.log(cla_name, "   change :  ", eml);
+        var i, len;
+        for (i = 0, len = eml.length; i < len; i++) {
+            var old_style = eml[i].style.cssText;
+            eml[i].style.cssText = old_style + "width: 100% !important;";
+        }
+    }
+    function Normalimg() {
+        var eml = document.getElementsByClassName("post-list-item");
+        //console.log(cla_name, "   change :  ", eml);
+        var i, len;
+        for (i = 0, len = eml.length; i < len; i++) {
+            var old_style = eml[i].style.cssText;
+            eml[i].style.cssText = old_style - "width: 100% !important;";
+        }
+    }
+</script>
