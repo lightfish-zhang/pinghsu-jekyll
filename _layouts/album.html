@@ -66,6 +66,11 @@ layout: default
         position: unset;
         height: unset;
     }
+    .img_comment{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
 </style>
 
 
@@ -128,6 +133,10 @@ layout: default
 </div>
 {% endif %}
 {% endfor %}
+
+<div class="img_comment">
+{% include comment.html %}
+</div>
 
 <script>
     function Bigimg() {
