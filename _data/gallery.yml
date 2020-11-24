@@ -44,6 +44,16 @@
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/20201123001857.jpg
       description: 在这里记录生活~
 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/4ECCEDFA-2DD3-4A6F-BC41-03FDC195AC3D_big.jpg
+      description: 颜色很搭，给🐂大摄影师加鸡腿
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/5ADB295F-E8C7-4B91-B4B1-3A0E47E4F98C_big.jpg
+      description: 火锅🍲
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/2020ChongQing/IMG_0730.jpg
+      description: 鹅岭二厂，爬山真的蛮累吼
+
 
 - id: 2
   name: 光之崽种
@@ -465,3 +475,110 @@
       description: 愿永远不失少年！ 
     - title: img
       img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/The_Krusty_Krab/SpongeBob111.jpg
+      description: 剧本杀之前大吃一顿
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/The_Krusty_Krab/1606234359390.jpg
+      description: 🐂的🍰 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/The_Krusty_Krab/B612Kaji_20190324_201032_379.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/The_Krusty_Krab/75ddc683ffc0922.jpg
+      description: 在这里记录生活~ 
+
+- id: 7
+  name: 随拍
+  thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20180913_122210.jpg
+  description: 想起来时拍点什么？
+  url: JustPhoto
+  album: 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/butter_1589976497262.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/butter_1589976534834.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20180913_121839.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20180913_122210.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20190331_111309.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20190606_135336.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20190709_184504.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20190710_175355.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20190816_180717.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20190816_180731_1.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20190831_185205.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20191002_173323.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20191108_154749.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20191130_111217.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20200113_130113.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20200403_105310.jpg
+      description: 在这里记录生活~ 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/JustPhoto/IMG_20200403_135132.jpg
+      description: 在这里记录生活~ 
+
+
+
+- id: 8
+  name: LifeTour-Something
+  thumbnail: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/LifeTour_Something/IMG_20180711_154321.jpg
+  description: 人生就是一趟旅程，别忽略沿途的风景
+  url: LifeTour_Something
+  album: 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/LifeTour_Something/IMG_20180710_115706.jpg
+      description: 2018南京 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/LifeTour_Something/IMG_20180710_121719.jpg
+      description: 2018南京 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/LifeTour_Something/IMG_20180710_151324.jpg
+      description: 2018南京 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/LifeTour_Something/IMG_20180710_153825.jpg
+      description: 2018南京 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/LifeTour_Something/IMG_20180710_153920.jpg
+      description: 2018南京 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/LifeTour_Something/IMG_20180711_154321.jpg
+      description: 2018南京 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/LifeTour_Something/IMG_20180711_193012.jpg
+      description: 2018南京 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/LifeTour_Something/IMG_20180711_193018.jpg
+      description: 2018南京 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/LifeTour_Something/IMG_20180712_204307.jpg
+      description: 2018南京 
+    - title: img
+      img: https://ning-blog-1304206373.cos.ap-nanjing.myqcloud.com/image/gallery/LifeTour_Something/IMG_20180713_064213.jpg
+      description: 2018南京 
