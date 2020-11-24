@@ -221,7 +221,7 @@
 }
 /*文章页面标题显示图片*/
 .post-header-thumb-op img{
-    /* width: 100%; */
+    width: 100%;
     height: -webkit-fill-available;
     object-fit: cover;
 }
