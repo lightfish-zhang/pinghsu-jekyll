@@ -2,20 +2,19 @@
 layout: default
 ---
 
+<style>
+    #header-site-title{
+        line-height: 55px !important;
+    }
+</style>
+
 <div>
     <!--首页搜索时打开新标签页，其他覆盖本页-->
     <script>
         var s_in = document.getElementById("search");
-        //console.log(document.getElementById("search").target);
-        //var this_url = window.location.href;
-        //var site_ul = document.getElementById("site_url").value;
-        //console.log("this_url", this_url);
-        //console.log("site_url", site_ul);
-        //if (this_url == site_ul) {
-            //console.log("index");
             document.getElementById("search").setAttribute('target', '_blank');
             //首页修复站点名称显示
-            document.getElementById("header-site-title").style.cssText += "line-height: 55px !important;";
+            // document.getElementById("header-site-title").style.cssText += "line-height: 55px !important;";
             //console.log(document.getElementById("search").target);
         //}
     </script>
