@@ -41,4 +41,17 @@
 <script>
     //懒加载
     lazyload();
+    //footer置底
+    function footer_height(){
+        var footerinner_bottom_height = document.getElementsByClassName("inner")[0].getBoundingClientRect().bottom;
+        var scrennHeight = window.screen.availHeight;
+        // console.log("s:",scrennHeight);
+        // console.log("f_i:",footerinner_bottom_height);
+        document.getElementById("footer").style.cssText = "padding-bottom: "+(scrennHeight-footerinner_bottom_height)+"px;";
+    }
+    footer_height();
+    window.onresize = function(){
+        footer_height();
+    }
+    // window.addEventListener(onresize,footer_pd);
 </script>

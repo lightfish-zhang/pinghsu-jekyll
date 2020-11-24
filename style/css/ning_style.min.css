@@ -202,24 +202,26 @@
 
 .post-card img{
     position: absolute;
-    width: auto;
+    /* width: auto; */
+    width: -webkit-fill-available;
     height: 250px;
-    left: -20%;
+    /* left: -20%; */
     object-fit: cover;
 }
 
 @media (max-width: 580px){
 .post-card img{
     position: absolute;
-    width: auto;
+    /* width: auto; */
+    width: -webkit-fill-available;
     height: 250px;
-    left: -10%;
+    /* left: -10%; */
 }
 
 }
 /*文章页面标题显示图片*/
 .post-header-thumb-op img{
-    width: 100%;
+    /* width: 100%; */
     height: -webkit-fill-available;
     object-fit: cover;
 }
