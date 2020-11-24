@@ -106,15 +106,15 @@ layout: default
                     <div class="post-card">
                         <img class="lazyload" src="{{ '/style/image/orange.progress-bar-stripe-loader.svg' | prepend: site.baseurl }}" data-src="{{ images.img }}">
                     </div>
-                    <!--<a href="{{ post.url | prepend: site.baseurl }}" target="_blank">-->
+                    <a href="{{ images.img }}" target="_blank">
                         <div class="item-desc">
                             <p>{{ images.description }} </p>
                         </div>
-                    <!--</a>-->
-                    <div class="item-slant reverse-slant bg-deepgrey"></div>
+                    </a>
+                    <!-- <div class="item-slant reverse-slant bg-deepgrey"></div>
                     <div class="item-slant"></div>
                     <div class="item-label">
-                        <div class="item-title"><a href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ images.title }}</a>
+                        <div class="item-title"><a href="{{ images.img }}" target="_blank">{{ images.title }}</a>
                         <br />
                         {{ post.date | date: "%Y-%m-%d" }}
                         </div>
@@ -124,7 +124,7 @@ layout: default
                                 <a href="/category/{{ post.category}}" target="_blank">{{ post.category }}</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             {% endfor %}
