@@ -10,6 +10,11 @@ summary: 这个音乐插件在跳转网页后就会刷新，所以我只放在�
 tag: [服务器,网站,音乐播放器,QQ音乐]
 ---
 
+<!--音乐播放器-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+
 * content
 {:toc}
 
@@ -139,3 +144,9 @@ Metingjs官网文档：https://github.com/metowolf/MetingJS
 这个音乐插件在跳转网页后就会刷新，所以我只放在了首页，并且将首页都设置为在新标签页中打开。
 
 后续我会尝试解决这个问题，使得其可以在跳转页面后连续播放。
+
+
+
+
+<!--音乐播放器-->
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
