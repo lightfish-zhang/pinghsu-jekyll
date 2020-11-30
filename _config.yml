@@ -17,6 +17,6 @@ comments :
   gitalk :
     clientID : 7822001ed41e401b49e0
     clientSecret : 319e3ad920b76bfc2e6d6049d42061030744ab4d
-    repo : wook87.github.io
+    repo : https://github.com/wook87/wook87.github.io
     owner : wook87
     admin : wook87
