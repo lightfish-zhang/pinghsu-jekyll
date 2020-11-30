@@ -8,4 +8,4 @@ title: About site
 
 ## Introduction
 
-some description...
+name: Taewook Kim
