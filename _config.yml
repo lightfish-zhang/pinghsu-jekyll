@@ -15,8 +15,8 @@ highlighter: rouge
 markdown: kramdown
 comments :
   gitalk :
-    clientID : 
-    clientSecret : 
-    repo : 
-    owner : 
-    admin : 
+    clientID : wook87
+    clientSecret : cdd902bfdf23caaab53f053f1c589850fadd54ef
+    repo : wook87.github.io
+    owner : wook87
+    admin : wook87
