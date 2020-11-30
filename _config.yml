@@ -1,11 +1,11 @@
-name: 
-author: 
-url: 
-baseurl: 
+name: wook
+author: wook
+url: https://wook87.github.io
+baseurl: /
 resume_site: 
-description: 
-github_username: 
-github: 
+description: '개발 관련 자료 모음'
+github_username: wook87
+github: https://github.co.kr/wook87
 plugins: [jekyll-paginate]
 permalink: /:year-:month-:day-:title
 paginate: 12
