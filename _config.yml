@@ -16,7 +16,7 @@ markdown: kramdown
 comments :
   gitalk :
     clientID : wook87
-    clientSecret : c770ba24ea366fa9522a63c599168966172ea95c
+    clientSecret : f65ffac50f0df4982f55a4addc27153bba710b5e
     repo : wook87.github.io
     owner : wook87
     admin : wook87
