@@ -1,7 +1,7 @@
 name: wook
 author: wook
 url: https://wook87.github.io
-baseurl: /
+baseurl: https://github.com/wook87
 resume_site: 
 description: '개발 관련 자료 모음'
 github_username: wook87
